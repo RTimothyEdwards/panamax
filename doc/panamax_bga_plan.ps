@@ -1,0 +1,2127 @@
+%!PS-Adobe-3.0
+%%Title: panamax_bga_plan.ps
+%%Creator: XCircuit v0.0 rev525745813
+%%CreationDate: Fri Feb 14 11:50:05 2025
+%%Pages: 2
+%%BoundingBox: 0 0 612 792
+%%DocumentNeededResources: font Helvetica HelveticaISO 
+%%EndComments
+%%BeginProlog
+%
+%  PostScript prolog for output from xcircuit
+%  Version: 3.9
+%
+%  Electrical circuit (and otherwise general) drawing program
+%
+%  Written by Tim Edwards 8/5/93--4/12/16  (tim@opencircuitdesign.com)
+%  The Johns Hopkins University (1993-2004)
+%  MultiGiG, Inc. (2004-2012)
+%  Open Circuit Design (2012-2016)
+%
+%%BeginResource: procset XCIRCproc 3.9 1
+%
+% supporting definitions --- these are the primary xcircuit types.
+
+/XCIRCsave save def
+/topmat matrix currentmatrix def
+
+/fontslant { /slant exch def [1 0 slant 1 0 0] 
+    exch findfont exch makefont dup length dict /ndict exch def
+    { 1 index /FID ne { ndict 3 1 roll put } { pop pop } ifelse } forall
+    ndict definefont pop} def
+/ul { count 0 gt { dup type /stringtype eq showflag 1 eq and { gsave 
+   currentpoint topmat setmatrix 0 0 moveto 2 index stringwidth pop (_)
+   false charpath flattenpath pathbbox grestore exch pop 1 index
+   sub setlinewidth exch pop currentpoint 3 -1 roll add moveto 0
+   rlineto stroke moveto } if } if } def
+/ol { count 0 gt { dup type /stringtype eq showflag 1 eq and { gsave gsave
+   currentpoint topmat setmatrix 2 index stringwidth pop 3 index
+   true charpath flattenpath pathbbox grestore exch pop
+   exch pop topmat setmatrix (_) true charpath pathbbox grestore
+   exch pop 1 index sub setlinewidth exch pop currentpoint
+   exch 4 1 roll exch sub add moveto pop 0 rlineto stroke
+   moveto } if } if } def
+/stW { gsave currentpoint newpath moveto true charpath flattenpath
+	pathbbox pop exch pop sub grestore } def
+/Ts {mark Tabs aload pop counttomark 1 add array astore /Tabs exch def Tabs
+	0 currentpoint pop put} def
+/Tbn {mark Tabs aload pop counttomark dup 2 add 1 roll cleartomark 1 sub} def
+/Tb { 0 1 Tbn {Tabs exch get dup currentpoint pop lt
+	{currentpoint exch pop moveto exit} {pop} ifelse } for } def
+/Tf { Tbn -1 0 {Tabs exch get dup currentpoint pop gt
+	{currentpoint exch pop moveto exit} {pop} ifelse } for } def
+/qS { (aa) stW (a a) stW sub 4 div 0 Kn } def
+/hS { qS qS } def
+/pspc 0 def
+/cf0 { scalefont setfont } bind def
+/Kn { dup kY add /kY exch def rmoveto } bind def
+/ss { /fscale fscale 0.67 mul def currentfont 0.67 cf0 0 fscale0 fscale mul
+	0.33 mul neg Kn} def
+/Ss { /fscale fscale 0.67 mul def currentfont 0.67 cf0 0 fscale0 fscale mul
+	0.67 mul Kn } def
+/ns { 0 kY neg Kn /kY 0 def /fscale 1.0 def xfont0 1.0 cf0 } def
+/MR { /twidth exch def } def
+/CRx { } def
+/CR { ns 0 /Bline Bline fscale0 neg add def Bline moveto CRx } def
+/cf { dup type /realtype ne {1.0} if exch findfont exch kY 0 eq
+	{ 40 mul dup /fscale0 exch def cf0 /xfont0 currentfont def}
+	{fscale0 mul fscale mul cf0} ifelse } def
+/ctmk { counttomark dup 2 add -1 roll pop } bind def
+/label { gsave translate 0 0 moveto dup scale neg
+	/rotval exch def /twidth 100000 def /just exch def just 128 and
+	0 gt {/mshow {pop} def} {/mshow {show} def} ifelse just 16 and 0
+	gt {gsave rotval rotate 0 1 dtransform gsave pagemat setmatrix
+	idtransform exch grestore 1 0 dtransform gsave pagemat setmatrix
+	idtransform exch grestore dup abs 1e-9 lt {pop mul 0 gt} {3 1 roll
+	pop pop 0 lt} ifelse grestore {-1 /rotval rotval neg def /just just
+	dup 3 and 1 ne {3 xor} if def} {1} ifelse exch -1e-9 lt {-1 /rotval
+	rotval neg def /just just dup 12 and 4 ne {12 xor} if def} {1}
+	ifelse scale } if /showflag 0 def /fspc pspc def /Bline 0 def
+	/numlines 0 def /padding 0 array def /Tabs 0 array def
+	/fscale 1.0 def /kY 0 def gsave /CRx { linewid padding
+	aload pop numlines 1 add dup /numlines exch def array astore
+	/padding exch def /linewid 0 def } def dup 1 add copy dup 1 0
+	dtransform exch atan rotate {exch dup type /stringtype eq {gsave dup
+	gsave newpath 0 0 moveto true charpath flattenpath pathbbox pop exch
+	pop exch pop grestore currentpoint pop add dup /linewid exch def twidth
+	ge {grestore CR exch 1 add dup 2 add {CR} exch 1 roll exch} {grestore}
+	ifelse true charpath flattenpath} {dup type /arraytype eq {exec} {12
+	string cvs true charpath flattenpath} ifelse} ifelse} repeat
+	CRx /CRx {padding aload pop just 1280 and 0 gt {blockwid exch sub just
+	1024 and 0 gt {0.5 mul} if} {pop 0} ifelse 0 rmoveto numlines 1 sub
+	dup /numlines exch def array astore /padding exch def} def exch pop
+	pathbbox grestore 4 copy pop exch pop exch sub /blockwid exch def
+	3 -1 roll pop 3 1 roll just 1 and 0 gt {just 2 and
+	0 gt {exch pop neg fspc sub} {exch sub 0.5 mul neg} ifelse} {pop neg
+	fspc add} ifelse exch Bline exch just 4 and 0 gt {just 8 and 0 gt
+	{exch pop neg fspc sub} {add 0.5 mul neg} ifelse} {pop neg fspc add}
+	ifelse rotval rotate Kn currentpoint translate /showflag 1 def /Bline
+	0 def /Tabs 0 array def /fscale 1.0 def /kY 0 def CRx {dup type
+	/stringtype eq {mshow} {dup type /arraytype eq {exec} {12 string cvs
+	mshow} ifelse} ifelse} repeat grestore endclip} def
+/pinlabel { 4 index 32 and 0 ne hlevel 0 eq or { /pspc 10 def label
+	/pspc 0 def } { pop pop pop pop pop {pop} repeat } ifelse } def
+/pinglobal { pinlabel } def
+/infolabel { pinlabel } def
+/graphic { gsave 4 index cvx exec /DataSource get resetfile translate 0 0
+	moveto neg rotate dup scale cvx exec image grestore endclip} def
+
+/scb { setrgbcolor } bind def  /sce { defColor aload pop scb } bind def
+/cRedef {/defColor currentcolor 3 array astore def} def
+/begingate {dup type /dicttype ne {1 dict} if begin	% default params
+	dup type /dicttype ne {1 dict} if begin		% instanced params
+	/hlevel hlevel 1 add def /defColor currentcolor sce 3 array astore
+	def gsave sce dup type /nametype eq { pop } if translate 0 0 moveto
+	neg rotate dup type /nametype eq not { dup abs currentlinewidth exch
+	div setlinewidth } { pop } ifelse dup abs scale clipped 1 and 1 eq
+	{/clipped clipped 1 add def} if} bind def
+/endgate { /hlevel hlevel 1 sub def grestore defColor aload pop cRedef
+	scb end end endclip} bind def
+
+/hlevel 0 def
+/endclip {clipped 1 and 1 eq {grestore /clipped clipped 1 sub def} if} def
+/tmpa [1 0 0 1 0 0] def
+/gar {8 8 true tmpa {<c0 c0 00 00 0c 0c 00 00>} imagemask} bind
+{8 8 true tmpa {<30 70 60 02 03 07 06 20>} imagemask} bind
+{8 8 true tmpa {<0c 1e 1e 0c c0 e1 e1 c0>} imagemask} bind
+{8 8 true tmpa {<0f 0f 0f 0f f0 f0 f0 f0>} imagemask} bind
+{8 8 true tmpa {<3f f3 e1 e1 f3 3f 1e 1e>} imagemask} bind
+{8 8 true tmpa {<df cf 8f 9f fd fc f8 f9>} imagemask} bind
+{8 8 true tmpa {<ff 3f 3f ff ff f3 f3 ff>} imagemask} bind 7 array astore def
+/ppaint { gsave clip tmpa dup setmatrix pathbbox neg exch neg 4 2 roll
+  neg 4 -1 roll 2 copy gt {exch} if 8 div ceiling 8 mul 4 2 roll neg 2 copy
+  gt {exch} if 8 div ceiling 8 mul 3 -1 roll -8 5 -1 roll
+  { 3 index exch 5 exch put dup -8 3 index { 3 index
+  exch 4 exch put 3 index exec } for } for pop pop pop pop grestore } bind def
+/setstyles {
+  currentlinewidth mul setlinewidth /style exch def style 2048 and 0 gt
+  clipped 1 and 0 eq and {clip newpath /clipped clipped 1 add def} {
+  style 1 and 0 gt not {closepath} if
+  style 1024 and 0 gt {2 setlinecap 0 setlinejoin} if
+  style 2 and 0 gt {currentlinewidth 4 mul dup 2 array astore 0 setdash} if
+  style 4 and 0 gt {0.5 currentlinewidth 4 mul 2 array astore 0 setdash} if
+  gsave style 16 and 0 gt { style 224 and -5 bitshift style 256 and 0 gt {
+  7 exch sub 8 div dup 1 exch sub currentrgbcolor 3 array astore
+  {3 copy mul add 4 1 roll pop} forall pop pop setrgbcolor eofill}
+  {dup 7 lt {gar exch get ppaint} {pop eofill} ifelse} ifelse}
+  {style 256 and 0 gt {1 setgray eofill} if} ifelse grestore style 8 and 0 gt 
+  style 512 eq or {newpath} {stroke} ifelse grestore endclip} ifelse} def     
+
+/addtoy {exch dup dup 2 mul 3 add 1 roll -1 1 { 4 1 roll dup 4 1 roll add
+	4 -1 roll 2 mul 1 add index 2 mul 2 add 2 roll} for pop} def
+/addtoy1 {1 exch addtoy pop} def
+/addtoy3 {3 exch addtoy pop} def
+/addtoy4 {4 exch addtoy pop} def
+/addtox {exch dup dup 2 mul 3 add 1 roll -1 1 { 4 1 roll dup 4 1 roll 3 -1 roll
+	add exch 4 -1 roll 2 mul 1 add index 2 mul 2 add 2 roll} for pop} def
+/addtox1 {1 exch addtox pop} def
+/addtox3 {3 exch addtox pop} def
+/addtox4 {4 exch addtox pop} def
+/polygon { gsave /num exch def moveto num 1 sub {lineto} repeat setstyles } def
+/xcarc   { gsave newpath arc setstyles } def
+/elb { matrix currentmatrix 7 -1 roll 7 -1 roll translate 5 1 roll 4 -1 roll
+	3 index div 1 scale } def
+/ele { 0 4 1 roll 0 4 1 roll } bind def
+/ellipse { gsave elb newpath ele arc setmatrix setstyles } def
+/pellip  { elb ele arc setmatrix } def
+/nellip  { elb ele arcn setmatrix } def
+/spline  { gsave moveto curveto setstyles } def
+/polyc   { {lineto} repeat } bind def
+/beginpath { gsave moveto } bind def
+/endpath { setstyles } bind def
+/bop	 { 1 setlinecap 2 setlinejoin 6 setmiterlimit 0 0 0 scb cRedef
+	/clipped 0 def} def
+/psinsertion {/PSobj save def /showpage {} def /setpagedevice {pop} def bop
+	rotate translate dup scale} def
+/end_insert {PSobj restore} def
+/setpagemat {/pagemat matrix currentmatrix def} def
+/inchscale  {setpagemat 0.375 mul dup scale} def
+/cmscale    {setpagemat 0.35433071 mul dup scale} def
+
+%%EndResource
+%%EndProlog
+/Helvetica findfont dup length dict begin
+{1 index /FID ne {def} {pop pop} ifelse} forall
+/Encoding ISOLatin1Encoding def currentdict end
+/HelveticaISO exch definefont pop
+
+% XCircuit output starts here.
+
+%%BeginSetup
+
+/::chip_with_pads {
+begingate
+0 1.000 -880 -1328 -880 1296 864 1296 864 -1328 4 polygon
+0 1.000 -784 -384 -784 896 768 896 768 -384 4 polygon
+(user project area) {/Helvetica cf} 2 21 0.000 1.000 -48 352 label
+0 1.000 -992 -1440 -992 1408 976 1408 976 -1440 4 polygon
+0 1.000 -976 -1120 -976 -1072 -928 -1072 -928 -1120 4 polygon
+0 1.000 -976 -1056 -976 -1008 -928 -1008 -928 -1056 4 polygon
+0 1.000 -976 -992 -976 -944 -928 -944 -928 -992 4 polygon
+0 1.000 -976 -928 -976 -880 -928 -880 -928 -928 4 polygon
+0 1.000 -976 -864 -976 -816 -928 -816 -928 -864 4 polygon
+0 1.000 -976 -800 -976 -752 -928 -752 -928 -800 4 polygon
+0 1.000 -976 -736 -976 -688 -928 -688 -928 -736 4 polygon
+0 1.000 -976 -672 -976 -624 -928 -624 -928 -672 4 polygon
+0 1.000 -976 -608 -976 -560 -928 -560 -928 -608 4 polygon
+0 1.000 -976 -544 -976 -496 -928 -496 -928 -544 4 polygon
+0 1.000 -976 -480 -976 -432 -928 -432 -928 -480 4 polygon
+0 1.000 -976 -416 -976 -368 -928 -368 -928 -416 4 polygon
+0 1.000 -976 -352 -976 -304 -928 -304 -928 -352 4 polygon
+0 1.000 -976 -288 -976 -240 -928 -240 -928 -288 4 polygon
+0 1.000 -976 -224 -976 -176 -928 -176 -928 -224 4 polygon
+0 1.000 -976 -160 -976 -112 -928 -112 -928 -160 4 polygon
+0 1.000 -976 -96 -976 -48 -928 -48 -928 -96 4 polygon
+0 1.000 -976 -32 -976 16 -928 16 -928 -32 4 polygon
+0 1.000 -976 32 -976 80 -928 80 -928 32 4 polygon
+0 1.000 -976 96 -976 144 -928 144 -928 96 4 polygon
+0 1.000 -976 160 -976 208 -928 208 -928 160 4 polygon
+0 1.000 -976 224 -976 272 -928 272 -928 224 4 polygon
+0 1.000 -976 288 -976 336 -928 336 -928 288 4 polygon
+0 1.000 -976 352 -976 400 -928 400 -928 352 4 polygon
+0 1.000 -976 416 -976 464 -928 464 -928 416 4 polygon
+0 1.000 -976 480 -976 528 -928 528 -928 480 4 polygon
+0 1.000 -976 544 -976 592 -928 592 -928 544 4 polygon
+0 1.000 -976 608 -976 656 -928 656 -928 608 4 polygon
+0 1.000 -976 672 -976 720 -928 720 -928 672 4 polygon
+0 1.000 -976 736 -976 784 -928 784 -928 736 4 polygon
+0 1.000 -976 800 -976 848 -928 848 -928 800 4 polygon
+0 1.000 -976 864 -976 912 -928 912 -928 864 4 polygon
+0 1.000 -976 928 -976 976 -928 976 -928 928 4 polygon
+0 1.000 -976 992 -976 1040 -928 1040 -928 992 4 polygon
+0 1.000 -976 1056 -976 1104 -928 1104 -928 1056 4 polygon
+0 1.000 -976 1120 -976 1168 -928 1168 -928 1120 4 polygon
+0 1.000 -976 1184 -976 1232 -928 1232 -928 1184 4 polygon
+0 1.000 912 -1120 912 -1072 960 -1072 960 -1120 4 polygon
+0 1.000 912 -1056 912 -1008 960 -1008 960 -1056 4 polygon
+0 1.000 912 -992 912 -944 960 -944 960 -992 4 polygon
+0 1.000 912 -928 912 -880 960 -880 960 -928 4 polygon
+0 1.000 912 -864 912 -816 960 -816 960 -864 4 polygon
+0 1.000 912 -800 912 -752 960 -752 960 -800 4 polygon
+0 1.000 912 -736 912 -688 960 -688 960 -736 4 polygon
+0 1.000 912 -672 912 -624 960 -624 960 -672 4 polygon
+0 1.000 912 -608 912 -560 960 -560 960 -608 4 polygon
+0 1.000 912 -544 912 -496 960 -496 960 -544 4 polygon
+0 1.000 912 -480 912 -432 960 -432 960 -480 4 polygon
+0 1.000 912 -416 912 -368 960 -368 960 -416 4 polygon
+0 1.000 912 -352 912 -304 960 -304 960 -352 4 polygon
+0 1.000 912 -288 912 -240 960 -240 960 -288 4 polygon
+0 1.000 912 -224 912 -176 960 -176 960 -224 4 polygon
+0 1.000 912 -160 912 -112 960 -112 960 -160 4 polygon
+0 1.000 912 -96 912 -48 960 -48 960 -96 4 polygon
+0 1.000 912 -32 912 16 960 16 960 -32 4 polygon
+0 1.000 912 32 912 80 960 80 960 32 4 polygon
+0 1.000 912 96 912 144 960 144 960 96 4 polygon
+0 1.000 912 160 912 208 960 208 960 160 4 polygon
+0 1.000 912 224 912 272 960 272 960 224 4 polygon
+0 1.000 912 288 912 336 960 336 960 288 4 polygon
+0 1.000 912 352 912 400 960 400 960 352 4 polygon
+0 1.000 912 416 912 464 960 464 960 416 4 polygon
+0 1.000 912 480 912 528 960 528 960 480 4 polygon
+0 1.000 912 544 912 592 960 592 960 544 4 polygon
+0 1.000 912 608 912 656 960 656 960 608 4 polygon
+0 1.000 912 672 912 720 960 720 960 672 4 polygon
+0 1.000 912 736 912 784 960 784 960 736 4 polygon
+0 1.000 912 800 912 848 960 848 960 800 4 polygon
+0 1.000 912 864 912 912 960 912 960 864 4 polygon
+0 1.000 912 928 912 976 960 976 960 928 4 polygon
+0 1.000 912 992 912 1040 960 1040 960 992 4 polygon
+0 1.000 912 1056 912 1104 960 1104 960 1056 4 polygon
+0 1.000 912 1120 912 1168 960 1168 960 1120 4 polygon
+0 1.000 912 1184 912 1232 960 1232 960 1184 4 polygon
+0 1.000 272 1344 224 1344 224 1392 272 1392 4 polygon
+0 1.000 208 1344 160 1344 160 1392 208 1392 4 polygon
+0 1.000 144 1344 96 1344 96 1392 144 1392 4 polygon
+0 1.000 80 1344 32 1344 32 1392 80 1392 4 polygon
+0 1.000 16 1344 -32 1344 -32 1392 16 1392 4 polygon
+0 1.000 -48 1344 -96 1344 -96 1392 -48 1392 4 polygon
+0 1.000 -112 1344 -160 1344 -160 1392 -112 1392 4 polygon
+0 1.000 -176 1344 -224 1344 -224 1392 -176 1392 4 polygon
+0 1.000 -240 1344 -288 1344 -288 1392 -240 1392 4 polygon
+0 1.000 -304 1344 -352 1344 -352 1392 -304 1392 4 polygon
+0 1.000 -368 1344 -416 1344 -416 1392 -368 1392 4 polygon
+0 1.000 -432 1344 -480 1344 -480 1392 -432 1392 4 polygon
+0 1.000 -496 1344 -544 1344 -544 1392 -496 1392 4 polygon
+0 1.000 -560 1344 -608 1344 -608 1392 -560 1392 4 polygon
+0 1.000 -624 1344 -672 1344 -672 1392 -624 1392 4 polygon
+0 1.000 -688 1344 -736 1344 -736 1392 -688 1392 4 polygon
+0 1.000 -752 1344 -800 1344 -800 1392 -752 1392 4 polygon
+0 1.000 -928 -1248 -976 -1248 -976 -1200 -928 -1200 4 polygon
+0 1.000 960 -1248 912 -1248 912 -1200 960 -1200 4 polygon
+0 1.000 784 1344 736 1344 736 1392 784 1392 4 polygon
+0 1.000 720 1344 672 1344 672 1392 720 1392 4 polygon
+0 1.000 656 1344 608 1344 608 1392 656 1392 4 polygon
+0 1.000 592 1344 544 1344 544 1392 592 1392 4 polygon
+0 1.000 528 1344 480 1344 480 1392 528 1392 4 polygon
+0 1.000 464 1344 416 1344 416 1392 464 1392 4 polygon
+0 1.000 400 1344 352 1344 352 1392 400 1392 4 polygon
+0 1.000 336 1344 288 1344 288 1392 336 1392 4 polygon
+0 1.000 464 -1424 416 -1424 416 -1376 464 -1376 4 polygon
+0 1.000 400 -1424 352 -1424 352 -1376 400 -1376 4 polygon
+0 1.000 336 -1424 288 -1424 288 -1376 336 -1376 4 polygon
+0 1.000 272 -1424 224 -1424 224 -1376 272 -1376 4 polygon
+0 1.000 208 -1424 160 -1424 160 -1376 208 -1376 4 polygon
+0 1.000 144 -1424 96 -1424 96 -1376 144 -1376 4 polygon
+0 1.000 80 -1424 32 -1424 32 -1376 80 -1376 4 polygon
+0 1.000 16 -1424 -32 -1424 -32 -1376 16 -1376 4 polygon
+0 1.000 -48 -1424 -96 -1424 -96 -1376 -48 -1376 4 polygon
+0 1.000 -112 -1424 -160 -1424 -160 -1376 -112 -1376 4 polygon
+0 1.000 -176 -1424 -224 -1424 -224 -1376 -176 -1376 4 polygon
+0 1.000 -240 -1424 -288 -1424 -288 -1376 -240 -1376 4 polygon
+0 1.000 -304 -1424 -352 -1424 -352 -1376 -304 -1376 4 polygon
+0 1.000 -368 -1424 -416 -1424 -416 -1376 -368 -1376 4 polygon
+0 1.000 -432 -1424 -480 -1424 -480 -1376 -432 -1376 4 polygon
+0 1.000 -496 -1424 -544 -1424 -544 -1376 -496 -1376 4 polygon
+0 1.000 -560 -1424 -608 -1424 -608 -1376 -560 -1376 4 polygon
+0 1.000 -928 -1184 -976 -1184 -976 -1136 -928 -1136 4 polygon
+0 1.000 960 -1184 912 -1184 912 -1136 960 -1136 4 polygon
+0 1.000 -624 -1424 -672 -1424 -672 -1376 -624 -1376 4 polygon
+0 1.000 -688 -1424 -736 -1424 -736 -1376 -688 -1376 4 polygon
+0 1.000 -752 -1424 -800 -1424 -800 -1376 -752 -1376 4 polygon
+0 1.000 -816 -1424 -864 -1424 -864 -1376 -816 -1376 4 polygon
+0 1.000 816 -1408 768 -1408 768 -1360 816 -1360 4 polygon
+0 1.000 752 -1408 704 -1408 704 -1360 752 -1360 4 polygon
+0 1.000 528 -1424 480 -1424 480 -1376 528 -1376 4 polygon
+(2800um x 2300um) {/Helvetica cf} 2 17 0.000 1.000 -48 272 label
+(gpio8_7) {/Helvetica cf} 2 23 270.000 1.000 304 -1456 label
+(gpio8_6) {/Helvetica cf} 2 23 270.000 1.000 240 -1456 label
+(gpio8_5) {/Helvetica cf} 2 23 270.000 1.000 176 -1456 label
+(gpio8_4) {/Helvetica cf} 2 23 270.000 1.000 112 -1456 label
+(gpio8_3) {/Helvetica cf} 2 23 270.000 1.000 -464 -1456 label
+(gpio8_2) {/Helvetica cf} 2 23 270.000 1.000 -528 -1456 label
+(gpio8_1) {/Helvetica cf} 2 23 270.000 1.000 -592 -1456 label
+(gpio8_0) {/Helvetica cf} 2 23 270.000 1.000 -656 -1456 label
+0.647 0.165 0.165 scb
+(vssio_8) {/Helvetica cf} 2 23 270.000 1.000 -400 -1456 label
+(vddio_9) {/Helvetica cf} 2 23 270.000 1.000 -16 -1456 label
+0.361 0.675 0.933 scb
+(vccd0_0) {/Helvetica cf} 2 23 270.000 1.000 -848 -1456 label
+(vccd0_1) {/Helvetica cf} 2 23 270.000 1.000 48 -1456 label
+0.180 0.545 0.341 scb
+(vssa3_0) {/Helvetica cf} 2 23 270.000 1.000 432 -1456 label
+(vdda3_0) {/Helvetica cf} 2 23 270.000 1.000 496 -1456 label
+sce
+(gpio0_0) {/Helvetica cf} 2 20 0.000 1.000 992 -1152 label
+(gpio0_1) {/Helvetica cf} 2 20 0.000 1.000 992 -1088 label
+(gpio0_2) {/Helvetica cf} 2 20 0.000 1.000 992 -1024 label
+(gpio0_3) {/Helvetica cf} 2 20 0.000 1.000 992 -960 label
+(gpio0_4) {/Helvetica cf} 2 20 0.000 1.000 992 -768 label
+(gpio0_5) {/Helvetica cf} 2 20 0.000 1.000 992 -704 label
+(gpio0_6) {/Helvetica cf} 2 20 0.000 1.000 992 -640 label
+(gpio0_7) {/Helvetica cf} 2 20 0.000 1.000 992 -576 label
+(gpio1_0) {/Helvetica cf} 2 20 0.000 1.000 992 -320 label
+(gpio1_1) {/Helvetica cf} 2 20 0.000 1.000 992 -256 label
+(gpio1_2) {/Helvetica cf} 2 20 0.000 1.000 992 -192 label
+(gpio1_3) {/Helvetica cf} 2 20 0.000 1.000 992 -128 label
+(gpio1_4) {/Helvetica cf} 2 20 0.000 1.000 992 64 label
+(gpio1_5) {/Helvetica cf} 2 20 0.000 1.000 992 128 label
+(gpio1_6) {/Helvetica cf} 2 20 0.000 1.000 992 192 label
+(gpio1_7) {/Helvetica cf} 2 20 0.000 1.000 992 256 label
+(gpio2_0) {/Helvetica cf} 2 20 0.000 1.000 992 576 label
+(gpio2_1) {/Helvetica cf} 2 20 0.000 1.000 992 640 label
+(gpio2_2) {/Helvetica cf} 2 20 0.000 1.000 992 704 label
+(gpio2_3) {/Helvetica cf} 2 20 0.000 1.000 992 768 label
+(gpio2_4) {/Helvetica cf} 2 20 0.000 1.000 992 896 label
+(gpio2_5) {/Helvetica cf} 2 20 0.000 1.000 992 960 label
+(gpio2_6) {/Helvetica cf} 2 20 0.000 1.000 992 1024 label
+(gpio2_7) {/Helvetica cf} 2 20 0.000 1.000 992 1088 label
+0.647 0.165 0.165 scb
+(vddio_0) {/Helvetica cf} 2 20 360.000 1.000 992 -1216 label
+(vssio_0) {/Helvetica cf} 2 20 0.000 1.000 992 -832 label
+(vddio_2) {/Helvetica cf} 2 20 0.000 1.000 992 320 label
+0.361 0.675 0.933 scb
+(vssd1_0) {/Helvetica cf} 2 20 0.000 1.000 992 -896 label
+(vccd1_0) {/Helvetica cf} 2 20 0.000 1.000 992 -64 label
+0.180 0.545 0.341 scb
+(vdda1_0) {/Helvetica cf} 2 20 0.000 1.000 992 -448 label
+(vssa1_0) {/Helvetica cf} 2 20 0.000 1.000 992 -384 label
+0.361 0.675 0.933 scb
+(vssd1_1) {/Helvetica cf} 2 20 0.000 1.000 992 512 label
+(vccd1_1) {/Helvetica cf} 2 20 360.000 1.000 992 1152 label
+0.180 0.545 0.341 scb
+(vdda1_1) {/Helvetica cf} 2 20 0.000 1.000 992 384 label
+(vssa1_1) {/Helvetica cf} 2 20 360.000 1.000 992 448 label
+0.824 0.039 0.863 scb
+(select) {/Helvetica cf} 2 23 270.000 1.000 -784 -1456 label
+(xo1) {/Helvetica cf} 2 23 270.000 1.000 -80 -1456 label
+(xi1) {/Helvetica cf} 2 23 270.000 1.000 -144 -1456 label
+sce
+(gpio3_0) {/Helvetica cf} 2 20 270.000 1.000 752 1424 label
+(gpio3_1) {/Helvetica cf} 2 20 270.000 1.000 688 1424 label
+(gpio3_2) {/Helvetica cf} 2 20 270.000 1.000 624 1424 label
+(gpio3_3) {/Helvetica cf} 2 20 270.000 1.000 560 1424 label
+(gpio3_4) {/Helvetica cf} 2 20 270.000 1.000 368 1424 label
+(gpio3_5) {/Helvetica cf} 2 20 270.000 1.000 304 1424 label
+(gpio3_6) {/Helvetica cf} 2 20 270.000 1.000 240 1424 label
+(gpio3_7) {/Helvetica cf} 2 20 270.000 1.000 176 1424 label
+(gpio4_0) {/Helvetica cf} 2 20 270.000 1.000 -208 1424 label
+(gpio4_1) {/Helvetica cf} 2 20 270.000 1.000 -272 1424 label
+(gpio4_2) {/Helvetica cf} 2 20 270.000 1.000 -336 1424 label
+(gpio4_3) {/Helvetica cf} 2 20 270.000 1.000 -400 1424 label
+(gpio4_4) {/Helvetica cf} 2 20 270.000 1.000 -592 1424 label
+(gpio4_5) {/Helvetica cf} 2 20 270.000 1.000 -656 1424 label
+(gpio4_6) {/Helvetica cf} 2 20 270.000 1.000 -720 1424 label
+(gpio4_7) {/Helvetica cf} 2 20 270.000 1.000 -784 1424 label
+0.647 0.165 0.165 scb
+(vddio_3) {/Helvetica cf} 2 20 360.000 1.000 993 1216 label
+(vddio_5) {/Helvetica cf} 2 23 360.000 1.000 -1007 1216 label
+0.180 0.545 0.341 scb
+(vdda0_0) {/Helvetica cf} 2 20 270.000 1.000 48 1424 label
+(vssa0_0) {/Helvetica cf} 2 20 270.000 1.000 -144 1424 label
+0.647 0.165 0.165 scb
+(vddio_4) {/Helvetica cf} 2 20 270.000 1.000 112 1423 label
+0.361 0.675 0.933 scb
+(vccd2_0) {/Helvetica cf} 2 20 270.000 1.000 -848 1424 label
+sce
+(gpio5_0) {/Helvetica cf} 2 23 0.000 1.000 -1008 1088 label
+(gpio5_1) {/Helvetica cf} 2 23 0.000 1.000 -1008 1024 label
+(gpio5_2) {/Helvetica cf} 2 23 0.000 1.000 -1008 960 label
+(gpio5_3) {/Helvetica cf} 2 23 0.000 1.000 -1008 896 label
+(gpio5_4) {/Helvetica cf} 2 23 0.000 1.000 -1008 768 label
+(gpio5_5) {/Helvetica cf} 2 23 0.000 1.000 -1008 704 label
+(gpio5_6) {/Helvetica cf} 2 23 0.000 1.000 -1008 640 label
+(gpio5_7) {/Helvetica cf} 2 23 0.000 1.000 -1008 576 label
+(gpio6_7) {/Helvetica cf} 2 23 0.000 1.000 -1008 -320 label
+(gpio6_6) {/Helvetica cf} 2 23 0.000 1.000 -1008 -256 label
+(gpio6_5) {/Helvetica cf} 2 23 0.000 1.000 -1008 -192 label
+(gpio6_4) {/Helvetica cf} 2 23 0.000 1.000 -1008 -128 label
+(gpio6_3) {/Helvetica cf} 2 23 0.000 1.000 -1008 64 label
+(gpio6_2) {/Helvetica cf} 2 23 0.000 1.000 -1008 128 label
+(gpio6_1) {/Helvetica cf} 2 23 0.000 1.000 -1008 192 label
+(gpio6_0) {/Helvetica cf} 2 23 0.000 1.000 -1008 256 label
+(gpio7_7) {/Helvetica cf} 2 23 0.000 1.000 -1008 -1152 label
+(gpio7_6) {/Helvetica cf} 2 23 0.000 1.000 -1008 -1088 label
+(gpio7_5) {/Helvetica cf} 2 23 0.000 1.000 -1008 -1024 label
+(gpio7_4) {/Helvetica cf} 2 23 0.000 1.000 -1008 -960 label
+(gpio7_3) {/Helvetica cf} 2 23 0.000 1.000 -1008 -768 label
+(gpio7_2) {/Helvetica cf} 2 23 0.000 1.000 -1008 -704 label
+(gpio7_1) {/Helvetica cf} 2 23 0.000 1.000 -1008 -640 label
+(gpio7_0) {/Helvetica cf} 2 23 0.000 1.000 -1008 -576 label
+0.647 0.165 0.165 scb
+(vddio_7) {/Helvetica cf} 2 23 360.000 1.000 -1008 -512 label
+(vddio_8) {/Helvetica cf} 2 23 360.000 1.000 -1008 -1216 label
+0.824 0.039 0.863 scb
+(resetb) {/Helvetica cf} 2 23 270.000 1.000 -720 -1456 label
+0.180 0.545 0.341 scb
+(vdda2_1) {/Helvetica cf} 2 23 0.000 1.000 -1008 -448 label
+(vssa2_1) {/Helvetica cf} 2 23 0.000 1.000 -1008 -384 label
+0.647 0.165 0.165 scb
+(vddio_6) {/Helvetica cf} 2 23 360.000 1.000 -1008 320 label
+0.361 0.675 0.933 scb
+(vssd2_2) {/Helvetica cf} 2 23 0.000 1.000 -1008 -64 label
+(vccd2_2) {/Helvetica cf} 2 23 0.000 1.000 -1008 -896 label
+0.180 0.545 0.341 scb
+(vdda2_0) {/Helvetica cf} 2 23 0.000 1.000 -1008 384 label
+(vssa2_0) {/Helvetica cf} 2 23 0.000 1.000 -1008 448 label
+0.824 0.039 0.863 scb
+(xo0) {/Helvetica cf} 2 23 270.000 1.000 -208 -1456 label
+(xi0) {/Helvetica cf} 2 23 270.000 1.000 -272 -1456 label
+0.647 0.165 0.165 scb
+(vddio_1) {/Helvetica cf} 2 20 0.000 1.000 992 -512 label
+(vssio_1) {/Helvetica cf} 2 20 0.000 1.000 992 0 label
+(vssio_2) {/Helvetica cf} 2 20 0.000 1.000 992 832 label
+(vssio_3) {/Helvetica cf} 2 20 270.000 1.000 497 1424 label
+(vssio_4) {/Helvetica cf} 2 20 270.000 1.000 -528 1423 label
+(vssio_7) {/Helvetica cf} 2 23 360.000 1.000 -1008 -832 label
+(vssio_6) {/Helvetica cf} 2 23 360.000 1.000 -1008 0 label
+(vssio_5) {/Helvetica cf} 2 23 360.000 1.000 -1008 832 label
+0.361 0.675 0.933 scb
+(vssd2_1) {/Helvetica cf} 2 23 0.000 1.000 -1008 1152 label
+(vssd2_0) {/Helvetica cf} 2 20 270.000 1.000 -464 1424 label
+(vssd0_0) {/Helvetica cf} 2 23 270.000 1.000 -336 -1456 label
+(vssd0_1) {/Helvetica cf} 2 23 270.000 1.000 560 -1456 label
+(vccd2_1) {/Helvetica cf} 2 23 0.000 1.000 -1008 512 label
+(vssd1_2) {/Helvetica cf} 2 20 270.000 1.000 816 1424 label
+(vccd1_2) {/Helvetica cf} 2 20 270.000 1.000 432 1424 label
+sce
+0 1.000 -816 1344 -864 1344 -864 1392 -816 1392 4 polygon
+0 1.000 848 1344 800 1344 800 1392 848 1392 4 polygon
+0.824 0.039 0.863 scb
+(analog_0) {/Helvetica cf} 2 20 270.000 1.000 -16 1424 label
+(analog_1) {/Helvetica cf} 2 20 270.000 1.000 -80 1424 label
+sce
+(sio0) {/Helvetica cf} 2 23 270.000 1.000 720 -1456 label
+(sio1) {/Helvetica cf} 2 23 270.000 1.000 784 -1456 label
+0 1.000 592 -1424 544 -1424 544 -1376 592 -1376 4 polygon
+0.647 0.165 0.165 scb
+(vssio_9) {/Helvetica cf} 2 23 270.000 1.000 368 -1456 label
+sce
+(Hazard-3 RISC-V core) {CR} (Frigate SoC) {/Helvetica cf} 4 1041 0.000 1.000 
+-64 -800 label
+endgate
+} def
+
+/generic::arrowhead {
+% nonetwork
+begingate
+8 -28 beginpath
+3 -18 3 -15 0 0 curveto
+-3 -15 -3 -18 -8 -28 curveto
+-2 -26 2 -26 8 -28 curveto
+249 
+1.000 endpath
+endgate
+} def
+
+
+%%EndSetup
+
+%%Page: panamax_bga_plan 1
+%%PageOrientation: Portrait
+%%PageBoundingBox: 0 0 612 792
+/pgsave save def bop
+0.1486 inchscale
+2.6000 setlinewidth 3889 8542 translate
+
+0 1.000 704 496 832 496 832 416 704 416 4 polygon
+0 1.000 704 272 832 272 832 192 704 192 4 polygon
+0 1.000 704 48 832 48 832 -32 704 -32 4 polygon
+0 1.000 704 -176 832 -176 832 -256 704 -256 4 polygon
+0 1.000 704 -400 832 -400 832 -480 704 -480 4 polygon
+0 1.000 704 -624 832 -624 832 -704 704 -704 4 polygon
+0 1.000 704 -848 832 -848 832 -928 704 -928 4 polygon
+0 1.000 704 -1072 832 -1072 832 -1152 704 -1152 4 polygon
+0 1.000 704 -1296 832 -1296 832 -1376 704 -1376 4 polygon
+0 1.000 704 -1520 832 -1520 832 -1600 704 -1600 4 polygon
+0 1.000 704 -1744 832 -1744 832 -1824 704 -1824 4 polygon
+0 1.000 704 -1968 832 -1968 832 -2048 704 -2048 4 polygon
+0 1.000 704 -2192 832 -2192 832 -2272 704 -2272 4 polygon
+0 1.000 704 -2416 832 -2416 832 -2496 704 -2496 4 polygon
+0 1.000 704 -2640 832 -2640 832 -2720 704 -2720 4 polygon
+0 1.000 704 -2864 832 -2864 832 -2944 704 -2944 4 polygon
+0 1.000 704 608 832 608 832 528 704 528 4 polygon
+0 1.000 704 384 832 384 832 304 704 304 4 polygon
+0 1.000 704 160 832 160 832 80 704 80 4 polygon
+0 1.000 704 -64 832 -64 832 -144 704 -144 4 polygon
+0 1.000 704 -288 832 -288 832 -368 704 -368 4 polygon
+0 1.000 704 -512 832 -512 832 -592 704 -592 4 polygon
+0 1.000 704 -736 832 -736 832 -816 704 -816 4 polygon
+0 1.000 704 -960 832 -960 832 -1040 704 -1040 4 polygon
+0 1.000 704 -1184 832 -1184 832 -1264 704 -1264 4 polygon
+0 1.000 704 -1408 832 -1408 832 -1488 704 -1488 4 polygon
+0 1.000 704 -1632 832 -1632 832 -1712 704 -1712 4 polygon
+0 1.000 704 -1856 832 -1856 832 -1936 704 -1936 4 polygon
+0 1.000 704 -2080 832 -2080 832 -2160 704 -2160 4 polygon
+0 1.000 704 -2304 832 -2304 832 -2384 704 -2384 4 polygon
+0 1.000 704 -2528 832 -2528 832 -2608 704 -2608 4 polygon
+0 1.000 704 -2752 832 -2752 832 -2832 704 -2832 4 polygon
+0 2.000 672 -3520 672 864 5056 864 5056 -3520 4 polygon
+0 1.000 1584 -3488 1584 -3360 1664 -3360 1664 -3488 4 polygon
+0 1.000 1808 -3488 1808 -3360 1888 -3360 1888 -3488 4 polygon
+0 1.000 2032 -3488 2032 -3360 2112 -3360 2112 -3488 4 polygon
+0 1.000 2256 -3488 2256 -3360 2336 -3360 2336 -3488 4 polygon
+0 1.000 2480 -3488 2480 -3360 2560 -3360 2560 -3488 4 polygon
+0 1.000 2704 -3488 2704 -3360 2784 -3360 2784 -3488 4 polygon
+0 1.000 2928 -3488 2928 -3360 3008 -3360 3008 -3488 4 polygon
+0 1.000 3152 -3488 3152 -3360 3232 -3360 3232 -3488 4 polygon
+0 1.000 3376 -3488 3376 -3360 3456 -3360 3456 -3488 4 polygon
+0 1.000 3600 -3488 3600 -3360 3680 -3360 3680 -3488 4 polygon
+0 1.000 3824 -3488 3824 -3360 3904 -3360 3904 -3488 4 polygon
+0 1.000 4048 -3488 4048 -3360 4128 -3360 4128 -3488 4 polygon
+0 1.000 1472 -3488 1472 -3360 1552 -3360 1552 -3488 4 polygon
+0 1.000 1696 -3488 1696 -3360 1776 -3360 1776 -3488 4 polygon
+0 1.000 1920 -3488 1920 -3360 2000 -3360 2000 -3488 4 polygon
+0 1.000 2144 -3488 2144 -3360 2224 -3360 2224 -3488 4 polygon
+0 1.000 2368 -3488 2368 -3360 2448 -3360 2448 -3488 4 polygon
+0 1.000 2592 -3488 2592 -3360 2672 -3360 2672 -3488 4 polygon
+0 1.000 2816 -3488 2816 -3360 2896 -3360 2896 -3488 4 polygon
+0 1.000 3040 -3488 3040 -3360 3120 -3360 3120 -3488 4 polygon
+0 1.000 3264 -3488 3264 -3360 3344 -3360 3344 -3488 4 polygon
+0 1.000 3488 -3488 3488 -3360 3568 -3360 3568 -3488 4 polygon
+0 1.000 3712 -3488 3712 -3360 3792 -3360 3792 -3488 4 polygon
+0 1.000 3936 -3488 3936 -3360 4016 -3360 4016 -3488 4 polygon
+0 1.000 4160 -3488 4160 -3360 4240 -3360 4240 -3488 4 polygon
+(gpio3_0) {/Helvetica cf} 2 20 270.000 2.000 4192 896 label
+(gpio3_1) {/Helvetica cf} 2 20 270.000 2.000 4080 896 label
+(gpio3_2) {/Helvetica cf} 2 20 270.000 2.000 3968 896 label
+(gpio3_3) {/Helvetica cf} 2 20 270.000 2.000 3856 896 label
+(gpio3_4) {/Helvetica cf} 2 20 270.000 2.000 3520 896 label
+(gpio3_5) {/Helvetica cf} 2 20 270.000 2.000 3408 896 label
+(gpio3_6) {/Helvetica cf} 2 20 270.000 2.000 3296 896 label
+(gpio3_7) {/Helvetica cf} 2 20 270.000 2.000 3184 896 label
+(gpio4_0) {/Helvetica cf} 2 20 270.000 2.000 2512 896 label
+(gpio4_1) {/Helvetica cf} 2 20 270.000 2.000 2400 896 label
+(gpio4_2) {/Helvetica cf} 2 20 270.000 2.000 2288 896 label
+(gpio4_3) {/Helvetica cf} 2 20 270.000 2.000 2176 896 label
+(gpio4_4) {/Helvetica cf} 2 20 270.000 2.000 1840 896 label
+(gpio4_5) {/Helvetica cf} 2 20 270.000 2.000 1728 896 label
+(gpio4_6) {/Helvetica cf} 2 20 270.000 2.000 1616 896 label
+(gpio4_7) {/Helvetica cf} 2 20 270.000 2.000 1504 896 label
+0.180 0.545 0.341 scb
+(vdda0_0) {/Helvetica cf} 2 20 270.000 2.000 2960 896 label
+(vssa0_0) {/Helvetica cf} 2 20 270.000 2.000 2640 896 label
+0.647 0.165 0.165 scb
+(vddio_4) {/Helvetica cf} 2 20 270.000 2.000 3072 895 label
+0.361 0.675 0.933 scb
+(vccd2_0) {/Helvetica cf} 2 20 270.000 2.000 1392 896 label
+0.647 0.165 0.165 scb
+(vssio_3) {/Helvetica cf} 2 20 270.000 2.000 3745 896 label
+(vssio_4) {/Helvetica cf} 2 20 270.000 2.000 1968 895 label
+0.361 0.675 0.933 scb
+(vssd2_0) {/Helvetica cf} 2 20 270.000 2.000 2064 896 label
+(vssd1_2) {/Helvetica cf} 2 20 270.000 2.000 4304 896 label
+(vccd1_2) {/Helvetica cf} 2 20 270.000 2.000 3632 896 label
+0.824 0.039 0.863 scb
+(analog_0) {/Helvetica cf} 2 20 270.000 2.000 2848 896 label
+(analog_1) {/Helvetica cf} 2 20 270.000 2.000 2736 896 label
+sce
+(gpio0_0) {/Helvetica cf} 2 23 180.000 2.000 5088 -3328 label
+(gpio0_1) {/Helvetica cf} 2 23 180.000 2.000 5088 -3216 label
+(gpio0_2) {/Helvetica cf} 2 23 180.000 2.000 5088 -3104 label
+(gpio0_3) {/Helvetica cf} 2 20 0.000 2.000 5088 -2992 label
+(gpio0_4) {/Helvetica cf} 2 20 0.000 2.000 5088 -2672 label
+(gpio0_5) {/Helvetica cf} 2 20 0.000 2.000 5088 -2560 label
+(gpio0_6) {/Helvetica cf} 2 20 0.000 2.000 5088 -2448 label
+(gpio0_7) {/Helvetica cf} 2 20 0.000 2.000 5088 -2336 label
+(gpio1_0) {/Helvetica cf} 2 20 0.000 2.000 5088 -1888 label
+(gpio1_1) {/Helvetica cf} 2 20 0.000 2.000 5088 -1776 label
+(gpio1_2) {/Helvetica cf} 2 20 0.000 2.000 5088 -1664 label
+(gpio1_3) {/Helvetica cf} 2 20 0.000 2.000 5088 -1552 label
+(gpio1_4) {/Helvetica cf} 2 20 0.000 2.000 5088 -1216 label
+(gpio1_5) {/Helvetica cf} 2 20 0.000 2.000 5088 -1104 label
+(gpio1_6) {/Helvetica cf} 2 20 0.000 2.000 5088 -992 label
+(gpio1_7) {/Helvetica cf} 2 20 0.000 2.000 5088 -880 label
+(gpio2_0) {/Helvetica cf} 2 20 0.000 2.000 5088 -320 label
+(gpio2_1) {/Helvetica cf} 2 20 0.000 2.000 5088 -208 label
+(gpio2_2) {/Helvetica cf} 2 20 0.000 2.000 5088 -96 label
+(gpio2_3) {/Helvetica cf} 2 20 0.000 2.000 5088 16 label
+(gpio2_4) {/Helvetica cf} 2 20 0.000 2.000 5088 240 label
+(gpio2_5) {/Helvetica cf} 2 20 0.000 2.000 5088 352 label
+(gpio2_6) {/Helvetica cf} 2 20 0.000 2.000 5088 464 label
+(gpio2_7) {/Helvetica cf} 2 20 360.000 2.000 5088 576 label
+0.647 0.165 0.165 scb
+(vddio_0) {/Helvetica cf} 2 23 180.000 2.000 5088 -3456 label
+(vssio_0) {/Helvetica cf} 2 20 0.000 2.000 5088 -2784 label
+(vddio_2) {/Helvetica cf} 2 20 0.000 2.000 5088 -768 label
+0.361 0.675 0.933 scb
+(vssd1_0) {/Helvetica cf} 2 20 0.000 2.000 5088 -2896 label
+(vccd1_0) {/Helvetica cf} 2 20 0.000 2.000 5088 -1440 label
+0.180 0.545 0.341 scb
+(vdda1_0) {/Helvetica cf} 2 20 0.000 2.000 5088 -2112 label
+(vssa1_0) {/Helvetica cf} 2 20 0.000 2.000 5088 -2000 label
+0.361 0.675 0.933 scb
+(vssd1_1) {/Helvetica cf} 2 20 0.000 2.000 5088 -432 label
+(vccd1_1) {/Helvetica cf} 2 20 360.000 2.000 5088 688 label
+0.180 0.545 0.341 scb
+(vdda1_1) {/Helvetica cf} 2 20 0.000 2.000 5088 -656 label
+(vssa1_1) {/Helvetica cf} 2 20 360.000 2.000 5088 -544 label
+0.647 0.165 0.165 scb
+(vddio_3) {/Helvetica cf} 2 20 360.000 2.000 5088 800 label
+(vddio_1) {/Helvetica cf} 2 20 0.000 2.000 5088 -2224 label
+(vssio_1) {/Helvetica cf} 2 20 0.000 2.000 5088 -1328 label
+(vssio_2) {/Helvetica cf} 2 20 0.000 2.000 5088 128 label
+(vddio_5) {/Helvetica cf} 2 20 180.000 2.000 640 784 label
+sce
+(gpio5_0) {/Helvetica cf} 2 23 0.000 2.000 640 560 label
+(gpio5_1) {/Helvetica cf} 2 23 0.000 2.000 640 448 label
+(gpio5_2) {/Helvetica cf} 2 23 0.000 2.000 640 336 label
+(gpio5_3) {/Helvetica cf} 2 23 0.000 2.000 640 224 label
+(gpio5_4) {/Helvetica cf} 2 23 0.000 2.000 640 0 label
+(gpio5_5) {/Helvetica cf} 2 23 0.000 2.000 640 -128 label
+(gpio5_6) {/Helvetica cf} 2 23 0.000 2.000 640 -240 label
+(gpio5_7) {/Helvetica cf} 2 23 0.000 2.000 640 -336 label
+(gpio6_7) {/Helvetica cf} 2 23 0.000 2.000 640 -1888 label
+(gpio6_6) {/Helvetica cf} 2 23 0.000 2.000 640 -1776 label
+(gpio6_5) {/Helvetica cf} 2 23 0.000 2.000 640 -1664 label
+(gpio6_4) {/Helvetica cf} 2 23 0.000 2.000 640 -1552 label
+(gpio6_3) {/Helvetica cf} 2 23 0.000 2.000 640 -1216 label
+(gpio6_2) {/Helvetica cf} 2 23 0.000 2.000 640 -1104 label
+(gpio6_1) {/Helvetica cf} 2 23 0.000 2.000 640 -1008 label
+(gpio6_0) {/Helvetica cf} 2 23 0.000 2.000 640 -896 label
+(gpio7_7) {/Helvetica cf} 2 23 360.000 2.000 640 -3360 label
+(gpio7_6) {/Helvetica cf} 2 23 360.000 2.000 640 -3232 label
+(gpio7_5) {/Helvetica cf} 2 23 360.000 2.000 640 -3120 label
+(gpio7_4) {/Helvetica cf} 2 23 360.000 2.000 640 -3008 label
+(gpio7_3) {/Helvetica cf} 2 23 0.000 2.000 640 -2688 label
+(gpio7_2) {/Helvetica cf} 2 23 0.000 2.000 640 -2576 label
+(gpio7_1) {/Helvetica cf} 2 23 0.000 2.000 640 -2464 label
+(gpio7_0) {/Helvetica cf} 2 23 0.000 2.000 640 -2336 label
+0.647 0.165 0.165 scb
+(vddio_7) {/Helvetica cf} 2 23 360.000 2.000 640 -2224 label
+(vddio_8) {/Helvetica cf} 2 23 360.000 2.000 640 -3472 label
+0.180 0.545 0.341 scb
+(vdda2_1) {/Helvetica cf} 2 23 0.000 2.000 640 -2112 label
+(vssa2_1) {/Helvetica cf} 2 23 0.000 2.000 640 -2000 label
+0.647 0.165 0.165 scb
+(vddio_6) {/Helvetica cf} 2 23 360.000 2.000 640 -784 label
+0.361 0.675 0.933 scb
+(vssd2_2) {/Helvetica cf} 2 23 0.000 2.000 640 -1440 label
+(vccd2_2) {/Helvetica cf} 2 23 0.000 2.000 640 -2912 label
+0.180 0.545 0.341 scb
+(vdda2_0) {/Helvetica cf} 2 23 0.000 2.000 640 -672 label
+(vssa2_0) {/Helvetica cf} 2 23 0.000 2.000 640 -560 label
+0.647 0.165 0.165 scb
+(vssio_7) {/Helvetica cf} 2 23 360.000 2.000 640 -2800 label
+(vssio_6) {/Helvetica cf} 2 23 360.000 2.000 640 -1328 label
+(vssio_5) {/Helvetica cf} 2 23 360.000 2.000 640 112 label
+0.361 0.675 0.933 scb
+(vssd2_1) {/Helvetica cf} 2 20 180.000 2.000 640 672 label
+(vccd2_1) {/Helvetica cf} 2 23 0.000 2.000 640 -464 label
+sce
+(gpio8_7) {/Helvetica cf} 2 23 270.000 2.000 3520 -3584 label
+(gpio8_6) {/Helvetica cf} 2 23 270.000 2.000 3408 -3584 label
+(gpio8_5) {/Helvetica cf} 2 23 270.000 2.000 3296 -3584 label
+(gpio8_4) {/Helvetica cf} 2 23 270.000 2.000 3184 -3584 label
+(gpio8_3) {/Helvetica cf} 2 23 270.000 2.000 2176 -3584 label
+(gpio8_2) {/Helvetica cf} 2 23 270.000 2.000 2064 -3584 label
+(gpio8_1) {/Helvetica cf} 2 23 270.000 2.000 1952 -3584 label
+(gpio8_0) {/Helvetica cf} 2 23 270.000 2.000 1856 -3584 label
+0.647 0.165 0.165 scb
+(vssio_8) {/Helvetica cf} 2 23 270.000 2.000 2288 -3584 label
+(vddio_9) {/Helvetica cf} 2 23 270.000 2.000 2960 -3584 label
+0.361 0.675 0.933 scb
+(vccd0_0) {/Helvetica cf} 2 23 270.000 2.000 1504 -3584 label
+(vccd0_1) {/Helvetica cf} 2 23 270.000 2.000 3072 -3584 label
+0.180 0.545 0.341 scb
+(vssa3_0) {/Helvetica cf} 2 23 270.000 2.000 3632 -3584 label
+(vdda3_0) {/Helvetica cf} 2 23 270.000 2.000 3744 -3584 label
+0.824 0.039 0.863 scb
+(xo1) {/Helvetica cf} 2 23 270.000 2.000 2848 -3584 label
+(xi1) {/Helvetica cf} 2 23 270.000 2.000 2736 -3584 label
+(resetb) {/Helvetica cf} 2 23 270.000 2.000 1728 -3584 label
+(xo0) {/Helvetica cf} 2 23 270.000 2.000 2624 -3584 label
+(xi0) {/Helvetica cf} 2 23 270.000 2.000 2512 -3584 label
+0.361 0.675 0.933 scb
+(vssd0_0) {/Helvetica cf} 2 23 270.000 2.000 2400 -3584 label
+(vssd0_1) {/Helvetica cf} 2 23 270.000 2.000 3856 -3584 label
+sce
+(sio0) {/Helvetica cf} 2 23 270.000 2.000 4080 -3584 label
+(sio1) {/Helvetica cf} 2 23 270.000 2.000 4192 -3584 label
+0.933 0.604 0.000 scb
+(flash_io3) {/Helvetica cf} 2 23 270.000 2.000 3408 -3936 label
+(flash_io2) {/Helvetica cf} 2 23 270.000 2.000 3296 -3936 label
+(flash_io1) {/Helvetica cf} 2 23 270.000 2.000 3184 -3936 label
+(flash_io0) {/Helvetica cf} 2 23 270.000 2.000 2176 -3936 label
+(flash_clk) {/Helvetica cf} 2 23 270.000 2.000 2064 -3936 label
+(flash_csb) {/Helvetica cf} 2 23 270.000 2.000 1952 -3936 label
+(clock) {/Helvetica cf} 2 23 270.000 2.000 1856 -3936 label
+(mgmt_gpio) {/Helvetica cf} 2 23 270.000 2.000 3520 -3936 label
+(SDO) {/Helvetica cf} 2 23 180.000 2.000 5440 -3216 label
+(SDI) {/Helvetica cf} 2 23 180.000 2.000 5440 -3104 label
+(CSB) {/Helvetica cf} 2 23 0.000 2.000 5600 -2992 label
+(SCK) {/Helvetica cf} 2 23 0.000 2.000 5600 -2672 label
+(ser_rx) {/Helvetica cf} 2 20 0.000 2.000 5440 -2560 label
+(ser_tx) {/Helvetica cf} 2 20 0.000 2.000 5440 -2448 label
+(dbg) {/Helvetica cf} 2 23 180.000 2.000 5440 -3328 label
+sce
+(3) {/Helvetica cf} 2 16 0.000 2.000 144 528 label
+(4) {/Helvetica cf} 2 16 0.000 2.000 144 416 label
+(5) {/Helvetica cf} 2 16 0.000 2.000 144 304 label
+(6) {/Helvetica cf} 2 16 0.000 2.000 144 192 label
+(7) {/Helvetica cf} 2 16 0.000 2.000 144 80 label
+(8) {/Helvetica cf} 2 16 0.000 2.000 144 -32 label
+(9) {/Helvetica cf} 2 16 0.000 2.000 144 -160 label
+(10) {/Helvetica cf} 2 16 0.000 2.000 144 -288 label
+(11) {/Helvetica cf} 2 16 0.000 2.000 144 -384 label
+(12) {/Helvetica cf} 2 16 0.000 2.000 144 -496 label
+(13) {/Helvetica cf} 2 16 0.000 2.000 144 -592 label
+(14) {/Helvetica cf} 2 16 0.000 2.000 144 -704 label
+(15) {/Helvetica cf} 2 16 0.000 2.000 144 -816 label
+(16) {/Helvetica cf} 2 16 0.000 2.000 144 -928 label
+(17) {/Helvetica cf} 2 16 0.000 2.000 144 -1040 label
+(18) {/Helvetica cf} 2 16 0.000 2.000 144 -1136 label
+(19) {/Helvetica cf} 2 16 0.000 2.000 144 -1248 label
+(20) {/Helvetica cf} 2 16 0.000 2.000 144 -1360 label
+(21) {/Helvetica cf} 2 16 0.000 2.000 144 -1472 label
+(22) {/Helvetica cf} 2 16 0.000 2.000 144 -1584 label
+(23) {/Helvetica cf} 2 16 0.000 2.000 144 -1696 label
+(24) {/Helvetica cf} 2 16 0.000 2.000 144 -1808 label
+(25) {/Helvetica cf} 2 16 0.000 2.000 144 -1920 label
+(26) {/Helvetica cf} 2 16 0.000 2.000 144 -2032 label
+(27) {/Helvetica cf} 2 16 0.000 2.000 144 -2144 label
+(28) {/Helvetica cf} 2 16 0.000 2.000 144 -2256 label
+(29) {/Helvetica cf} 2 16 0.000 2.000 144 -2368 label
+(30) {/Helvetica cf} 2 16 0.000 2.000 144 -2496 label
+(31) {/Helvetica cf} 2 16 0.000 2.000 144 -2608 label
+(32) {/Helvetica cf} 2 16 0.000 2.000 144 -2720 label
+(33) {/Helvetica cf} 2 16 0.000 2.000 144 -2832 label
+(34) {/Helvetica cf} 2 16 0.000 2.000 144 -2944 label
+(35) {/Helvetica cf} 2 16 360.000 2.000 145 -3056 label
+(36) {/Helvetica cf} 2 16 360.000 2.000 144 -3167 label
+(37) {/Helvetica cf} 2 16 360.000 2.000 144 -3280 label
+(38) {/Helvetica cf} 2 16 360.000 2.000 143 -3408 label
+(39) {/Helvetica cf} 2 16 360.000 2.000 144 -3520 label
+(40) {/Helvetica cf} 2 16 270.000 2.000 1536 -4432 label
+(41) {/Helvetica cf} 2 16 270.000 2.000 1648 -4432 label
+(42) {/Helvetica cf} 2 16 270.000 2.000 1776 -4432 label
+(43) {/Helvetica cf} 2 16 270.000 2.000 1904 -4432 label
+(44) {/Helvetica cf} 2 16 270.000 2.000 1984 -4432 label
+(45) {/Helvetica cf} 2 16 270.000 2.000 2096 -4432 label
+(46) {/Helvetica cf} 2 16 270.000 2.000 2208 -4432 label
+(47) {/Helvetica cf} 2 16 270.000 2.000 2320 -4432 label
+(48) {/Helvetica cf} 2 16 270.000 2.000 2432 -4432 label
+(49) {/Helvetica cf} 2 16 270.000 2.000 2528 -4432 label
+(50) {/Helvetica cf} 2 16 270.000 2.000 2640 -4432 label
+(51) {/Helvetica cf} 2 16 270.000 2.000 2752 -4432 label
+(52) {/Helvetica cf} 2 16 270.000 2.000 2864 -4432 label
+(53) {/Helvetica cf} 2 16 270.000 2.000 2976 -4432 label
+(54) {/Helvetica cf} 2 16 270.000 2.000 3088 -4432 label
+(55) {/Helvetica cf} 2 16 270.000 2.000 3216 -4432 label
+(56) {/Helvetica cf} 2 16 270.000 2.000 3328 -4432 label
+(57) {/Helvetica cf} 2 16 270.000 2.000 3440 -4432 label
+(58) {/Helvetica cf} 2 16 270.000 2.000 3552 -4432 label
+(59) {/Helvetica cf} 2 16 270.000 2.000 3664 -4432 label
+(60) {/Helvetica cf} 2 16 270.000 2.000 3776 -4432 label
+(61) {/Helvetica cf} 2 16 270.000 2.000 3888 -4432 label
+(62) {/Helvetica cf} 2 16 270.000 2.000 4000 -4432 label
+(63) {/Helvetica cf} 2 16 270.000 2.000 4112 -4432 label
+(64) {/Helvetica cf} 2 16 270.000 2.000 4224 -4432 label
+(65) {/Helvetica cf} 2 16 180.000 2.000 5841 -3440 label
+(66) {/Helvetica cf} 2 16 180.000 2.000 5841 -3312 label
+(69) {/Helvetica cf} 2 16 180.000 2.000 5840 -2976 label
+(70) {/Helvetica cf} 2 16 180.000 2.000 5840 -2880 label
+(71) {/Helvetica cf} 2 16 180.000 2.000 5840 -2768 label
+(72) {/Helvetica cf} 2 16 180.000 2.000 5840 -2656 label
+(73) {/Helvetica cf} 2 16 180.000 2.000 5840 -2544 label
+(74) {/Helvetica cf} 2 16 180.000 2.000 5840 -2432 label
+(75) {/Helvetica cf} 2 16 180.000 2.000 5840 -2320 label
+(76) {/Helvetica cf} 2 16 180.000 2.000 5840 -2192 label
+(77) {/Helvetica cf} 2 16 180.000 2.000 5840 -2080 label
+(78) {/Helvetica cf} 2 16 180.000 2.000 5840 -1984 label
+(79) {/Helvetica cf} 2 16 180.000 2.000 5840 -1872 label
+(80) {/Helvetica cf} 2 16 180.000 2.000 5840 -1760 label
+(81) {/Helvetica cf} 2 16 180.000 2.000 5840 -1648 label
+(82) {/Helvetica cf} 2 16 180.000 2.000 5840 -1536 label
+(83) {/Helvetica cf} 2 16 180.000 2.000 5840 -1424 label
+(84) {/Helvetica cf} 2 16 180.000 2.000 5840 -1312 label
+(85) {/Helvetica cf} 2 16 180.000 2.000 5840 -1200 label
+(86) {/Helvetica cf} 2 16 180.000 2.000 5840 -1088 label
+(87) {/Helvetica cf} 2 16 180.000 2.000 5840 -976 label
+(88) {/Helvetica cf} 2 16 180.000 2.000 5840 -864 label
+(89) {/Helvetica cf} 2 16 180.000 2.000 5840 -752 label
+(90) {/Helvetica cf} 2 16 180.000 2.000 5840 -640 label
+(91) {/Helvetica cf} 2 16 180.000 2.000 5840 -528 label
+(92) {/Helvetica cf} 2 16 180.000 2.000 5840 -416 label
+(93) {/Helvetica cf} 2 16 180.000 2.000 5840 -304 label
+(94) {/Helvetica cf} 2 16 180.000 2.000 5840 -192 label
+(95) {/Helvetica cf} 2 16 180.000 2.000 5840 -80 label
+(96) {/Helvetica cf} 2 16 180.000 2.000 5840 32 label
+(97) {/Helvetica cf} 2 16 180.000 2.000 5840 144 label
+(98) {/Helvetica cf} 2 16 180.000 2.000 5840 256 label
+(99) {/Helvetica cf} 2 16 180.000 2.000 5840 368 label
+(100) {/Helvetica cf} 2 16 180.000 2.000 5840 480 label
+(101) {/Helvetica cf} 2 20 180.000 2.000 5824 560 label
+(102) {/Helvetica cf} 2 20 180.000 2.000 5824 688 label
+(103) {/Helvetica cf} 2 20 180.000 2.000 5824 800 label
+(104) {/Helvetica cf} 2 16 90.000 2.000 4272 1392 label
+(105) {/Helvetica cf} 2 16 90.000 2.000 4160 1392 label
+(106) {/Helvetica cf} 2 16 90.000 2.000 4048 1392 label
+(107) {/Helvetica cf} 2 16 90.000 2.000 3936 1392 label
+(108) {/Helvetica cf} 2 16 90.000 2.000 3824 1392 label
+(109) {/Helvetica cf} 2 16 90.000 2.000 3712 1392 label
+(110) {/Helvetica cf} 2 16 90.000 2.000 3600 1392 label
+(111) {/Helvetica cf} 2 16 90.000 2.000 3488 1392 label
+(112) {/Helvetica cf} 2 16 90.000 2.000 3376 1392 label
+(113) {/Helvetica cf} 2 16 90.000 2.000 3264 1392 label
+(114) {/Helvetica cf} 2 16 90.000 2.000 3152 1392 label
+(115) {/Helvetica cf} 2 16 90.000 2.000 3040 1392 label
+(116) {/Helvetica cf} 2 16 90.000 2.000 2944 1392 label
+(117) {/Helvetica cf} 2 16 90.000 2.000 2816 1392 label
+(118) {/Helvetica cf} 2 16 90.000 2.000 2704 1392 label
+(119) {/Helvetica cf} 2 16 90.000 2.000 2608 1392 label
+(120) {/Helvetica cf} 2 16 90.000 2.000 2480 1392 label
+(121) {/Helvetica cf} 2 16 90.000 2.000 2368 1392 label
+(122) {/Helvetica cf} 2 16 90.000 2.000 2256 1392 label
+(123) {/Helvetica cf} 2 16 90.000 2.000 2144 1392 label
+(124) {/Helvetica cf} 2 16 90.000 2.000 2032 1392 label
+(125) {/Helvetica cf} 2 16 90.000 2.000 1936 1392 label
+(126) {/Helvetica cf} 2 16 90.000 2.000 1808 1392 label
+(127) {/Helvetica cf} 2 16 90.000 2.000 1696 1392 label
+(128) {/Helvetica cf} 2 16 90.000 2.000 1584 1392 label
+(129) {/Helvetica cf} 2 16 90.000 2.000 1472 1392 label
+(130) {/Helvetica cf} 2 16 90.000 2.000 1360 1392 label
+(1) {/Helvetica cf} 2 16 360.000 2.000 144 768 label
+(2) {/Helvetica cf} 2 16 360.000 2.000 144 640 label
+1 1.000 992 544 96 0.000 360.000 xcarc
+1 1.000 1280 544 96 0.000 360.000 xcarc
+1 1.000 1568 544 96 0.000 360.000 xcarc
+1 1.000 1856 544 96 0.000 360.000 xcarc
+1 1.000 2144 544 96 0.000 360.000 xcarc
+1 1.000 2432 544 96 0.000 360.000 xcarc
+1 1.000 2720 544 96 0.000 360.000 xcarc
+1 1.000 3008 544 96 0.000 360.000 xcarc
+1 1.000 3296 544 96 0.000 360.000 xcarc
+1 1.000 3584 544 96 0.000 360.000 xcarc
+1 1.000 3872 544 96 0.000 360.000 xcarc
+1 1.000 4160 544 96 0.000 360.000 xcarc
+1 1.000 4448 544 96 0.000 360.000 xcarc
+1 1.000 4736 544 96 0.000 360.000 xcarc
+1 1.000 992 256 96 0.000 360.000 xcarc
+1 1.000 1280 256 96 0.000 360.000 xcarc
+1 1.000 1568 256 96 0.000 360.000 xcarc
+1 1.000 1856 256 96 0.000 360.000 xcarc
+1 1.000 2144 256 96 0.000 360.000 xcarc
+1 1.000 2432 256 96 0.000 360.000 xcarc
+1 1.000 2720 256 96 0.000 360.000 xcarc
+1 1.000 3008 256 96 0.000 360.000 xcarc
+1 1.000 3296 256 96 0.000 360.000 xcarc
+1 1.000 3584 256 96 0.000 360.000 xcarc
+1 1.000 3872 256 96 0.000 360.000 xcarc
+1 1.000 4160 256 96 0.000 360.000 xcarc
+1 1.000 4448 256 96 0.000 360.000 xcarc
+1 1.000 4736 256 96 0.000 360.000 xcarc
+1 1.000 992 -32 96 0.000 360.000 xcarc
+1 1.000 1280 -32 96 0.000 360.000 xcarc
+1 1.000 1568 -32 96 0.000 360.000 xcarc
+1 1.000 1856 -32 96 0.000 360.000 xcarc
+1 1.000 2144 -32 96 0.000 360.000 xcarc
+1 1.000 2432 -32 96 0.000 360.000 xcarc
+1 1.000 2720 -32 96 0.000 360.000 xcarc
+1 1.000 3008 -32 96 0.000 360.000 xcarc
+1 1.000 3296 -32 96 0.000 360.000 xcarc
+1 1.000 3584 -32 96 0.000 360.000 xcarc
+1 1.000 3872 -32 96 0.000 360.000 xcarc
+1 1.000 4160 -32 96 0.000 360.000 xcarc
+1 1.000 4448 -32 96 0.000 360.000 xcarc
+1 1.000 4736 -32 96 0.000 360.000 xcarc
+1 1.000 992 -320 96 0.000 360.000 xcarc
+1 1.000 1280 -320 96 0.000 360.000 xcarc
+1 1.000 992 -608 96 0.000 360.000 xcarc
+1 1.000 1280 -608 96 0.000 360.000 xcarc
+1 1.000 1568 -608 96 0.000 360.000 xcarc
+1 1.000 992 -896 96 0.000 360.000 xcarc
+1 1.000 1280 -896 96 0.000 360.000 xcarc
+1 1.000 1568 -896 96 0.000 360.000 xcarc
+1 1.000 992 -1184 96 0.000 360.000 xcarc
+1 1.000 1280 -1184 96 0.000 360.000 xcarc
+1 1.000 1568 -1184 96 0.000 360.000 xcarc
+1 1.000 992 -1472 96 0.000 360.000 xcarc
+1 1.000 1280 -1472 96 0.000 360.000 xcarc
+1 1.000 1568 -1472 96 0.000 360.000 xcarc
+1 1.000 992 -1760 96 0.000 360.000 xcarc
+1 1.000 1280 -1760 96 0.000 360.000 xcarc
+1 1.000 1568 -1760 96 0.000 360.000 xcarc
+1 1.000 992 -2048 96 0.000 360.000 xcarc
+1 1.000 1280 -2048 96 0.000 360.000 xcarc
+1 1.000 1568 -2048 96 0.000 360.000 xcarc
+1 1.000 992 -2336 96 0.000 360.000 xcarc
+1 1.000 1280 -2336 96 0.000 360.000 xcarc
+1 1.000 1568 -2336 96 0.000 360.000 xcarc
+1 1.000 992 -2624 96 0.000 360.000 xcarc
+1 1.000 1280 -2624 96 0.000 360.000 xcarc
+1 1.000 1568 -2624 96 0.000 360.000 xcarc
+1 1.000 4448 -320 96 0.000 360.000 xcarc
+1 1.000 4736 -320 96 0.000 360.000 xcarc
+1 1.000 4160 -608 96 0.000 360.000 xcarc
+1 1.000 4448 -608 96 0.000 360.000 xcarc
+1 1.000 4736 -608 96 0.000 360.000 xcarc
+1 1.000 4160 -896 96 0.000 360.000 xcarc
+1 1.000 4448 -896 96 0.000 360.000 xcarc
+1 1.000 4736 -896 96 0.000 360.000 xcarc
+1 1.000 4160 -1184 96 0.000 360.000 xcarc
+1 1.000 4448 -1184 96 0.000 360.000 xcarc
+1 1.000 4736 -1184 96 0.000 360.000 xcarc
+1 1.000 4160 -1472 96 0.000 360.000 xcarc
+1 1.000 4448 -1472 96 0.000 360.000 xcarc
+1 1.000 4736 -1472 96 0.000 360.000 xcarc
+1 1.000 4160 -1760 96 0.000 360.000 xcarc
+1 1.000 4448 -1760 96 0.000 360.000 xcarc
+1 1.000 4736 -1760 96 0.000 360.000 xcarc
+1 1.000 4160 -2048 96 0.000 360.000 xcarc
+1 1.000 4448 -2048 96 0.000 360.000 xcarc
+1 1.000 4736 -2048 96 0.000 360.000 xcarc
+1 1.000 4160 -2336 96 0.000 360.000 xcarc
+1 1.000 4448 -2336 96 0.000 360.000 xcarc
+1 1.000 4736 -2336 96 0.000 360.000 xcarc
+1 1.000 4160 -2624 96 0.000 360.000 xcarc
+1 1.000 4448 -2624 96 0.000 360.000 xcarc
+1 1.000 4736 -2624 96 0.000 360.000 xcarc
+1 1.000 992 -2912 96 0.000 360.000 xcarc
+1 1.000 1280 -2912 96 0.000 360.000 xcarc
+1 1.000 1568 -2912 96 0.000 360.000 xcarc
+1 1.000 1856 -2912 96 0.000 360.000 xcarc
+1 1.000 2144 -2912 96 0.000 360.000 xcarc
+1 1.000 2432 -2912 96 0.000 360.000 xcarc
+1 1.000 2720 -2912 96 0.000 360.000 xcarc
+1 1.000 3008 -2912 96 0.000 360.000 xcarc
+1 1.000 3296 -2912 96 0.000 360.000 xcarc
+1 1.000 3584 -2912 96 0.000 360.000 xcarc
+1 1.000 3872 -2912 96 0.000 360.000 xcarc
+1 1.000 4160 -2912 96 0.000 360.000 xcarc
+1 1.000 4448 -2912 96 0.000 360.000 xcarc
+1 1.000 4736 -2912 96 0.000 360.000 xcarc
+1 1.000 992 -3200 96 0.000 360.000 xcarc
+1 1.000 1280 -3200 96 0.000 360.000 xcarc
+1 1.000 1568 -3200 96 0.000 360.000 xcarc
+1 1.000 1856 -3200 96 0.000 360.000 xcarc
+1 1.000 2144 -3200 96 0.000 360.000 xcarc
+1 1.000 2432 -3200 96 0.000 360.000 xcarc
+1 1.000 2720 -3200 96 0.000 360.000 xcarc
+1 1.000 3008 -3200 96 0.000 360.000 xcarc
+1 1.000 3296 -3200 96 0.000 360.000 xcarc
+1 1.000 3584 -3200 96 0.000 360.000 xcarc
+1 1.000 3872 -3200 96 0.000 360.000 xcarc
+1 1.000 4160 -3200 96 0.000 360.000 xcarc
+1 1.000 4448 -3200 96 0.000 360.000 xcarc
+1 1.000 4736 -3200 96 0.000 360.000 xcarc
+1 1.000 1856 -2624 96 0.000 360.000 xcarc
+1 1.000 2144 -2624 96 0.000 360.000 xcarc
+1 1.000 2432 -2624 96 0.000 360.000 xcarc
+1 1.000 2720 -2624 96 0.000 360.000 xcarc
+1 1.000 3008 -2624 96 0.000 360.000 xcarc
+1 1.000 3296 -2624 96 0.000 360.000 xcarc
+1 1.000 3584 -2624 96 0.000 360.000 xcarc
+1 1.000 3872 -2624 96 0.000 360.000 xcarc
+1.000 0.000 -1232 -864 ::chip_with_pads
+(39 pads) {/Helvetica cf} 2 21 270.000 2.000 -2608 -848 label
+(39 pads) {/Helvetica cf} 2 21 90.000 2.000 0 -768 label
+(27 pads) {/Helvetica cf} 2 21 360.000 2.000 -1280 864 label
+(25 pads) {/Helvetica cf} 2 21 360.000 2.000 -1264 -2624 label
+0.647 0.165 0.165 scb
+(vssio_9) {/Helvetica cf} 2 23 270.000 2.000 3968 -3584 label
+0.824 0.039 0.863 scb
+(select) {/Helvetica cf} 2 23 270.000 2.000 1616 -3584 label
+sce
+(67) {/Helvetica cf} 2 16 180.000 2.000 5841 -3201 label
+(68) {/Helvetica cf} 2 16 180.000 2.000 5840 -3088 label
+0.000 0.000 1.000 scb
+(\327 7.5mm\)) {/HelveticaISO cf} (Panamax \(Frigate\) BGA 130 \(7.5mm ) 
+{/Helvetica cf} 4 17 0.000 3.000 2960 1472 label
+sce
+0 1.000 704 720 832 720 832 640 704 640 4 polygon
+0 1.000 704 832 832 832 832 752 704 752 4 polygon
+0 1.000 704 -2976 832 -2976 832 -3056 704 -3056 4 polygon
+0 1.000 704 -3200 832 -3200 832 -3280 704 -3280 4 polygon
+0 1.000 704 -3424 832 -3424 832 -3504 704 -3504 4 polygon
+0 1.000 704 -3088 832 -3088 832 -3168 704 -3168 4 polygon
+0 1.000 704 -3312 832 -3312 832 -3392 704 -3392 4 polygon
+0 1.000 4896 496 5024 496 5024 416 4896 416 4 polygon
+0 1.000 4896 272 5024 272 5024 192 4896 192 4 polygon
+0 1.000 4896 48 5024 48 5024 -32 4896 -32 4 polygon
+0 1.000 4896 -176 5024 -176 5024 -256 4896 -256 4 polygon
+0 1.000 4896 -400 5024 -400 5024 -480 4896 -480 4 polygon
+0 1.000 4896 -624 5024 -624 5024 -704 4896 -704 4 polygon
+0 1.000 4896 -848 5024 -848 5024 -928 4896 -928 4 polygon
+0 1.000 4896 -1072 5024 -1072 5024 -1152 4896 -1152 4 polygon
+0 1.000 4896 -1296 5024 -1296 5024 -1376 4896 -1376 4 polygon
+0 1.000 4896 -1520 5024 -1520 5024 -1600 4896 -1600 4 polygon
+0 1.000 4896 -1744 5024 -1744 5024 -1824 4896 -1824 4 polygon
+0 1.000 4896 -1968 5024 -1968 5024 -2048 4896 -2048 4 polygon
+0 1.000 4896 -2192 5024 -2192 5024 -2272 4896 -2272 4 polygon
+0 1.000 4896 -2416 5024 -2416 5024 -2496 4896 -2496 4 polygon
+0 1.000 4896 -2640 5024 -2640 5024 -2720 4896 -2720 4 polygon
+0 1.000 4896 -2864 5024 -2864 5024 -2944 4896 -2944 4 polygon
+0 1.000 4896 608 5024 608 5024 528 4896 528 4 polygon
+0 1.000 4896 384 5024 384 5024 304 4896 304 4 polygon
+0 1.000 4896 160 5024 160 5024 80 4896 80 4 polygon
+0 1.000 4896 -64 5024 -64 5024 -144 4896 -144 4 polygon
+0 1.000 4896 -288 5024 -288 5024 -368 4896 -368 4 polygon
+0 1.000 4896 -512 5024 -512 5024 -592 4896 -592 4 polygon
+0 1.000 4896 -736 5024 -736 5024 -816 4896 -816 4 polygon
+0 1.000 4896 -960 5024 -960 5024 -1040 4896 -1040 4 polygon
+0 1.000 4896 -1184 5024 -1184 5024 -1264 4896 -1264 4 polygon
+0 1.000 4896 -1408 5024 -1408 5024 -1488 4896 -1488 4 polygon
+0 1.000 4896 -1632 5024 -1632 5024 -1712 4896 -1712 4 polygon
+0 1.000 4896 -1856 5024 -1856 5024 -1936 4896 -1936 4 polygon
+0 1.000 4896 -2080 5024 -2080 5024 -2160 4896 -2160 4 polygon
+0 1.000 4896 -2304 5024 -2304 5024 -2384 4896 -2384 4 polygon
+0 1.000 4896 -2528 5024 -2528 5024 -2608 4896 -2608 4 polygon
+0 1.000 4896 -2752 5024 -2752 5024 -2832 4896 -2832 4 polygon
+0 1.000 4896 720 5024 720 5024 640 4896 640 4 polygon
+0 1.000 4896 832 5024 832 5024 752 4896 752 4 polygon
+0 1.000 4896 -2976 5024 -2976 5024 -3056 4896 -3056 4 polygon
+0 1.000 4896 -3200 5024 -3200 5024 -3280 4896 -3280 4 polygon
+0 1.000 4896 -3424 5024 -3424 5024 -3504 4896 -3504 4 polygon
+0 1.000 4896 -3088 5024 -3088 5024 -3168 4896 -3168 4 polygon
+0 1.000 4896 -3312 5024 -3312 5024 -3392 4896 -3392 4 polygon
+0 1.000 1584 704 1584 832 1664 832 1664 704 4 polygon
+0 1.000 1808 704 1808 832 1888 832 1888 704 4 polygon
+0 1.000 2032 704 2032 832 2112 832 2112 704 4 polygon
+0 1.000 2256 704 2256 832 2336 832 2336 704 4 polygon
+0 1.000 2480 704 2480 832 2560 832 2560 704 4 polygon
+0 1.000 2704 704 2704 832 2784 832 2784 704 4 polygon
+0 1.000 2928 704 2928 832 3008 832 3008 704 4 polygon
+0 1.000 3152 704 3152 832 3232 832 3232 704 4 polygon
+0 1.000 3376 704 3376 832 3456 832 3456 704 4 polygon
+0 1.000 3600 704 3600 832 3680 832 3680 704 4 polygon
+0 1.000 3824 704 3824 832 3904 832 3904 704 4 polygon
+0 1.000 4048 704 4048 832 4128 832 4128 704 4 polygon
+0 1.000 1472 704 1472 832 1552 832 1552 704 4 polygon
+0 1.000 1696 704 1696 832 1776 832 1776 704 4 polygon
+0 1.000 1920 704 1920 832 2000 832 2000 704 4 polygon
+0 1.000 2144 704 2144 832 2224 832 2224 704 4 polygon
+0 1.000 2368 704 2368 832 2448 832 2448 704 4 polygon
+0 1.000 2592 704 2592 832 2672 832 2672 704 4 polygon
+0 1.000 2816 704 2816 832 2896 832 2896 704 4 polygon
+0 1.000 3040 704 3040 832 3120 832 3120 704 4 polygon
+0 1.000 3264 704 3264 832 3344 832 3344 704 4 polygon
+0 1.000 3488 704 3488 832 3568 832 3568 704 4 polygon
+0 1.000 3712 704 3712 832 3792 832 3792 704 4 polygon
+0 1.000 3936 704 3936 832 4016 832 4016 704 4 polygon
+0 1.000 4160 704 4160 832 4240 832 4240 704 4 polygon
+0 1.000 4272 704 4272 832 4352 832 4352 704 4 polygon
+0 1.000 1360 704 1360 832 1440 832 1440 704 4 polygon
+1 1.000 3008 -32 2880 96 2880 704 3 polygon
+1 1.000 2720 -32 2848 128 2848 640 2784 704 4 polygon
+1 1.000 2720 544 2640 624 2640 704 3 polygon
+1 1.000 3008 544 2976 576 2976 704 3 polygon
+1 1.000 2720 256 2592 384 2592 640 2528 704 4 polygon
+1 1.000 3008 256 3136 384 3136 672 3104 704 4 polygon
+1 1.000 2432 704 2464 672 2496 672 2560 608 2560 96 2432 -32 6 polygon
+1 1.000 3200 704 3168 672 3168 96 3296 -32 4 polygon
+1 1.000 2432 544 2304 672 2304 704 3 polygon
+1 1.000 2432 256 2304 384 2304 608 2208 704 4 polygon
+1 1.000 3296 544 3296 704 2 polygon
+1 1.000 3296 256 3424 384 3424 704 3 polygon
+1 1.000 2144 -32 2272 96 2272 608 2208 672 2112 672 2080 704 6 polygon
+1 1.000 2144 544 1984 704 2 polygon
+1 1.000 2144 256 2016 384 2016 608 1952 672 1888 672 1856 704 6 polygon
+1 1.000 1856 544 1760 640 1760 704 3 polygon
+1 1.000 1856 256 1728 384 1728 640 1696 672 1664 672 1632 704 6 polygon
+1 1.000 1856 -32 1696 128 1696 608 1632 672 1536 672 1504 704 6 polygon
+1 1.000 1568 544 1408 704 2 polygon
+1 1.000 3584 -32 3456 96 3456 640 3520 704 4 polygon
+1 1.000 3584 544 3584 672 3616 704 3 polygon
+1 1.000 3584 256 3712 384 3712 672 3744 704 4 polygon
+1 1.000 3872 -32 3744 96 3744 608 3840 704 4 polygon
+1 1.000 3872 544 3872 608 3968 704 3 polygon
+1 1.000 3872 256 4000 384 4000 640 4064 704 4 polygon
+1 1.000 4160 256 4032 384 4032 624 4080 672 4160 672 4192 704 6 polygon
+1 1.000 4160 544 4320 704 2 polygon
+1 1.000 4448 544 4656 768 4896 768 3 polygon
+1 1.000 1568 256 1408 416 1408 608 1248 768 832 768 5 polygon
+1 1.000 4448 256 4592 384 4592 608 4656 672 4896 672 5 polygon
+1 1.000 4736 544 4896 544 2 polygon
+1 1.000 4160 -32 4320 128 4512 128 4576 192 4576 320 4672 416 4864 416 4896 448 
+8 polygon
+1 1.000 4736 256 4832 352 4896 352 3 polygon
+1 1.000 4448 -32 4608 128 4800 128 4896 224 4 polygon
+1 1.000 1280 544 1152 672 832 672 3 polygon
+1 1.000 992 544 832 544 2 polygon
+1 1.000 832 448 864 416 1344 416 1408 352 1408 128 1568 -32 6 polygon
+1 1.000 1280 256 1152 384 896 384 832 320 4 polygon
+1 1.000 832 224 864 256 992 256 3 polygon
+1 1.000 1280 -32 1120 128 832 128 3 polygon
+1 1.000 992 -32 960 0 832 0 3 polygon
+1 1.000 832 -96 896 -160 1120 -160 1280 -320 4 polygon
+1 1.000 992 -320 896 -224 832 -224 3 polygon
+1 1.000 1568 -608 1408 -448 928 -448 864 -384 864 -352 832 -320 6 polygon
+1 1.000 1280 -608 1152 -480 864 -480 832 -448 4 polygon
+1 1.000 992 -608 896 -608 832 -544 3 polygon
+1 1.000 832 -672 896 -736 1408 -736 1568 -896 4 polygon
+1 1.000 1280 -896 1136 -768 832 -768 3 polygon
+1 1.000 992 -896 832 -896 2 polygon
+1 1.000 832 -1024 1408 -1024 1568 -1184 3 polygon
+1 1.000 1280 -1184 1152 -1056 896 -1056 832 -1120 4 polygon
+1 1.000 832 -1216 864 -1184 992 -1184 3 polygon
+1 1.000 832 -1312 1408 -1312 1568 -1472 3 polygon
+1 1.000 832 -1440 928 -1344 1152 -1344 1280 -1472 4 polygon
+1 1.000 992 -1472 896 -1568 832 -1568 3 polygon
+1 1.000 832 -1664 896 -1600 1408 -1600 1568 -1760 4 polygon
+1 1.000 1280 -1760 1152 -1632 928 -1632 864 -1696 864 -1760 832 -1792 6 polygon
+1 1.000 992 -1760 864 -1888 832 -1888 3 polygon
+1 1.000 832 -2016 960 -1888 1408 -1888 1568 -2048 4 polygon
+1 1.000 992 -2048 896 -2144 832 -2144 3 polygon
+1 1.000 832 -2240 896 -2176 1152 -2176 1280 -2048 4 polygon
+1 1.000 1568 -2336 1440 -2208 928 -2208 864 -2272 864 -2304 832 -2336 6 polygon
+1 1.000 992 -2336 864 -2464 832 -2464 3 polygon
+1 1.000 832 -2560 928 -2464 1152 -2464 1280 -2336 4 polygon
+1 1.000 992 -2624 896 -2624 832 -2688 3 polygon
+1 1.000 832 -2784 864 -2752 1088 -2752 1120 -2720 1120 -2560 1184 -2496 1440 
+-2496 1568 -2624 8 polygon
+1 1.000 1280 -2624 1120 -2784 896 -2784 864 -2816 864 -2880 832 -2912 6 polygon
+1 1.000 992 -2912 896 -3008 832 -3008 3 polygon
+1 1.000 832 -3136 928 -3040 1152 -3040 1280 -2912 4 polygon
+1 1.000 992 -3200 960 -3232 832 -3232 3 polygon
+1 1.000 1568 -2912 1408 -3072 1216 -3072 1152 -3136 1152 -3264 1056 -3360 832 
+-3360 7 polygon
+1 1.000 1280 -3200 1056 -3456 832 -3456 3 polygon
+1 1.000 1504 -3360 1440 -3296 1440 -3136 1504 -3072 1632 -3072 1696 -3008 1696 
+-2784 1856 -2624 8 polygon
+1 1.000 1568 -3200 1632 -3264 1632 -3360 3 polygon
+1 1.000 1728 -3360 1728 -3040 1856 -2912 3 polygon
+1 1.000 1856 -3200 1856 -3360 2 polygon
+1 1.000 1984 -3360 1984 -2784 2144 -2624 3 polygon
+1 1.000 2144 -2912 2016 -3040 2016 -3296 2080 -3360 4 polygon
+1 1.000 2144 -3200 2144 -3328 2176 -3360 3 polygon
+1 1.000 2272 -3360 2272 -2784 2432 -2624 3 polygon
+1 1.000 2432 -2912 2304 -3040 2304 -3264 2400 -3360 4 polygon
+1 1.000 2432 -3200 2528 -3296 2528 -3360 3 polygon
+1 1.000 2624 -3360 2560 -3296 2560 -2784 2720 -2624 4 polygon
+1 1.000 4896 128 4864 96 4672 96 4608 32 4608 -160 4448 -320 6 polygon
+1 1.000 4736 -32 4768 0 4896 0 3 polygon
+1 1.000 4896 -96 4832 -160 4672 -160 4608 -224 4608 -384 4544 -448 4304 -448 
+4160 -608 8 polygon
+1 1.000 4736 -320 4832 -224 4896 -224 3 polygon
+1 1.000 4448 -608 4608 -448 4800 -448 4864 -384 4864 -352 4896 -320 6 polygon
+1 1.000 4160 -896 4320 -736 4512 -736 4576 -672 4576 -544 4640 -480 4864 -480 
+4896 -448 8 polygon
+1 1.000 4736 -608 4768 -576 4896 -576 3 polygon
+1 1.000 4448 -896 4608 -736 4800 -736 4864 -672 4896 -672 5 polygon
+1 1.000 4736 -896 4864 -768 4896 -768 3 polygon
+1 1.000 4160 -1184 4320 -1024 4800 -1024 4864 -960 4864 -928 4896 -896 6 
+polygon
+1 1.000 4448 -1184 4576 -1056 4832 -1056 4896 -992 4 polygon
+1 1.000 4736 -1184 4800 -1120 4896 -1120 3 polygon
+1 1.000 4160 -1472 4320 -1312 4800 -1312 4896 -1216 4 polygon
+1 1.000 4448 -1472 4576 -1344 4896 -1344 3 polygon
+1 1.000 4736 -1472 4896 -1472 2 polygon
+1 1.000 4160 -1760 4320 -1600 4832 -1600 4896 -1536 4 polygon
+1 1.000 4448 -1760 4576 -1632 4864 -1632 4896 -1664 4 polygon
+1 1.000 4736 -1760 4768 -1792 4896 -1792 3 polygon
+1 1.000 4160 -2048 4320 -1888 4896 -1888 3 polygon
+1 1.000 4448 -2048 4576 -1920 4832 -1920 4896 -1984 4 polygon
+1 1.000 4736 -2048 4800 -2112 4896 -2112 3 polygon
+1 1.000 4160 -2336 4320 -2176 4832 -2176 4896 -2240 4 polygon
+1 1.000 4448 -2336 4576 -2208 4800 -2208 4864 -2272 4864 -2304 4896 -2336 6 
+polygon
+1 1.000 4736 -2336 4864 -2464 4896 -2464 3 polygon
+1 1.000 4896 -2560 4800 -2464 4320 -2464 4160 -2624 4 polygon
+1 1.000 4736 -2624 4768 -2656 4896 -2656 3 polygon
+1 1.000 4448 -2624 4576 -2752 4864 -2752 4896 -2784 4 polygon
+1 1.000 4448 -2912 4576 -2784 4800 -2784 4896 -2880 4 polygon
+1 1.000 4736 -2912 4832 -3008 4896 -3008 3 polygon
+1 1.000 4160 -2912 4288 -3040 4800 -3040 4896 -3136 4 polygon
+1 1.000 4736 -3200 4768 -3232 4896 -3232 3 polygon
+1 1.000 4448 -3200 4576 -3328 4896 -3328 3 polygon
+1 1.000 3584 -3200 3648 -3264 3648 -3360 3 polygon
+1 1.000 3584 -2912 3712 -3040 3712 -3328 3744 -3360 4 polygon
+1 1.000 3584 -2624 3744 -2784 3744 -3296 3776 -3328 3840 -3328 3872 -3360 6 
+polygon
+1 1.000 3872 -3200 3968 -3296 3968 -3360 3 polygon
+1 1.000 3872 -2912 4000 -3072 4000 -3296 4064 -3360 4 polygon
+1 1.000 4160 -3200 4416 -3456 4896 -3456 3 polygon
+1 1.000 3872 -2624 4032 -2784 4032 -3264 4096 -3328 4160 -3328 4192 -3360 6 
+polygon
+1 1.000 3296 -2624 3456 -2784 3456 -3264 3520 -3328 3520 -3360 5 polygon
+1 1.000 3296 -2912 3424 -3040 3424 -3360 3 polygon
+1 1.000 3296 -3200 3296 -3360 2 polygon
+1 1.000 3008 -2624 3168 -2784 3168 -3360 3 polygon
+1 1.000 3008 -2912 3136 -3040 3136 -3296 3072 -3360 4 polygon
+1 1.000 3008 -3200 2976 -3232 2976 -3360 3 polygon
+1 1.000 2720 -3200 2720 -3328 2752 -3360 3 polygon
+1 1.000 2720 -2912 2848 -3040 2848 -3360 3 polygon
+1 1.000 -2224 -2448 -2224 -2576 2 polygon
+1 1.000 -256 -2448 -256 -2576 2 polygon
+1 1.000 -2224 -2512 -1424 -2512 2 polygon
+(3.588um) {/Helvetica cf} 2 21 0.000 2.000 -1232 -2512 label
+-2.000 270.000 -2224 -2512 generic::arrowhead
+2.000 90.000 -256 -2512 generic::arrowhead
+1 1.000 -1056 -2512 -256 -2512 2 polygon
+1 1.000 -2464 -1024 -2464 -2304 2 polygon
+(5.188um) {/Helvetica cf} 2 21 270.000 2.000 -2464 -848 label
+2.000 0.000 -2464 544 generic::arrowhead
+-2.000 180.000 -2464 -2304 generic::arrowhead
+1 1.000 -2464 544 -2464 -656 2 polygon
+1 1.000 -2384 -2304 -2576 -2304 2 polygon
+1 1.000 -2384 544 -2576 544 2 polygon
+pgsave restore showpage
+
+%%Page: panamax_bga_plan 2
+%%PageOrientation: Portrait
+%%PageBoundingBox: 0 0 612 792
+/pgsave save def bop
+0.2069 inchscale
+2.6000 setlinewidth 3551 6444 translate
+
+0 1.000 -1728 592 -1600 592 -1600 512 -1728 512 4 polygon
+0 1.000 -1728 368 -1600 368 -1600 288 -1728 288 4 polygon
+0 1.000 -1728 144 -1600 144 -1600 64 -1728 64 4 polygon
+0 1.000 -1728 -80 -1600 -80 -1600 -160 -1728 -160 4 polygon
+0 1.000 -1728 -304 -1600 -304 -1600 -384 -1728 -384 4 polygon
+0 1.000 -1728 -528 -1600 -528 -1600 -608 -1728 -608 4 polygon
+0 1.000 -1728 -752 -1600 -752 -1600 -832 -1728 -832 4 polygon
+0 1.000 -1728 -976 -1600 -976 -1600 -1056 -1728 -1056 4 polygon
+0 1.000 -1728 -1200 -1600 -1200 -1600 -1280 -1728 -1280 4 polygon
+0 1.000 -1728 -1424 -1600 -1424 -1600 -1504 -1728 -1504 4 polygon
+0 1.000 -1728 -1648 -1600 -1648 -1600 -1728 -1728 -1728 4 polygon
+0 1.000 -1728 -1872 -1600 -1872 -1600 -1952 -1728 -1952 4 polygon
+0 1.000 -1728 -2096 -1600 -2096 -1600 -2176 -1728 -2176 4 polygon
+0 1.000 -1728 -2320 -1600 -2320 -1600 -2400 -1728 -2400 4 polygon
+0 1.000 -1728 -2544 -1600 -2544 -1600 -2624 -1728 -2624 4 polygon
+0 1.000 -1728 -2768 -1600 -2768 -1600 -2848 -1728 -2848 4 polygon
+0 1.000 -1728 704 -1600 704 -1600 624 -1728 624 4 polygon
+0 1.000 -1728 480 -1600 480 -1600 400 -1728 400 4 polygon
+0 1.000 -1728 256 -1600 256 -1600 176 -1728 176 4 polygon
+0 1.000 -1728 32 -1600 32 -1600 -48 -1728 -48 4 polygon
+0 1.000 -1728 -192 -1600 -192 -1600 -272 -1728 -272 4 polygon
+0 1.000 -1728 -416 -1600 -416 -1600 -496 -1728 -496 4 polygon
+0 1.000 -1728 -640 -1600 -640 -1600 -720 -1728 -720 4 polygon
+0 1.000 -1728 -864 -1600 -864 -1600 -944 -1728 -944 4 polygon
+0 1.000 -1728 -1088 -1600 -1088 -1600 -1168 -1728 -1168 4 polygon
+0 1.000 -1728 -1312 -1600 -1312 -1600 -1392 -1728 -1392 4 polygon
+0 1.000 -1728 -1536 -1600 -1536 -1600 -1616 -1728 -1616 4 polygon
+0 1.000 -1728 -1760 -1600 -1760 -1600 -1840 -1728 -1840 4 polygon
+0 1.000 -1728 -1984 -1600 -1984 -1600 -2064 -1728 -2064 4 polygon
+0 1.000 -1728 -2208 -1600 -2208 -1600 -2288 -1728 -2288 4 polygon
+0 1.000 -1728 -2432 -1600 -2432 -1600 -2512 -1728 -2512 4 polygon
+0 1.000 -1728 -2656 -1600 -2656 -1600 -2736 -1728 -2736 4 polygon
+0 2.000 -1760 -3424 -1760 960 2624 960 2624 -3424 4 polygon
+0 1.000 -848 -3392 -848 -3264 -768 -3264 -768 -3392 4 polygon
+0 1.000 -624 -3392 -624 -3264 -544 -3264 -544 -3392 4 polygon
+0 1.000 -400 -3392 -400 -3264 -320 -3264 -320 -3392 4 polygon
+0 1.000 -176 -3392 -176 -3264 -96 -3264 -96 -3392 4 polygon
+0 1.000 48 -3392 48 -3264 128 -3264 128 -3392 4 polygon
+0 1.000 272 -3392 272 -3264 352 -3264 352 -3392 4 polygon
+0 1.000 496 -3392 496 -3264 576 -3264 576 -3392 4 polygon
+0 1.000 720 -3392 720 -3264 800 -3264 800 -3392 4 polygon
+0 1.000 944 -3392 944 -3264 1024 -3264 1024 -3392 4 polygon
+0 1.000 1168 -3392 1168 -3264 1248 -3264 1248 -3392 4 polygon
+0 1.000 1392 -3392 1392 -3264 1472 -3264 1472 -3392 4 polygon
+0 1.000 1616 -3392 1616 -3264 1696 -3264 1696 -3392 4 polygon
+0 1.000 -960 -3392 -960 -3264 -880 -3264 -880 -3392 4 polygon
+0 1.000 -736 -3392 -736 -3264 -656 -3264 -656 -3392 4 polygon
+0 1.000 -512 -3392 -512 -3264 -432 -3264 -432 -3392 4 polygon
+0 1.000 -288 -3392 -288 -3264 -208 -3264 -208 -3392 4 polygon
+0 1.000 -64 -3392 -64 -3264 16 -3264 16 -3392 4 polygon
+0 1.000 160 -3392 160 -3264 240 -3264 240 -3392 4 polygon
+0 1.000 384 -3392 384 -3264 464 -3264 464 -3392 4 polygon
+0 1.000 608 -3392 608 -3264 688 -3264 688 -3392 4 polygon
+0 1.000 832 -3392 832 -3264 912 -3264 912 -3392 4 polygon
+0 1.000 1056 -3392 1056 -3264 1136 -3264 1136 -3392 4 polygon
+0 1.000 1280 -3392 1280 -3264 1360 -3264 1360 -3392 4 polygon
+0 1.000 1504 -3392 1504 -3264 1584 -3264 1584 -3392 4 polygon
+0 1.000 1728 -3392 1728 -3264 1808 -3264 1808 -3392 4 polygon
+(gpio3_0) {/Helvetica cf} 2 20 270.000 2.000 1760 992 label
+(gpio3_1) {/Helvetica cf} 2 20 270.000 2.000 1648 992 label
+(gpio3_2) {/Helvetica cf} 2 20 270.000 2.000 1536 992 label
+(gpio3_3) {/Helvetica cf} 2 20 270.000 2.000 1424 992 label
+(gpio3_4) {/Helvetica cf} 2 20 270.000 2.000 1088 992 label
+(gpio3_5) {/Helvetica cf} 2 20 270.000 2.000 976 992 label
+(gpio3_6) {/Helvetica cf} 2 20 270.000 2.000 864 992 label
+(gpio3_7) {/Helvetica cf} 2 20 270.000 2.000 752 992 label
+(gpio4_0) {/Helvetica cf} 2 20 270.000 2.000 80 992 label
+(gpio4_1) {/Helvetica cf} 2 20 270.000 2.000 -32 992 label
+(gpio4_2) {/Helvetica cf} 2 20 270.000 2.000 -144 992 label
+(gpio4_3) {/Helvetica cf} 2 20 270.000 2.000 -256 992 label
+(gpio4_4) {/Helvetica cf} 2 20 270.000 2.000 -592 992 label
+(gpio4_5) {/Helvetica cf} 2 20 270.000 2.000 -704 992 label
+(gpio4_6) {/Helvetica cf} 2 20 270.000 2.000 -816 992 label
+(gpio4_7) {/Helvetica cf} 2 20 270.000 2.000 -928 992 label
+0.180 0.545 0.341 scb
+(vdda0_0) {/Helvetica cf} 2 20 270.000 2.000 528 992 label
+(vssa0_0) {/Helvetica cf} 2 20 270.000 2.000 208 992 label
+0.647 0.165 0.165 scb
+(vddio_4) {/Helvetica cf} 2 20 270.000 2.000 640 991 label
+0.361 0.675 0.933 scb
+(vccd2_0) {/Helvetica cf} 2 20 270.000 2.000 -1040 992 label
+0.647 0.165 0.165 scb
+(vssio_3) {/Helvetica cf} 2 20 270.000 2.000 1313 992 label
+(vssio_4) {/Helvetica cf} 2 20 270.000 2.000 -464 991 label
+0.361 0.675 0.933 scb
+(vssd2_0) {/Helvetica cf} 2 20 270.000 2.000 -368 992 label
+(vssd1_2) {/Helvetica cf} 2 20 270.000 2.000 1872 992 label
+(vccd1_2) {/Helvetica cf} 2 20 270.000 2.000 1200 992 label
+0.824 0.039 0.863 scb
+(analog_0) {/Helvetica cf} 2 20 270.000 2.000 416 992 label
+(analog_1) {/Helvetica cf} 2 20 270.000 2.000 304 992 label
+sce
+(gpio0_0) {/Helvetica cf} 2 23 180.000 2.000 2656 -3232 label
+(gpio0_1) {/Helvetica cf} 2 23 180.000 2.000 2656 -3120 label
+(gpio0_2) {/Helvetica cf} 2 23 180.000 2.000 2656 -3008 label
+(gpio0_3) {/Helvetica cf} 2 20 0.000 2.000 2656 -2896 label
+(gpio0_4) {/Helvetica cf} 2 20 0.000 2.000 2656 -2576 label
+(gpio0_5) {/Helvetica cf} 2 20 0.000 2.000 2656 -2464 label
+(gpio0_6) {/Helvetica cf} 2 20 0.000 2.000 2656 -2352 label
+(gpio0_7) {/Helvetica cf} 2 20 0.000 2.000 2656 -2240 label
+(gpio1_0) {/Helvetica cf} 2 20 0.000 2.000 2656 -1792 label
+(gpio1_1) {/Helvetica cf} 2 20 0.000 2.000 2656 -1680 label
+(gpio1_2) {/Helvetica cf} 2 20 0.000 2.000 2656 -1568 label
+(gpio1_3) {/Helvetica cf} 2 20 0.000 2.000 2656 -1456 label
+(gpio1_4) {/Helvetica cf} 2 20 0.000 2.000 2656 -1120 label
+(gpio1_5) {/Helvetica cf} 2 20 0.000 2.000 2656 -1008 label
+(gpio1_6) {/Helvetica cf} 2 20 0.000 2.000 2656 -896 label
+(gpio1_7) {/Helvetica cf} 2 20 0.000 2.000 2656 -784 label
+(gpio2_0) {/Helvetica cf} 2 20 0.000 2.000 2656 -224 label
+(gpio2_1) {/Helvetica cf} 2 20 0.000 2.000 2656 -112 label
+(gpio2_2) {/Helvetica cf} 2 20 0.000 2.000 2656 0 label
+(gpio2_3) {/Helvetica cf} 2 20 0.000 2.000 2656 112 label
+(gpio2_4) {/Helvetica cf} 2 20 0.000 2.000 2656 336 label
+(gpio2_5) {/Helvetica cf} 2 20 0.000 2.000 2656 448 label
+(gpio2_6) {/Helvetica cf} 2 20 0.000 2.000 2656 560 label
+(gpio2_7) {/Helvetica cf} 2 20 360.000 2.000 2656 672 label
+0.647 0.165 0.165 scb
+(vddio_0) {/Helvetica cf} 2 23 180.000 2.000 2656 -3360 label
+(vssio_0) {/Helvetica cf} 2 20 0.000 2.000 2656 -2688 label
+(vddio_2) {/Helvetica cf} 2 20 0.000 2.000 2656 -672 label
+0.361 0.675 0.933 scb
+(vssd1_0) {/Helvetica cf} 2 20 0.000 2.000 2656 -2800 label
+(vccd1_0) {/Helvetica cf} 2 20 0.000 2.000 2656 -1344 label
+0.180 0.545 0.341 scb
+(vdda1_0) {/Helvetica cf} 2 20 0.000 2.000 2656 -2016 label
+(vssa1_0) {/Helvetica cf} 2 20 0.000 2.000 2656 -1904 label
+0.361 0.675 0.933 scb
+(vssd1_1) {/Helvetica cf} 2 20 0.000 2.000 2656 -336 label
+(vccd1_1) {/Helvetica cf} 2 20 360.000 2.000 2656 784 label
+0.180 0.545 0.341 scb
+(vdda1_1) {/Helvetica cf} 2 20 0.000 2.000 2656 -560 label
+(vssa1_1) {/Helvetica cf} 2 20 360.000 2.000 2656 -448 label
+0.647 0.165 0.165 scb
+(vddio_3) {/Helvetica cf} 2 20 360.000 2.000 2656 896 label
+(vddio_1) {/Helvetica cf} 2 20 0.000 2.000 2656 -2128 label
+(vssio_1) {/Helvetica cf} 2 20 0.000 2.000 2656 -1232 label
+(vssio_2) {/Helvetica cf} 2 20 0.000 2.000 2656 224 label
+(vddio_5) {/Helvetica cf} 2 20 180.000 2.000 -1792 880 label
+sce
+(gpio5_0) {/Helvetica cf} 2 23 0.000 2.000 -1792 656 label
+(gpio5_1) {/Helvetica cf} 2 23 0.000 2.000 -1792 544 label
+(gpio5_2) {/Helvetica cf} 2 23 0.000 2.000 -1792 432 label
+(gpio5_3) {/Helvetica cf} 2 23 0.000 2.000 -1792 320 label
+(gpio5_4) {/Helvetica cf} 2 23 0.000 2.000 -1792 96 label
+(gpio5_5) {/Helvetica cf} 2 23 0.000 2.000 -1792 -32 label
+(gpio5_6) {/Helvetica cf} 2 23 0.000 2.000 -1792 -144 label
+(gpio5_7) {/Helvetica cf} 2 23 0.000 2.000 -1792 -240 label
+(gpio6_7) {/Helvetica cf} 2 23 0.000 2.000 -1792 -1792 label
+(gpio6_6) {/Helvetica cf} 2 23 0.000 2.000 -1792 -1680 label
+(gpio6_5) {/Helvetica cf} 2 23 0.000 2.000 -1792 -1568 label
+(gpio6_4) {/Helvetica cf} 2 23 0.000 2.000 -1792 -1456 label
+(gpio6_3) {/Helvetica cf} 2 23 0.000 2.000 -1792 -1120 label
+(gpio6_2) {/Helvetica cf} 2 23 0.000 2.000 -1792 -1008 label
+(gpio6_1) {/Helvetica cf} 2 23 0.000 2.000 -1792 -912 label
+(gpio6_0) {/Helvetica cf} 2 23 0.000 2.000 -1792 -800 label
+(gpio7_7) {/Helvetica cf} 2 23 360.000 2.000 -1792 -3264 label
+(gpio7_6) {/Helvetica cf} 2 23 360.000 2.000 -1792 -3136 label
+(gpio7_5) {/Helvetica cf} 2 23 360.000 2.000 -1792 -3024 label
+(gpio7_4) {/Helvetica cf} 2 23 360.000 2.000 -1792 -2912 label
+(gpio7_3) {/Helvetica cf} 2 23 0.000 2.000 -1792 -2592 label
+(gpio7_2) {/Helvetica cf} 2 23 0.000 2.000 -1792 -2480 label
+(gpio7_1) {/Helvetica cf} 2 23 0.000 2.000 -1792 -2368 label
+(gpio7_0) {/Helvetica cf} 2 23 0.000 2.000 -1792 -2240 label
+0.647 0.165 0.165 scb
+(vddio_7) {/Helvetica cf} 2 23 360.000 2.000 -1792 -2128 label
+(vddio_8) {/Helvetica cf} 2 23 360.000 2.000 -1792 -3376 label
+0.180 0.545 0.341 scb
+(vdda2_1) {/Helvetica cf} 2 23 0.000 2.000 -1792 -2016 label
+(vssa2_1) {/Helvetica cf} 2 23 0.000 2.000 -1792 -1904 label
+0.647 0.165 0.165 scb
+(vddio_6) {/Helvetica cf} 2 23 360.000 2.000 -1792 -688 label
+0.361 0.675 0.933 scb
+(vssd2_2) {/Helvetica cf} 2 23 0.000 2.000 -1792 -1344 label
+(vccd2_2) {/Helvetica cf} 2 23 0.000 2.000 -1792 -2816 label
+0.180 0.545 0.341 scb
+(vdda2_0) {/Helvetica cf} 2 23 0.000 2.000 -1792 -576 label
+(vssa2_0) {/Helvetica cf} 2 23 0.000 2.000 -1792 -464 label
+0.647 0.165 0.165 scb
+(vssio_7) {/Helvetica cf} 2 23 360.000 2.000 -1792 -2704 label
+(vssio_6) {/Helvetica cf} 2 23 360.000 2.000 -1792 -1232 label
+(vssio_5) {/Helvetica cf} 2 23 360.000 2.000 -1792 208 label
+0.361 0.675 0.933 scb
+(vssd2_1) {/Helvetica cf} 2 20 180.000 2.000 -1792 768 label
+(vccd2_1) {/Helvetica cf} 2 23 0.000 2.000 -1792 -368 label
+sce
+(gpio8_7) {/Helvetica cf} 2 23 270.000 2.000 1088 -3488 label
+(gpio8_6) {/Helvetica cf} 2 23 270.000 2.000 976 -3488 label
+(gpio8_5) {/Helvetica cf} 2 23 270.000 2.000 864 -3488 label
+(gpio8_4) {/Helvetica cf} 2 23 270.000 2.000 752 -3488 label
+(gpio8_3) {/Helvetica cf} 2 23 270.000 2.000 -256 -3488 label
+(gpio8_2) {/Helvetica cf} 2 23 270.000 2.000 -368 -3488 label
+(gpio8_1) {/Helvetica cf} 2 23 270.000 2.000 -480 -3488 label
+(gpio8_0) {/Helvetica cf} 2 23 270.000 2.000 -576 -3488 label
+0.647 0.165 0.165 scb
+(vssio_8) {/Helvetica cf} 2 23 270.000 2.000 -144 -3488 label
+(vddio_9) {/Helvetica cf} 2 23 270.000 2.000 528 -3488 label
+0.361 0.675 0.933 scb
+(vccd0_0) {/Helvetica cf} 2 23 270.000 2.000 -928 -3488 label
+(vccd0_1) {/Helvetica cf} 2 23 270.000 2.000 640 -3488 label
+0.180 0.545 0.341 scb
+(vssa3_0) {/Helvetica cf} 2 23 270.000 2.000 1200 -3488 label
+(vdda3_0) {/Helvetica cf} 2 23 270.000 2.000 1312 -3488 label
+0.824 0.039 0.863 scb
+(xo1) {/Helvetica cf} 2 23 270.000 2.000 416 -3488 label
+(xi1) {/Helvetica cf} 2 23 270.000 2.000 304 -3488 label
+(resetb) {/Helvetica cf} 2 23 270.000 2.000 -704 -3488 label
+(xo0) {/Helvetica cf} 2 23 270.000 2.000 192 -3488 label
+(xi0) {/Helvetica cf} 2 23 270.000 2.000 80 -3488 label
+0.361 0.675 0.933 scb
+(vssd0_0) {/Helvetica cf} 2 23 270.000 2.000 -32 -3488 label
+(vssd0_1) {/Helvetica cf} 2 23 270.000 2.000 1424 -3488 label
+sce
+(sio0) {/Helvetica cf} 2 23 270.000 2.000 1648 -3488 label
+(sio1) {/Helvetica cf} 2 23 270.000 2.000 1760 -3488 label
+0.933 0.604 0.000 scb
+(flash_io3) {/Helvetica cf} 2 23 270.000 2.000 976 -3840 label
+(flash_io2) {/Helvetica cf} 2 23 270.000 2.000 864 -3840 label
+(flash_io1) {/Helvetica cf} 2 23 270.000 2.000 752 -3840 label
+(flash_io0) {/Helvetica cf} 2 23 270.000 2.000 -256 -3840 label
+(flash_clk) {/Helvetica cf} 2 23 270.000 2.000 -368 -3840 label
+(flash_csb) {/Helvetica cf} 2 23 270.000 2.000 -480 -3840 label
+(clock) {/Helvetica cf} 2 23 270.000 2.000 -576 -3840 label
+(mgmt_gpio) {/Helvetica cf} 2 23 270.000 2.000 1088 -3840 label
+(SDO) {/Helvetica cf} 2 23 180.000 2.000 3008 -3120 label
+(SDI) {/Helvetica cf} 2 23 180.000 2.000 3008 -3008 label
+(CSB) {/Helvetica cf} 2 23 0.000 2.000 3168 -2896 label
+(SCK) {/Helvetica cf} 2 23 0.000 2.000 3168 -2576 label
+(ser_rx) {/Helvetica cf} 2 20 0.000 2.000 3008 -2464 label
+(ser_tx) {/Helvetica cf} 2 20 0.000 2.000 3008 -2352 label
+(dbg) {/Helvetica cf} 2 23 180.000 2.000 3008 -3232 label
+sce
+(3) {/Helvetica cf} 2 16 0.000 2.000 -2288 624 label
+(4) {/Helvetica cf} 2 16 0.000 2.000 -2288 512 label
+(5) {/Helvetica cf} 2 16 0.000 2.000 -2288 400 label
+(6) {/Helvetica cf} 2 16 0.000 2.000 -2288 288 label
+(7) {/Helvetica cf} 2 16 0.000 2.000 -2288 176 label
+(8) {/Helvetica cf} 2 16 0.000 2.000 -2288 64 label
+(9) {/Helvetica cf} 2 16 0.000 2.000 -2288 -64 label
+(10) {/Helvetica cf} 2 16 0.000 2.000 -2288 -192 label
+(11) {/Helvetica cf} 2 16 0.000 2.000 -2288 -288 label
+(12) {/Helvetica cf} 2 16 0.000 2.000 -2288 -400 label
+(13) {/Helvetica cf} 2 16 0.000 2.000 -2288 -496 label
+(14) {/Helvetica cf} 2 16 0.000 2.000 -2288 -608 label
+(15) {/Helvetica cf} 2 16 0.000 2.000 -2288 -720 label
+(16) {/Helvetica cf} 2 16 0.000 2.000 -2288 -832 label
+(17) {/Helvetica cf} 2 16 0.000 2.000 -2288 -944 label
+(18) {/Helvetica cf} 2 16 0.000 2.000 -2288 -1040 label
+(19) {/Helvetica cf} 2 16 0.000 2.000 -2288 -1152 label
+(20) {/Helvetica cf} 2 16 0.000 2.000 -2288 -1264 label
+(21) {/Helvetica cf} 2 16 0.000 2.000 -2288 -1376 label
+(22) {/Helvetica cf} 2 16 0.000 2.000 -2288 -1488 label
+(23) {/Helvetica cf} 2 16 0.000 2.000 -2288 -1600 label
+(24) {/Helvetica cf} 2 16 0.000 2.000 -2288 -1712 label
+(25) {/Helvetica cf} 2 16 0.000 2.000 -2288 -1824 label
+(26) {/Helvetica cf} 2 16 0.000 2.000 -2288 -1936 label
+(27) {/Helvetica cf} 2 16 0.000 2.000 -2288 -2048 label
+(28) {/Helvetica cf} 2 16 0.000 2.000 -2288 -2160 label
+(29) {/Helvetica cf} 2 16 0.000 2.000 -2288 -2272 label
+(30) {/Helvetica cf} 2 16 0.000 2.000 -2288 -2400 label
+(31) {/Helvetica cf} 2 16 0.000 2.000 -2288 -2512 label
+(32) {/Helvetica cf} 2 16 0.000 2.000 -2288 -2624 label
+(33) {/Helvetica cf} 2 16 0.000 2.000 -2288 -2736 label
+(34) {/Helvetica cf} 2 16 0.000 2.000 -2288 -2848 label
+(35) {/Helvetica cf} 2 16 360.000 2.000 -2287 -2960 label
+(36) {/Helvetica cf} 2 16 360.000 2.000 -2288 -3071 label
+(37) {/Helvetica cf} 2 16 360.000 2.000 -2288 -3184 label
+(38) {/Helvetica cf} 2 16 360.000 2.000 -2289 -3312 label
+(39) {/Helvetica cf} 2 16 360.000 2.000 -2288 -3424 label
+(40) {/Helvetica cf} 2 16 270.000 2.000 -896 -4336 label
+(41) {/Helvetica cf} 2 16 270.000 2.000 -784 -4336 label
+(42) {/Helvetica cf} 2 16 270.000 2.000 -656 -4336 label
+(43) {/Helvetica cf} 2 16 270.000 2.000 -528 -4336 label
+(44) {/Helvetica cf} 2 16 270.000 2.000 -448 -4336 label
+(45) {/Helvetica cf} 2 16 270.000 2.000 -336 -4336 label
+(46) {/Helvetica cf} 2 16 270.000 2.000 -224 -4336 label
+(47) {/Helvetica cf} 2 16 270.000 2.000 -112 -4336 label
+(48) {/Helvetica cf} 2 16 270.000 2.000 0 -4336 label
+(49) {/Helvetica cf} 2 16 270.000 2.000 96 -4336 label
+(50) {/Helvetica cf} 2 16 270.000 2.000 208 -4336 label
+(51) {/Helvetica cf} 2 16 270.000 2.000 320 -4336 label
+(52) {/Helvetica cf} 2 16 270.000 2.000 432 -4336 label
+(53) {/Helvetica cf} 2 16 270.000 2.000 544 -4336 label
+(54) {/Helvetica cf} 2 16 270.000 2.000 656 -4336 label
+(55) {/Helvetica cf} 2 16 270.000 2.000 784 -4336 label
+(56) {/Helvetica cf} 2 16 270.000 2.000 896 -4336 label
+(57) {/Helvetica cf} 2 16 270.000 2.000 1008 -4336 label
+(58) {/Helvetica cf} 2 16 270.000 2.000 1120 -4336 label
+(59) {/Helvetica cf} 2 16 270.000 2.000 1232 -4336 label
+(60) {/Helvetica cf} 2 16 270.000 2.000 1344 -4336 label
+(61) {/Helvetica cf} 2 16 270.000 2.000 1456 -4336 label
+(62) {/Helvetica cf} 2 16 270.000 2.000 1568 -4336 label
+(63) {/Helvetica cf} 2 16 270.000 2.000 1680 -4336 label
+(64) {/Helvetica cf} 2 16 270.000 2.000 1792 -4336 label
+(65) {/Helvetica cf} 2 16 180.000 2.000 3409 -3344 label
+(66) {/Helvetica cf} 2 16 180.000 2.000 3409 -3216 label
+(69) {/Helvetica cf} 2 16 180.000 2.000 3408 -2880 label
+(70) {/Helvetica cf} 2 16 180.000 2.000 3408 -2784 label
+(71) {/Helvetica cf} 2 16 180.000 2.000 3408 -2672 label
+(72) {/Helvetica cf} 2 16 180.000 2.000 3408 -2560 label
+(73) {/Helvetica cf} 2 16 180.000 2.000 3408 -2448 label
+(74) {/Helvetica cf} 2 16 180.000 2.000 3408 -2336 label
+(75) {/Helvetica cf} 2 16 180.000 2.000 3408 -2224 label
+(76) {/Helvetica cf} 2 16 180.000 2.000 3408 -2096 label
+(77) {/Helvetica cf} 2 16 180.000 2.000 3408 -1984 label
+(78) {/Helvetica cf} 2 16 180.000 2.000 3408 -1888 label
+(79) {/Helvetica cf} 2 16 180.000 2.000 3408 -1776 label
+(80) {/Helvetica cf} 2 16 180.000 2.000 3408 -1664 label
+(81) {/Helvetica cf} 2 16 180.000 2.000 3408 -1552 label
+(82) {/Helvetica cf} 2 16 180.000 2.000 3408 -1440 label
+(83) {/Helvetica cf} 2 16 180.000 2.000 3408 -1328 label
+(84) {/Helvetica cf} 2 16 180.000 2.000 3408 -1216 label
+(85) {/Helvetica cf} 2 16 180.000 2.000 3408 -1104 label
+(86) {/Helvetica cf} 2 16 180.000 2.000 3408 -992 label
+(87) {/Helvetica cf} 2 16 180.000 2.000 3408 -880 label
+(88) {/Helvetica cf} 2 16 180.000 2.000 3408 -768 label
+(89) {/Helvetica cf} 2 16 180.000 2.000 3408 -656 label
+(90) {/Helvetica cf} 2 16 180.000 2.000 3408 -544 label
+(91) {/Helvetica cf} 2 16 180.000 2.000 3408 -432 label
+(92) {/Helvetica cf} 2 16 180.000 2.000 3408 -320 label
+(93) {/Helvetica cf} 2 16 180.000 2.000 3408 -208 label
+(94) {/Helvetica cf} 2 16 180.000 2.000 3408 -96 label
+(95) {/Helvetica cf} 2 16 180.000 2.000 3408 16 label
+(96) {/Helvetica cf} 2 16 180.000 2.000 3408 128 label
+(97) {/Helvetica cf} 2 16 180.000 2.000 3408 240 label
+(98) {/Helvetica cf} 2 16 180.000 2.000 3408 352 label
+(99) {/Helvetica cf} 2 16 180.000 2.000 3408 464 label
+(100) {/Helvetica cf} 2 16 180.000 2.000 3408 576 label
+(101) {/Helvetica cf} 2 20 180.000 2.000 3392 656 label
+(102) {/Helvetica cf} 2 20 180.000 2.000 3392 784 label
+(103) {/Helvetica cf} 2 20 180.000 2.000 3392 896 label
+(104) {/Helvetica cf} 2 16 90.000 2.000 1840 1488 label
+(105) {/Helvetica cf} 2 16 90.000 2.000 1728 1488 label
+(106) {/Helvetica cf} 2 16 90.000 2.000 1616 1488 label
+(107) {/Helvetica cf} 2 16 90.000 2.000 1504 1488 label
+(108) {/Helvetica cf} 2 16 90.000 2.000 1392 1488 label
+(109) {/Helvetica cf} 2 16 90.000 2.000 1280 1488 label
+(110) {/Helvetica cf} 2 16 90.000 2.000 1168 1488 label
+(111) {/Helvetica cf} 2 16 90.000 2.000 1056 1488 label
+(112) {/Helvetica cf} 2 16 90.000 2.000 944 1488 label
+(113) {/Helvetica cf} 2 16 90.000 2.000 832 1488 label
+(114) {/Helvetica cf} 2 16 90.000 2.000 720 1488 label
+(115) {/Helvetica cf} 2 16 90.000 2.000 608 1488 label
+(116) {/Helvetica cf} 2 16 90.000 2.000 512 1488 label
+(117) {/Helvetica cf} 2 16 90.000 2.000 384 1488 label
+(118) {/Helvetica cf} 2 16 90.000 2.000 272 1488 label
+(119) {/Helvetica cf} 2 16 90.000 2.000 176 1488 label
+(120) {/Helvetica cf} 2 16 90.000 2.000 48 1488 label
+(121) {/Helvetica cf} 2 16 90.000 2.000 -64 1488 label
+(122) {/Helvetica cf} 2 16 90.000 2.000 -176 1488 label
+(123) {/Helvetica cf} 2 16 90.000 2.000 -288 1488 label
+(124) {/Helvetica cf} 2 16 90.000 2.000 -400 1488 label
+(125) {/Helvetica cf} 2 16 90.000 2.000 -496 1488 label
+(126) {/Helvetica cf} 2 16 90.000 2.000 -624 1488 label
+(127) {/Helvetica cf} 2 16 90.000 2.000 -736 1488 label
+(128) {/Helvetica cf} 2 16 90.000 2.000 -848 1488 label
+(129) {/Helvetica cf} 2 16 90.000 2.000 -960 1488 label
+(130) {/Helvetica cf} 2 16 90.000 2.000 -1072 1488 label
+(1) {/Helvetica cf} 2 16 360.000 2.000 -2288 864 label
+(2) {/Helvetica cf} 2 16 360.000 2.000 -2288 736 label
+1 1.000 -1440 640 96 0.000 360.000 xcarc
+1 1.000 -1152 640 96 0.000 360.000 xcarc
+1 1.000 -864 640 96 0.000 360.000 xcarc
+1 1.000 -576 640 96 0.000 360.000 xcarc
+1 1.000 -288 640 96 0.000 360.000 xcarc
+1 1.000 0 640 96 0.000 360.000 xcarc
+1 1.000 288 640 96 0.000 360.000 xcarc
+1 1.000 576 640 96 0.000 360.000 xcarc
+1 1.000 864 640 96 0.000 360.000 xcarc
+1 1.000 1152 640 96 0.000 360.000 xcarc
+1 1.000 1440 640 96 0.000 360.000 xcarc
+1 1.000 1728 640 96 0.000 360.000 xcarc
+1 1.000 2016 640 96 0.000 360.000 xcarc
+1 1.000 2304 640 96 0.000 360.000 xcarc
+1 1.000 -1440 352 96 0.000 360.000 xcarc
+1 1.000 -1152 352 96 0.000 360.000 xcarc
+1 1.000 -864 352 96 0.000 360.000 xcarc
+1 1.000 -576 352 96 0.000 360.000 xcarc
+1 1.000 -288 352 96 0.000 360.000 xcarc
+1 1.000 0 352 96 0.000 360.000 xcarc
+1 1.000 288 352 96 0.000 360.000 xcarc
+1 1.000 576 352 96 0.000 360.000 xcarc
+1 1.000 864 352 96 0.000 360.000 xcarc
+1 1.000 1152 352 96 0.000 360.000 xcarc
+1 1.000 1440 352 96 0.000 360.000 xcarc
+1 1.000 1728 352 96 0.000 360.000 xcarc
+1 1.000 2016 352 96 0.000 360.000 xcarc
+1 1.000 2304 352 96 0.000 360.000 xcarc
+1 1.000 -1440 64 96 0.000 360.000 xcarc
+1 1.000 -1152 64 96 0.000 360.000 xcarc
+1 1.000 -864 64 96 0.000 360.000 xcarc
+1 1.000 -576 64 96 0.000 360.000 xcarc
+1 1.000 -288 64 96 0.000 360.000 xcarc
+1 1.000 0 64 96 0.000 360.000 xcarc
+1 1.000 288 64 96 0.000 360.000 xcarc
+1 1.000 576 64 96 0.000 360.000 xcarc
+1 1.000 864 64 96 0.000 360.000 xcarc
+1 1.000 1152 64 96 0.000 360.000 xcarc
+1 1.000 1440 64 96 0.000 360.000 xcarc
+1 1.000 1728 64 96 0.000 360.000 xcarc
+1 1.000 2016 64 96 0.000 360.000 xcarc
+1 1.000 2304 64 96 0.000 360.000 xcarc
+1 1.000 -1440 -224 96 0.000 360.000 xcarc
+1 1.000 -1152 -224 96 0.000 360.000 xcarc
+1 1.000 -1440 -512 96 0.000 360.000 xcarc
+1 1.000 -1152 -512 96 0.000 360.000 xcarc
+1 1.000 -864 -512 96 0.000 360.000 xcarc
+1 1.000 -1440 -800 96 0.000 360.000 xcarc
+1 1.000 -1152 -800 96 0.000 360.000 xcarc
+1 1.000 -864 -800 96 0.000 360.000 xcarc
+1 1.000 -1440 -1088 96 0.000 360.000 xcarc
+1 1.000 -1152 -1088 96 0.000 360.000 xcarc
+1 1.000 -864 -1088 96 0.000 360.000 xcarc
+1 1.000 -1440 -1376 96 0.000 360.000 xcarc
+1 1.000 -1152 -1376 96 0.000 360.000 xcarc
+1 1.000 -864 -1376 96 0.000 360.000 xcarc
+1 1.000 -1440 -1664 96 0.000 360.000 xcarc
+1 1.000 -1152 -1664 96 0.000 360.000 xcarc
+1 1.000 -864 -1664 96 0.000 360.000 xcarc
+1 1.000 -1440 -1952 96 0.000 360.000 xcarc
+1 1.000 -1152 -1952 96 0.000 360.000 xcarc
+1 1.000 -864 -1952 96 0.000 360.000 xcarc
+1 1.000 -1440 -2240 96 0.000 360.000 xcarc
+1 1.000 -1152 -2240 96 0.000 360.000 xcarc
+1 1.000 -864 -2240 96 0.000 360.000 xcarc
+1 1.000 -1440 -2528 96 0.000 360.000 xcarc
+1 1.000 -1152 -2528 96 0.000 360.000 xcarc
+1 1.000 -864 -2528 96 0.000 360.000 xcarc
+1 1.000 2016 -224 96 0.000 360.000 xcarc
+1 1.000 2304 -224 96 0.000 360.000 xcarc
+1 1.000 1728 -512 96 0.000 360.000 xcarc
+1 1.000 2016 -512 96 0.000 360.000 xcarc
+1 1.000 2304 -512 96 0.000 360.000 xcarc
+1 1.000 1728 -800 96 0.000 360.000 xcarc
+1 1.000 2016 -800 96 0.000 360.000 xcarc
+1 1.000 2304 -800 96 0.000 360.000 xcarc
+1 1.000 1728 -1088 96 0.000 360.000 xcarc
+1 1.000 2016 -1088 96 0.000 360.000 xcarc
+1 1.000 2304 -1088 96 0.000 360.000 xcarc
+1 1.000 1728 -1376 96 0.000 360.000 xcarc
+1 1.000 2016 -1376 96 0.000 360.000 xcarc
+1 1.000 2304 -1376 96 0.000 360.000 xcarc
+1 1.000 1728 -1664 96 0.000 360.000 xcarc
+1 1.000 2016 -1664 96 0.000 360.000 xcarc
+1 1.000 2304 -1664 96 0.000 360.000 xcarc
+1 1.000 1728 -1952 96 0.000 360.000 xcarc
+1 1.000 2016 -1952 96 0.000 360.000 xcarc
+1 1.000 2304 -1952 96 0.000 360.000 xcarc
+1 1.000 1728 -2240 96 0.000 360.000 xcarc
+1 1.000 2016 -2240 96 0.000 360.000 xcarc
+1 1.000 2304 -2240 96 0.000 360.000 xcarc
+1 1.000 1728 -2528 96 0.000 360.000 xcarc
+1 1.000 2016 -2528 96 0.000 360.000 xcarc
+1 1.000 2304 -2528 96 0.000 360.000 xcarc
+1 1.000 -1440 -2816 96 0.000 360.000 xcarc
+1 1.000 -1152 -2816 96 0.000 360.000 xcarc
+1 1.000 -864 -2816 96 0.000 360.000 xcarc
+1 1.000 -576 -2816 96 0.000 360.000 xcarc
+1 1.000 -288 -2816 96 0.000 360.000 xcarc
+1 1.000 0 -2816 96 0.000 360.000 xcarc
+1 1.000 288 -2816 96 0.000 360.000 xcarc
+1 1.000 576 -2816 96 0.000 360.000 xcarc
+1 1.000 864 -2816 96 0.000 360.000 xcarc
+1 1.000 1152 -2816 96 0.000 360.000 xcarc
+1 1.000 1440 -2816 96 0.000 360.000 xcarc
+1 1.000 1728 -2816 96 0.000 360.000 xcarc
+1 1.000 2016 -2816 96 0.000 360.000 xcarc
+1 1.000 2304 -2816 96 0.000 360.000 xcarc
+1 1.000 -1440 -3104 96 0.000 360.000 xcarc
+1 1.000 -1152 -3104 96 0.000 360.000 xcarc
+1 1.000 -864 -3104 96 0.000 360.000 xcarc
+1 1.000 -576 -3104 96 0.000 360.000 xcarc
+1 1.000 -288 -3104 96 0.000 360.000 xcarc
+1 1.000 0 -3104 96 0.000 360.000 xcarc
+1 1.000 288 -3104 96 0.000 360.000 xcarc
+1 1.000 576 -3104 96 0.000 360.000 xcarc
+1 1.000 864 -3104 96 0.000 360.000 xcarc
+1 1.000 1152 -3104 96 0.000 360.000 xcarc
+1 1.000 1440 -3104 96 0.000 360.000 xcarc
+1 1.000 1728 -3104 96 0.000 360.000 xcarc
+1 1.000 2016 -3104 96 0.000 360.000 xcarc
+1 1.000 2304 -3104 96 0.000 360.000 xcarc
+1 1.000 -576 -2528 96 0.000 360.000 xcarc
+1 1.000 -288 -2528 96 0.000 360.000 xcarc
+1 1.000 0 -2528 96 0.000 360.000 xcarc
+1 1.000 288 -2528 96 0.000 360.000 xcarc
+1 1.000 576 -2528 96 0.000 360.000 xcarc
+1 1.000 864 -2528 96 0.000 360.000 xcarc
+1 1.000 1152 -2528 96 0.000 360.000 xcarc
+1 1.000 1440 -2528 96 0.000 360.000 xcarc
+1.000 0.000 432 -1216 ::chip_with_pads
+0.647 0.165 0.165 scb
+(vssio_9) {/Helvetica cf} 2 23 270.000 2.000 1536 -3488 label
+0.824 0.039 0.863 scb
+(select) {/Helvetica cf} 2 23 270.000 2.000 -816 -3488 label
+sce
+(67) {/Helvetica cf} 2 16 180.000 2.000 3409 -3105 label
+(68) {/Helvetica cf} 2 16 180.000 2.000 3408 -2992 label
+0.000 0.000 1.000 scb
+(\327 7.5mm\)) {/HelveticaISO cf} (Panamax \(Frigate\) BGA 130 \(7.5mm ) 
+{/Helvetica cf} 4 17 0.000 3.000 528 1568 label
+sce
+0 1.000 -1728 816 -1600 816 -1600 736 -1728 736 4 polygon
+0 1.000 -1728 928 -1600 928 -1600 848 -1728 848 4 polygon
+0 1.000 -1728 -2880 -1600 -2880 -1600 -2960 -1728 -2960 4 polygon
+0 1.000 -1728 -3104 -1600 -3104 -1600 -3184 -1728 -3184 4 polygon
+0 1.000 -1728 -3328 -1600 -3328 -1600 -3408 -1728 -3408 4 polygon
+0 1.000 -1728 -2992 -1600 -2992 -1600 -3072 -1728 -3072 4 polygon
+0 1.000 -1728 -3216 -1600 -3216 -1600 -3296 -1728 -3296 4 polygon
+0 1.000 2464 592 2592 592 2592 512 2464 512 4 polygon
+0 1.000 2464 368 2592 368 2592 288 2464 288 4 polygon
+0 1.000 2464 144 2592 144 2592 64 2464 64 4 polygon
+0 1.000 2464 -80 2592 -80 2592 -160 2464 -160 4 polygon
+0 1.000 2464 -304 2592 -304 2592 -384 2464 -384 4 polygon
+0 1.000 2464 -528 2592 -528 2592 -608 2464 -608 4 polygon
+0 1.000 2464 -752 2592 -752 2592 -832 2464 -832 4 polygon
+0 1.000 2464 -976 2592 -976 2592 -1056 2464 -1056 4 polygon
+0 1.000 2464 -1200 2592 -1200 2592 -1280 2464 -1280 4 polygon
+0 1.000 2464 -1424 2592 -1424 2592 -1504 2464 -1504 4 polygon
+0 1.000 2464 -1648 2592 -1648 2592 -1728 2464 -1728 4 polygon
+0 1.000 2464 -1872 2592 -1872 2592 -1952 2464 -1952 4 polygon
+0 1.000 2464 -2096 2592 -2096 2592 -2176 2464 -2176 4 polygon
+0 1.000 2464 -2320 2592 -2320 2592 -2400 2464 -2400 4 polygon
+0 1.000 2464 -2544 2592 -2544 2592 -2624 2464 -2624 4 polygon
+0 1.000 2464 -2768 2592 -2768 2592 -2848 2464 -2848 4 polygon
+0 1.000 2464 704 2592 704 2592 624 2464 624 4 polygon
+0 1.000 2464 480 2592 480 2592 400 2464 400 4 polygon
+0 1.000 2464 256 2592 256 2592 176 2464 176 4 polygon
+0 1.000 2464 32 2592 32 2592 -48 2464 -48 4 polygon
+0 1.000 2464 -192 2592 -192 2592 -272 2464 -272 4 polygon
+0 1.000 2464 -416 2592 -416 2592 -496 2464 -496 4 polygon
+0 1.000 2464 -640 2592 -640 2592 -720 2464 -720 4 polygon
+0 1.000 2464 -864 2592 -864 2592 -944 2464 -944 4 polygon
+0 1.000 2464 -1088 2592 -1088 2592 -1168 2464 -1168 4 polygon
+0 1.000 2464 -1312 2592 -1312 2592 -1392 2464 -1392 4 polygon
+0 1.000 2464 -1536 2592 -1536 2592 -1616 2464 -1616 4 polygon
+0 1.000 2464 -1760 2592 -1760 2592 -1840 2464 -1840 4 polygon
+0 1.000 2464 -1984 2592 -1984 2592 -2064 2464 -2064 4 polygon
+0 1.000 2464 -2208 2592 -2208 2592 -2288 2464 -2288 4 polygon
+0 1.000 2464 -2432 2592 -2432 2592 -2512 2464 -2512 4 polygon
+0 1.000 2464 -2656 2592 -2656 2592 -2736 2464 -2736 4 polygon
+0 1.000 2464 816 2592 816 2592 736 2464 736 4 polygon
+0 1.000 2464 928 2592 928 2592 848 2464 848 4 polygon
+0 1.000 2464 -2880 2592 -2880 2592 -2960 2464 -2960 4 polygon
+0 1.000 2464 -3104 2592 -3104 2592 -3184 2464 -3184 4 polygon
+0 1.000 2464 -3328 2592 -3328 2592 -3408 2464 -3408 4 polygon
+0 1.000 2464 -2992 2592 -2992 2592 -3072 2464 -3072 4 polygon
+0 1.000 2464 -3216 2592 -3216 2592 -3296 2464 -3296 4 polygon
+0 1.000 -848 800 -848 928 -768 928 -768 800 4 polygon
+0 1.000 -624 800 -624 928 -544 928 -544 800 4 polygon
+0 1.000 -400 800 -400 928 -320 928 -320 800 4 polygon
+0 1.000 -176 800 -176 928 -96 928 -96 800 4 polygon
+0 1.000 48 800 48 928 128 928 128 800 4 polygon
+0 1.000 272 800 272 928 352 928 352 800 4 polygon
+0 1.000 496 800 496 928 576 928 576 800 4 polygon
+0 1.000 720 800 720 928 800 928 800 800 4 polygon
+0 1.000 944 800 944 928 1024 928 1024 800 4 polygon
+0 1.000 1168 800 1168 928 1248 928 1248 800 4 polygon
+0 1.000 1392 800 1392 928 1472 928 1472 800 4 polygon
+0 1.000 1616 800 1616 928 1696 928 1696 800 4 polygon
+0 1.000 -960 800 -960 928 -880 928 -880 800 4 polygon
+0 1.000 -736 800 -736 928 -656 928 -656 800 4 polygon
+0 1.000 -512 800 -512 928 -432 928 -432 800 4 polygon
+0 1.000 -288 800 -288 928 -208 928 -208 800 4 polygon
+0 1.000 -64 800 -64 928 16 928 16 800 4 polygon
+0 1.000 160 800 160 928 240 928 240 800 4 polygon
+0 1.000 384 800 384 928 464 928 464 800 4 polygon
+0 1.000 608 800 608 928 688 928 688 800 4 polygon
+0 1.000 832 800 832 928 912 928 912 800 4 polygon
+0 1.000 1056 800 1056 928 1136 928 1136 800 4 polygon
+0 1.000 1280 800 1280 928 1360 928 1360 800 4 polygon
+0 1.000 1504 800 1504 928 1584 928 1584 800 4 polygon
+0 1.000 1728 800 1728 928 1808 928 1808 800 4 polygon
+0 1.000 1840 800 1840 928 1920 928 1920 800 4 polygon
+0 1.000 -1072 800 -1072 928 -992 928 -992 800 4 polygon
+1 1.000 576 64 448 192 448 800 3 polygon
+1 1.000 288 64 416 224 416 736 352 800 4 polygon
+1 1.000 288 640 208 720 208 800 3 polygon
+1 1.000 576 640 544 672 544 800 3 polygon
+1 1.000 288 352 160 480 160 736 96 800 4 polygon
+1 1.000 576 352 704 480 704 768 672 800 4 polygon
+1 1.000 0 800 32 768 64 768 128 704 128 192 0 64 6 polygon
+1 1.000 768 800 736 768 736 192 864 64 4 polygon
+1 1.000 0 640 -128 768 -128 800 3 polygon
+1 1.000 0 352 -128 480 -128 704 -224 800 4 polygon
+1 1.000 864 640 864 800 2 polygon
+1 1.000 864 352 992 480 992 800 3 polygon
+1 1.000 -288 64 -160 192 -160 704 -224 768 -320 768 -352 800 6 polygon
+1 1.000 -288 640 -448 800 2 polygon
+1 1.000 -288 352 -416 480 -416 704 -480 768 -544 768 -576 800 6 polygon
+1 1.000 -576 640 -672 736 -672 800 3 polygon
+1 1.000 -576 352 -704 480 -704 736 -736 768 -768 768 -800 800 6 polygon
+1 1.000 -576 64 -736 224 -736 704 -800 768 -896 768 -928 800 6 polygon
+1 1.000 -864 640 -1024 800 2 polygon
+1 1.000 1152 64 1024 192 1024 736 1088 800 4 polygon
+1 1.000 1152 640 1152 768 1184 800 3 polygon
+1 1.000 1152 352 1280 480 1280 768 1312 800 4 polygon
+1 1.000 1440 64 1312 192 1312 704 1408 800 4 polygon
+1 1.000 1440 640 1440 704 1536 800 3 polygon
+1 1.000 1440 352 1568 480 1568 736 1632 800 4 polygon
+1 1.000 1728 352 1600 480 1600 720 1648 768 1728 768 1760 800 6 polygon
+1 1.000 1728 640 1888 800 2 polygon
+1 1.000 2016 640 2224 864 2464 864 3 polygon
+1 1.000 -864 352 -1024 512 -1024 704 -1184 864 -1600 864 5 polygon
+1 1.000 2016 352 2160 480 2160 704 2224 768 2464 768 5 polygon
+1 1.000 2304 640 2464 640 2 polygon
+1 1.000 1728 64 1888 224 2080 224 2144 288 2144 416 2240 512 2432 512 2464 544 
+8 polygon
+1 1.000 2304 352 2400 448 2464 448 3 polygon
+1 1.000 2016 64 2176 224 2368 224 2464 320 4 polygon
+1 1.000 -1152 640 -1280 768 -1600 768 3 polygon
+1 1.000 -1440 640 -1600 640 2 polygon
+1 1.000 -1600 544 -1568 512 -1088 512 -1024 448 -1024 224 -864 64 6 polygon
+1 1.000 -1152 352 -1280 480 -1536 480 -1600 416 4 polygon
+1 1.000 -1600 320 -1568 352 -1440 352 3 polygon
+1 1.000 -1152 64 -1312 224 -1600 224 3 polygon
+1 1.000 -1440 64 -1472 96 -1600 96 3 polygon
+1 1.000 -1600 0 -1536 -64 -1312 -64 -1152 -224 4 polygon
+1 1.000 -1440 -224 -1536 -128 -1600 -128 3 polygon
+1 1.000 -864 -512 -1024 -352 -1504 -352 -1568 -288 -1568 -256 -1600 -224 6 
+polygon
+1 1.000 -1152 -512 -1280 -384 -1568 -384 -1600 -352 4 polygon
+1 1.000 -1440 -512 -1536 -512 -1600 -448 3 polygon
+1 1.000 -1600 -576 -1536 -640 -1024 -640 -864 -800 4 polygon
+1 1.000 -1152 -800 -1296 -672 -1600 -672 3 polygon
+1 1.000 -1440 -800 -1600 -800 2 polygon
+1 1.000 -1600 -928 -1024 -928 -864 -1088 3 polygon
+1 1.000 -1152 -1088 -1280 -960 -1536 -960 -1600 -1024 4 polygon
+1 1.000 -1600 -1120 -1568 -1088 -1440 -1088 3 polygon
+1 1.000 -1600 -1216 -1024 -1216 -864 -1376 3 polygon
+1 1.000 -1600 -1344 -1504 -1248 -1280 -1248 -1152 -1376 4 polygon
+1 1.000 -1440 -1376 -1536 -1472 -1600 -1472 3 polygon
+1 1.000 -1600 -1568 -1536 -1504 -1024 -1504 -864 -1664 4 polygon
+1 1.000 -1152 -1664 -1280 -1536 -1504 -1536 -1568 -1600 -1568 -1664 -1600 -1696 
+6 polygon
+1 1.000 -1440 -1664 -1568 -1792 -1600 -1792 3 polygon
+1 1.000 -1600 -1920 -1472 -1792 -1024 -1792 -864 -1952 4 polygon
+1 1.000 -1440 -1952 -1536 -2048 -1600 -2048 3 polygon
+1 1.000 -1600 -2144 -1536 -2080 -1280 -2080 -1152 -1952 4 polygon
+1 1.000 -864 -2240 -992 -2112 -1504 -2112 -1568 -2176 -1568 -2208 -1600 -2240 6 
+polygon
+1 1.000 -1440 -2240 -1568 -2368 -1600 -2368 3 polygon
+1 1.000 -1600 -2464 -1504 -2368 -1280 -2368 -1152 -2240 4 polygon
+1 1.000 -1440 -2528 -1536 -2528 -1600 -2592 3 polygon
+1 1.000 -1600 -2688 -1568 -2656 -1344 -2656 -1312 -2624 -1312 -2464 -1248 -2400 
+-992 -2400 -864 -2528 8 polygon
+1 1.000 -1152 -2528 -1312 -2688 -1536 -2688 -1568 -2720 -1568 -2784 -1600 -2816 
+6 polygon
+1 1.000 -1440 -2816 -1536 -2912 -1600 -2912 3 polygon
+1 1.000 -1600 -3040 -1504 -2944 -1280 -2944 -1152 -2816 4 polygon
+1 1.000 -1440 -3104 -1472 -3136 -1600 -3136 3 polygon
+1 1.000 -864 -2816 -1024 -2976 -1216 -2976 -1280 -3040 -1280 -3168 -1376 -3264 
+-1600 -3264 7 polygon
+1 1.000 -1152 -3104 -1376 -3360 -1600 -3360 3 polygon
+1 1.000 -928 -3264 -992 -3200 -992 -3040 -928 -2976 -800 -2976 -736 -2912 -736 
+-2688 -576 -2528 8 polygon
+1 1.000 -864 -3104 -800 -3168 -800 -3264 3 polygon
+1 1.000 -704 -3264 -704 -2944 -576 -2816 3 polygon
+1 1.000 -576 -3104 -576 -3264 2 polygon
+1 1.000 -448 -3264 -448 -2688 -288 -2528 3 polygon
+1 1.000 -288 -2816 -416 -2944 -416 -3200 -352 -3264 4 polygon
+1 1.000 -288 -3104 -288 -3232 -256 -3264 3 polygon
+1 1.000 -160 -3264 -160 -2688 0 -2528 3 polygon
+1 1.000 0 -2816 -128 -2944 -128 -3168 -32 -3264 4 polygon
+1 1.000 0 -3104 96 -3200 96 -3264 3 polygon
+1 1.000 192 -3264 128 -3200 128 -2688 288 -2528 4 polygon
+1 1.000 2464 224 2432 192 2240 192 2176 128 2176 -64 2016 -224 6 polygon
+1 1.000 2304 64 2336 96 2464 96 3 polygon
+1 1.000 2464 0 2400 -64 2240 -64 2176 -128 2176 -288 2112 -352 1872 -352 1728 
+-512 8 polygon
+1 1.000 2304 -224 2400 -128 2464 -128 3 polygon
+1 1.000 2016 -512 2176 -352 2368 -352 2432 -288 2432 -256 2464 -224 6 polygon
+1 1.000 1728 -800 1888 -640 2080 -640 2144 -576 2144 -448 2208 -384 2432 -384 
+2464 -352 8 polygon
+1 1.000 2304 -512 2336 -480 2464 -480 3 polygon
+1 1.000 2016 -800 2176 -640 2368 -640 2432 -576 2464 -576 5 polygon
+1 1.000 2304 -800 2432 -672 2464 -672 3 polygon
+1 1.000 1728 -1088 1888 -928 2368 -928 2432 -864 2432 -832 2464 -800 6 polygon
+1 1.000 2016 -1088 2144 -960 2400 -960 2464 -896 4 polygon
+1 1.000 2304 -1088 2368 -1024 2464 -1024 3 polygon
+1 1.000 1728 -1376 1888 -1216 2368 -1216 2464 -1120 4 polygon
+1 1.000 2016 -1376 2144 -1248 2464 -1248 3 polygon
+1 1.000 2304 -1376 2464 -1376 2 polygon
+1 1.000 1728 -1664 1888 -1504 2400 -1504 2464 -1440 4 polygon
+1 1.000 2016 -1664 2144 -1536 2432 -1536 2464 -1568 4 polygon
+1 1.000 2304 -1664 2336 -1696 2464 -1696 3 polygon
+1 1.000 1728 -1952 1888 -1792 2464 -1792 3 polygon
+1 1.000 2016 -1952 2144 -1824 2400 -1824 2464 -1888 4 polygon
+1 1.000 2304 -1952 2368 -2016 2464 -2016 3 polygon
+1 1.000 1728 -2240 1888 -2080 2400 -2080 2464 -2144 4 polygon
+1 1.000 2016 -2240 2144 -2112 2368 -2112 2432 -2176 2432 -2208 2464 -2240 6 
+polygon
+1 1.000 2304 -2240 2432 -2368 2464 -2368 3 polygon
+1 1.000 2464 -2464 2368 -2368 1888 -2368 1728 -2528 4 polygon
+1 1.000 2304 -2528 2336 -2560 2464 -2560 3 polygon
+1 1.000 2016 -2528 2144 -2656 2432 -2656 2464 -2688 4 polygon
+1 1.000 2016 -2816 2144 -2688 2368 -2688 2464 -2784 4 polygon
+1 1.000 2304 -2816 2400 -2912 2464 -2912 3 polygon
+1 1.000 1728 -2816 1856 -2944 2368 -2944 2464 -3040 4 polygon
+1 1.000 2304 -3104 2336 -3136 2464 -3136 3 polygon
+1 1.000 2016 -3104 2144 -3232 2464 -3232 3 polygon
+1 1.000 1152 -3104 1216 -3168 1216 -3264 3 polygon
+1 1.000 1152 -2816 1280 -2944 1280 -3232 1312 -3264 4 polygon
+1 1.000 1152 -2528 1312 -2688 1312 -3200 1344 -3232 1408 -3232 1440 -3264 6 
+polygon
+1 1.000 1440 -3104 1536 -3200 1536 -3264 3 polygon
+1 1.000 1440 -2816 1568 -2976 1568 -3200 1632 -3264 4 polygon
+1 1.000 1728 -3104 1984 -3360 2464 -3360 3 polygon
+1 1.000 1440 -2528 1600 -2688 1600 -3168 1664 -3232 1728 -3232 1760 -3264 6 
+polygon
+1 1.000 864 -2528 1024 -2688 1024 -3168 1088 -3232 1088 -3264 5 polygon
+1 1.000 864 -2816 992 -2944 992 -3264 3 polygon
+1 1.000 864 -3104 864 -3264 2 polygon
+1 1.000 576 -2528 736 -2688 736 -3264 3 polygon
+1 1.000 576 -2816 704 -2944 704 -3200 640 -3264 4 polygon
+1 1.000 576 -3104 544 -3136 544 -3264 3 polygon
+1.000 0.000 0.000 scb
+1 2.000 -408 152 -1032 864 2 polygon
+1 2.000 -344 152 -920 864 2 polygon
+1 2.000 -280 152 -808 864 2 polygon
+1 2.000 -216 152 -696 864 2 polygon
+1 2.000 -152 152 -584 864 2 polygon
+1 2.000 -88 152 -472 864 2 polygon
+1 2.000 -24 152 -360 864 2 polygon
+1 2.000 40 152 -248 864 2 polygon
+1 2.000 104 152 -136 864 2 polygon
+1 2.000 168 152 -24 864 2 polygon
+1 2.000 232 152 88 864 2 polygon
+1 2.000 296 152 200 864 2 polygon
+1 2.000 360 152 312 864 2 polygon
+1 2.000 424 152 424 864 2 polygon
+1 2.000 488 152 544 864 2 polygon
+1 2.000 552 152 640 864 2 polygon
+1 2.000 616 152 752 864 2 polygon
+1 2.000 680 152 864 864 2 polygon
+1 2.000 744 152 976 864 2 polygon
+1 2.000 808 152 1088 864 2 polygon
+1 2.000 872 152 1200 864 2 polygon
+1 2.000 936 152 1312 864 2 polygon
+1 2.000 1000 152 1424 864 2 polygon
+1 2.000 1064 152 1536 864 2 polygon
+1 2.000 1128 152 1648 864 2 polygon
+1 2.000 1192 152 1760 864 2 polygon
+1 2.000 1256 152 1872 864 2 polygon
+1 2.000 1368 -8 2528 888 2 polygon
+1 2.000 1368 -72 2528 776 2 polygon
+1 2.000 1368 -136 2528 664 2 polygon
+1 2.000 1368 -200 2528 552 2 polygon
+1 2.000 1368 -264 2528 440 2 polygon
+1 2.000 1368 -328 2528 328 2 polygon
+1 2.000 1368 -392 2528 216 2 polygon
+1 2.000 1368 -456 2528 104 2 polygon
+1 2.000 1368 -520 2528 -8 2 polygon
+1 2.000 1368 -584 2528 -120 2 polygon
+1 2.000 1368 -648 2528 -232 2 polygon
+1 2.000 1368 -712 2528 -344 2 polygon
+1 2.000 1368 -776 2528 -456 2 polygon
+1 2.000 1368 -840 2528 -568 2 polygon
+1 2.000 1368 -904 2528 -680 2 polygon
+1 2.000 1368 -968 2528 -792 2 polygon
+1 2.000 1368 -1032 2528 -904 2 polygon
+1 2.000 1368 -1096 2528 -1016 2 polygon
+1 2.000 1368 -1160 2528 -1128 2 polygon
+1 2.000 1368 -1224 2528 -1240 2 polygon
+1 2.000 1368 -1288 2528 -1352 2 polygon
+1 2.000 1368 -1352 2528 -1464 2 polygon
+1 2.000 1368 -1416 2528 -1576 2 polygon
+1 2.000 1368 -1480 2528 -1688 2 polygon
+1 2.000 1368 -1544 2528 -1800 2 polygon
+1 2.000 1368 -1608 2528 -1912 2 polygon
+1 2.000 1368 -1672 2528 -2024 2 polygon
+1 2.000 1368 -1736 2528 -2136 2 polygon
+1 2.000 1368 -1800 2528 -2248 2 polygon
+1 2.000 1368 -1864 2528 -2360 2 polygon
+1 2.000 1368 -1928 2528 -2472 2 polygon
+1 2.000 1368 -1992 2528 -2584 2 polygon
+1 2.000 1368 -2056 2528 -2696 2 polygon
+1 2.000 1368 -2120 2528 -2808 2 polygon
+1 2.000 1368 -2184 2528 -2920 2 polygon
+1 2.000 1368 -2248 2528 -3032 2 polygon
+1 2.000 1368 -2312 2528 -3144 2 polygon
+1 2.000 1368 -2376 2528 -3256 2 polygon
+1 2.000 1368 -2440 2528 -3368 2 polygon
+1 2.000 1224 -2600 1768 -3328 2 polygon
+1 2.000 1160 -2600 1656 -3328 2 polygon
+1 2.000 1000 -2616 1544 -3328 2 polygon
+1 2.000 936 -2616 1432 -3328 2 polygon
+1 2.000 872 -2616 1320 -3328 2 polygon
+1 2.000 808 -2616 1208 -3328 2 polygon
+1 2.000 744 -2616 1096 -3328 2 polygon
+1 2.000 680 -2616 984 -3328 2 polygon
+1 2.000 616 -2616 872 -3328 2 polygon
+1 2.000 552 -2616 760 -3328 2 polygon
+1 2.000 488 -2616 648 -3328 2 polygon
+1 2.000 424 -2616 536 -3328 2 polygon
+1 2.000 232 -2616 200 -3328 2 polygon
+1 2.000 168 -2616 88 -3328 2 polygon
+1 2.000 104 -2616 -24 -3328 2 polygon
+1 2.000 40 -2616 -136 -3328 2 polygon
+1 2.000 -24 -2616 -248 -3328 2 polygon
+1 2.000 -88 -2616 -360 -3328 2 polygon
+1 2.000 -152 -2616 -472 -3328 2 polygon
+1 2.000 -216 -2616 -584 -3328 2 polygon
+1 2.000 -280 -2616 -696 -3328 2 polygon
+1 2.000 -344 -2616 -808 -3328 2 polygon
+1 2.000 -408 -2616 -920 -3328 2 polygon
+1 2.000 -520 -2440 -1664 -3368 2 polygon
+1 2.000 -520 -2376 -1664 -3256 2 polygon
+1 2.000 -520 -2312 -1664 -3144 2 polygon
+1 2.000 -520 -2248 -1664 -3032 2 polygon
+1 2.000 -520 -2184 -1664 -2920 2 polygon
+1 2.000 -520 -2120 -1664 -2808 2 polygon
+1 2.000 -520 -2056 -1664 -2696 2 polygon
+1 2.000 -520 -1992 -1664 -2584 2 polygon
+1 2.000 -520 -1928 -1664 -2472 2 polygon
+1 2.000 -520 -1864 -1664 -2360 2 polygon
+1 2.000 -520 -1800 -1664 -2248 2 polygon
+1 2.000 -520 -1736 -1664 -2136 2 polygon
+1 2.000 -520 -1672 -1664 -2024 2 polygon
+1 2.000 -520 -1608 -1664 -1912 2 polygon
+1 2.000 -520 -1544 -1664 -1800 2 polygon
+1 2.000 -520 -1480 -1664 -1688 2 polygon
+1 2.000 -520 -1416 -1664 -1576 2 polygon
+1 2.000 -520 -1352 -1664 -1464 2 polygon
+1 2.000 -520 -1288 -1664 -1352 2 polygon
+1 2.000 -520 -1232 -1664 -1232 2 polygon
+1 2.000 -520 -1160 -1664 -1128 2 polygon
+1 2.000 -520 -1096 -1664 -1016 2 polygon
+1 2.000 -520 -1032 -1664 -904 2 polygon
+1 2.000 -520 -968 -1664 -792 2 polygon
+1 2.000 -520 -904 -1664 -680 2 polygon
+1 2.000 -520 -840 -1664 -568 2 polygon
+1 2.000 -520 -776 -1664 -456 2 polygon
+1 2.000 -520 -712 -1664 -344 2 polygon
+1 2.000 -520 -648 -1664 -232 2 polygon
+1 2.000 -520 -584 -1664 -120 2 polygon
+1 2.000 -520 -520 -1664 -8 2 polygon
+1 2.000 -520 -456 -1664 104 2 polygon
+1 2.000 -520 -392 -1664 216 2 polygon
+1 2.000 -520 -328 -1664 328 2 polygon
+1 2.000 -520 -264 -1664 440 2 polygon
+1 2.000 -520 -200 -1664 552 2 polygon
+1 2.000 -520 -136 -1664 664 2 polygon
+1 2.000 -520 -72 -1664 776 2 polygon
+1 2.000 -520 -8 -1664 888 2 polygon
+0.400 0.400 0.400 scb
+1 2.000 2016 -3456 2016 -3872 2 polygon
+1 2.000 2304 -3456 2304 -3872 2 polygon
+1 2.000 2016 -3776 2304 -3776 2 polygon
+2.000 90.000 2304 -3776 generic::arrowhead
+-2.000 270.000 2016 -3776 generic::arrowhead
+sce
+(0.5mm) {/Helvetica cf} 2 29 0.000 2.000 2160 -3840 label
+0.400 0.400 0.400 scb
+1 2.000 -2336 760 -2560 760 2 polygon
+1 2.000 -2336 888 -2560 888 2 polygon
+1 2.000 -2496 984 -2496 888 2 polygon
+1 2.000 -2496 760 -2496 664 2 polygon
+2.000 0.000 -2496 760 generic::arrowhead
+-2.000 180.000 -2496 888 generic::arrowhead
+sce
+(0.22mm) {/Helvetica cf} 2 21 0.000 2.000 -2480 816 label
+1 1.000 288 -3104 288 -3232 320 -3264 3 polygon
+1 1.000 288 -2816 416 -2944 416 -3264 3 polygon
+1.000 0.000 0.000 scb
+1 2.000 360 -2616 424 -3328 2 polygon
+1 2.000 296 -2616 312 -3328 2 polygon
+pgsave restore showpage
+
+%%Trailer
+XCIRCsave restore
+%%EOF
