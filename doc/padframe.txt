@@ -1,0 +1,215 @@
+Panamax padframe floorplanning
+(subject to change)
+-------------------------------
+Caravel footprint:
+Horizontal space between corner cells = 3184um
+Vertical space between corner cells = 4784um
+
+Pad widths:
+GPIO = 80um
+Power/ground = 75um
+GPIO OVT = 140um
+SIO = 480um
+XRES = 75um
+analog = 75um
+
+top = 9 power/ground, 16 gpio, 2 analog
+	9 * 75 + 16 * 80 + 2 * 75 = 2105
+	#pads = 27, #spacers = 28
+	3184 - 2105 = 1079
+	1079 / 28 = 38.536
+	Use 2*20 spacers inside corners, 40 * 26 = 1040
+	1*20 on left, 19 on right (10 + 5 + 4 * 1)
+
+bottom = 9 power/ground, 9 gpio, 1 xres, 4 analog, 1 sio
+	9 * 75 + 9 * 80 + 5 * 75 + 1 * 480 = 2250 
+	#pads = 24, #spacers = 25
+	3184 - 2250 = 934
+	934 / 25 = 37.36
+	Use 2*20 spacers inside corners, 40 * 22 = 880
+	3*20 on left, 3*20 + 5 + 4 * 1 on right
+
+left, right = 15 power/ground, 16 gpio, 8 ovt
+	15 * 75 + 16 * 80 + 8 * 140 = 3525
+	#pads = 39, #spacers = 40
+	4784 - 3525 = 1259
+	1259 / 40 = 31
+	Use 1*20 + 1*10 spacers inside corners, 30 * 38 = 1140
+	Use 3*20 on bottom, 2*20 + 5 + 4 * 1 on top
+
+Final adjustments:  Move the extra space from the corners to positions
+between neighboring power and ground pads:
+1 position on top,
+4 positions each bottom, left, and right.
+
+--------------------------------------------
+Pin positions
+--------------------------------------------
+These are the coordinates:
+Bottom row pad Y center = 64.6um (except SIO pads)
+Bottom row SIO pad Y center = 90.34um
+Left side pad X center = 64.6um
+Right side pad X center = 3523.365um
+Top row pad Y center = 5123.8um
+
+Bottom row pad X centers, from left to right:
+272.5, 382.5, 497.5, 607.5, 722.5, 837.5, 952.5, 1067.5, 1177.5, 1287.5,
+1397.5, 1507.5, 1617.5, 1727.5, 1857.5, 1967.5, 2082.5, 2197.5, 2312.5,
+2427.5, 2537.5, 2667.5, 2797.5, 3098.485, 3211.51
+
+Left side Y centers, from bottom to top:
+271.5, 381.5, 491.5, 601.5, 711.5, 816.5, 941.5, 1051.5, 1161.5, 1271.5,
+1381.5, 1486.5, 1591.5, 1716.5, 1838.33, 2008.33, 2178.33, 2348.33,
+2501.5, 2606.5, 2728.33, 2898.33, 3068.33, 3238.33, 3391.5, 3496.5,
+3621.5, 3726.5, 3836.5, 3946.5, 4056.5, 4166.5, 4271.5, 4381.5, 4491.5,
+4601.5, 4711.5, 4816.5, 4941.5
+
+Top row pad X centers, from left to right:
+261.5, 381.5, 501.5, 621.5, 741.5, 856.5, 971.5, 1091.5, 1211.5, 1331.5,
+1451.5, 1566.5, 1681.5, 1796.5, 1911.5, 2026.5, 2146.5, 2266.5, 2386.5,
+2506.5, 2621.5, 2736.5, 2856.5, 2976.5, 3096.5, 3216.5, 3331.5
+
+Right side Y centers, from bottom to top:
+267.5, 372.5, 482.5, 592.5, 702.5, 812.5, 917.5, 1022.5, 1132.5, 1242.5,
+1352.5, 1462.5, 1567.5, 1692.5, 1845.67, 2015.67, 2185.67, 2355.67,
+2477.5, 2602.5, 2755.67, 2925.67, 3095.67, 3265.67, 3387.5, 3492.5,
+3617.5, 3722.5, 3827.5, 3937.5, 4047.5, 4157.5, 4267.5, 4372.5, 4482.5,
+4592.5, 4702.5, 4812.5, 4937.5
+
+CORE PINS (ordering according to orientation relative to bottom)
+------------------------------------------------------
+GPIO cell pins (m2 on top/bottom, m3 on left/right)
+   TIE_LO_ESD
+   IN
+   TIE_HI_ESD
+   ENABLE_VDDIO
+   SLOW
+   PAD_A_ESD_0_H
+   PAD_A_ESD_1_H (unused)
+   DM[1]
+   PAD_A_NOESD_H
+   ANALOG_EN
+   DM[0]
+   ANALOG_POL
+   INP_DIS
+   ENABLE_INP_H
+   ENABLE_H
+   HLD_H_N
+   ANALOG_SEL
+   DM[2]
+   HLD_OVR
+   OUT
+   ENABLE_VSWITCH_H
+   ENABLE_VDDA_H
+   VTRIP_SEL
+   IB_MODE_SEL
+   OE_N
+   IN_H
+
+   one		(signal added to connection cell)
+   zero		(signal added to connection cell)
+
+XRES cell pins (m2)
+   TIE_WEAK_HI_H
+   DISABLE_PULLUP_H
+   TIE_HI_ESD
+   XRES_H_N
+   TIE_LO_ESD
+   EN_VDDIO_SIG_H
+   FILT_IN_H
+   PAD_A_ESD_H
+   PULLUP_H
+   ENABLE_H
+   ENABLE_VDDIO
+
+SIO macro pins (m2)
+   vinref_dft
+   voutref_dft
+   enable_h
+   vref_sel<1>
+   vref_sel<0>
+   enable_vdda_h
+   dft_refgen
+   voh_sel<2>
+   voh_sel<1>
+   voh_sel<0>
+   amuxbus_b
+   amuxbus_a
+   vreg_en_refgen
+   ibuf_sel
+   vohref
+   hld_h_n_refgen
+   vtrip_sel_refgen
+   pad_a_esd_0_h<1>
+   pad_a_noesd_h<1>
+   inp_dis<1>
+   tie_lo_esd<1>
+   out<1>
+   vtrip_sel<1>
+   ibuf_sel<1>
+   hld_h_n<1>
+   hld_ovr<1>
+   in<1>
+   in_h<1>
+   oe_n<1>
+   slow<1>
+   vreg_en<1>
+   enable_h
+   dm1<2>
+   dm1<1>
+   dm1<0>
+   pad_a_esd_1_h<1>	(unused?)
+   pad_a_esd_1_h<0>	(unused?)
+   dm0<0>
+   dm0<1>
+   dm0<2>
+   (enable_h is redundant and connected across)
+   vreg_en<0>
+   slow<0>
+   oe_n<0>
+   in_h<0>
+   in<0>
+   hld_ovr<0>
+   hld_h_n<0>
+   ibuf_sel<0>
+   vtrip_sel<0>
+   out<0>
+   tie_lo_esd<0>
+   inp_dis<0>
+   pad_a_noesd_h<0>
+   pad_a_esd_0_h<0>
+ 
+
+OVT cell pins (m3)
+
+   TIE_HI_ESD
+   DM[0]
+   DM[1]
+   SLOW
+   OE_N
+   TIE_LO_ESD
+   DM[2]
+   INP_DIS
+   ENABLE_VDDIO_LV
+   VTRIP_SEL
+   IB_MODE_SEL[0]
+   OUT
+   IB_MODE_SEL[1]
+   SLEW_CTL[0]
+   ANALOG_POL
+   ANALOG_SEL
+   SLEW_CTL[1]
+   HYS_TRIM
+   VINREF
+   HLD_OVR
+   ENABLE_H
+   IN
+   HLD_H_N
+   ENABLE_VDDA_H
+   ANALOG_EN
+   ENABLE_INP_H
+   ENABLE_VSWITCH_H
+   PAD_A_NOESD_H
+   PAD_A_ESD_0_H
+   PAD_A_ESD_1_H (unused?)
+

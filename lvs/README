@@ -1,0 +1,9 @@
+Caravel Panamax padframe LVS:
+Run
+	./run_lvs_panamax.sh
+
+NOTE:  As of Februrary 2025, the padframe is not LVS clean at the
+transistor level because there are issues with extractiong the
+PDK library I/O cells for the GPIO OVT and SIO pads.  The padframe
+is LVS clean when black-boxing the I/O cells.
+

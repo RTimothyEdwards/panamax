@@ -1,0 +1,58 @@
+Registered signals between the padframe and Frigate core
+(that are not part of the analog subsystem or timing frontend)
+
+                                        Register namebit       Signal name
+-------------------------------------------------------------------------------
+A. amuxbus splitters				muxsplit_control
+    Connect amuxbusA to right side		0		muxsplit_se_switch_aa_sl
+    Isolate amuxbusA between right and bottom	1	        muxsplit_se_switch_aa_s0
+    Isolate amuxbusB between right and bottom	2	        muxsplit_se_switch_bb_s0
+    Connect amuxbusB to right side		3	        muxsplit_se_switch_bb_sl
+    Connect amuxbusB to bottom side		4	        muxsplit_se_switch_bb_sr
+    Connect amuxbusA to bottom side		5	        muxsplit_se_switch_aa_sr
+
+    Connect amuxbusA to bottom side		8	        muxsplit_sw_switch_aa_sl
+    Isolate amuxbusA between bottom and left	9		muxsplit_sw_switch_aa_s0
+    Isolate amuxbusB between bottom and left	10      	muxsplit_sw_switch_bb_s0
+    Connect amuxbusB to bottom side		11	        muxsplit_sw_switch_bb_sl
+    Connect amuxbusB to left side		12	        muxsplit_sw_switch_bb_sr
+    Connect amuxbusA to left side		13	        muxsplit_sw_switch_aa_sr
+
+    Connect amuxbusA to top side		16	        muxsplit_ne_switch_aa_sl
+    Isolate amuxbusA between top and right	17	        muxsplit_ne_switch_aa_s0
+    Isolate amuxbusB between top and right	18	        muxsplit_ne_switch_bb_s0
+    Connect amuxbusB to top side		19	        muxsplit_ne_switch_bb_sl
+    Connect amuxbusB to right side		20	        muxsplit_ne_switch_bb_sr
+    Connect amuxbusA to right side		21	        muxsplit_ne_switch_aa_sr
+
+    Connect amuxbusA to left side		22	        muxsplit_nw_switch_aa_sl
+    Isolate amuxbusA between left and top	23	        muxsplit_nw_switch_aa_s0
+    Isolate amuxbusB between left and top	24	        muxsplit_nw_switch_bb_s0
+    Connect amuxbusB to left side		25	        muxsplit_nw_switch_bb_sl
+    Connect amuxbusB to top side		26	        muxsplit_nw_switch_bb_sr
+    Connect amuxbusA to top side		27	        muxsplit_nw_switch_aa_sr
+
+-------------------------------------------------------------------------------------
+There are no registered signals for driving the power detection circuit at the
+bottom of the chip.  "pwrdet_vddd_present_vddio_hv" may be used to prevent the
+digital system from coming out of reset until the 1.8V supply is valid and
+stable.  However, it may be preferable to just run the reset through one of the
+in/out pairs.  Otherwise, the in/out pairs are unused, and the inputs should be
+grounded.
+-------------------------------------------------------------------------------------
+					power_detect_control
+							        pwrdet_in1_vddio_hv
+							        pwrdet_in1_vddd_hv
+							        pwrdet_in2_vddio_hv
+							        pwrdet_in2_vddd_hv
+							        pwrdet_in3_vddio_hv
+							        pwrdet_in3_vddd_hv
+							        pwrdet_out1_vddio_hv
+							        pwrdet_out1_vddd_hv
+							        pwrdet_out2_vddio_hv
+							        pwrdet_out2_vddd_hv
+							        pwrdet_out3_vddio_hv
+							        pwrdet_out3_vddd_hv
+							        pwrdet_vddio_present_vddd_hv
+							        pwrdet_vddd_present_vddio_hv
+

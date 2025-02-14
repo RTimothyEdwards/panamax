@@ -1,0 +1,51 @@
+-----------------------------------------------------------
+The "Panamax" Padframe
+-----------------------------------------------------------
+General-purpose 129-pin padframe in SkyWater sky130
+-----------------------------------------------------------
+Created by Tim Edwards, Efabless Corporation
+-----------------------------------------------------------
+
+The Panamax padframe design is an update of the padframe used for the
+Caravel and Caravan harness chips, also known as "caravel_openframe"
+(although it does not have its own repository but exists in the caravel
+design at https://github.com/efabless/caravel).
+
+The padframe was designed to accommodate a wider range of I/O types and
+a much larger number of GPIO.  There are a total of 9 banks of 8 GPIOs
+each, for a total of 72 GPIOs, 16 of which are overvoltage-tolerant
+pads.  In addition, there is one differential SIO cell which can be
+configured for use as two independent GPIOs, one dedicated reset pin,
+and one additional GPIO that is not part of a bank.  The power supplies
+are similar to the original Caravel design with two 1.8V domains and two
+3.3V domains ("user" domains in the Caravel and Frigate harness chip
+designs), one 1.8V core domain and one 3.3V ESD I/O domain, but with
+two core analog domains (one more than Caravel/Caravan).  In addition,
+there are six analog pads such that there is no need for separate
+analog and digital use cases.
+
+See the documentation in the doc/ directory for more details.
+
+Note:  "Panamax" refers to the definition of the largest ship that
+can fit through the Panama Canal.  The "Panamax" padframe does not
+have the absolute maximum number of pads that could be fit in the
+size of a standard "Caravel" harness chip area, but it is close to
+it.
+
+--------------------------------------------------------------
+
+Issues list (as of Feb. 2025):
+
+1. The verilog generation script is unfinished and does not generate a
+   valid verilog module---The final verilog edits have been done by hand.
+
+2. Magic needs development work to fix the issue with extracting devices
+   with 45-degree angles on devices, which happens in the flanged-gate
+   ESD structures in the I/O pads.  Without that, the GPIO OVT and SIO
+   cells will not LVS correctly.
+
+3. The DEF file has incorrect placement of subcells.  This was generated
+   by magic and needs to be fixed;  there is some issue with the cell
+   origin translation between the magic database and DEF.
+
+--------------------------------------------------------------
