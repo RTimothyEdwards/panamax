@@ -1211,7 +1211,7 @@ box position 58.25um 55.75um
 getcell user_id_textblock
 
 box position 3354.7um 32.4um
-getcell copyright_block_mlsoc
+getcell copyright_block_frigate
 
 box position 21.5um 5039.2um
 getcell caravel_logo

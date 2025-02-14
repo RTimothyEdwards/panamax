@@ -2891,7 +2891,7 @@ use caravel_motto  caravel_motto_0
 timestamp 1637698310
 transform 1 0 -351120 0 1 1002542
 box 373080 14838 395618 19242
-use copyright_block_mlsoc  copyright_block_mlsoc_0
+use copyright_block_frigate  copyright_block_frigate_0
 timestamp 1706137558
 transform 1 0 671202 0 1 16828
 box -262 -10348 30014 2764

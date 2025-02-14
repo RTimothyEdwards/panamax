@@ -1348,7 +1348,7 @@ COMPONENTS 537 ;
       + PLACED ( 1096000 0 ) S ;
    - sio_macro_pads sky130_fd_io__top_sio_macro
       + PLACED ( 1148000 0 ) S ;
-   - copyright_block_mlsoc_0 copyright_block_mlsoc
+   - copyright_block_frigate_0 copyright_block_frigate
       + PLACED ( 1342404 33656 ) N ;
    - sky130_ef_io__com_bus_slice_20um_26 sky130_ef_io__com_bus_slice_20um
       + PLACED ( 1340000 0 ) S ;
@@ -22802,7 +22802,7 @@ NETS 4465 ;
    - sky130_ef_io__com_bus_slice_20um_121/VSSIO
        ( sky130_ef_io__com_bus_slice_20um_121 VSSIO ) ;
    - corner_sw/VSSD ( corner_sw VSSD ) ( user_id_textblock_0 VSUBS )
-       ( copyright_block_mlsoc_0 VSUBS ) ;
+       ( copyright_block_frigate_0 VSUBS ) ;
    - gpio8_0_pad/VDDIO ( gpio8_0_pad VDDIO ) ;
    - gpio8_0_pad/VSSIO ( gpio8_0_pad VSSIO )
        ( sky130_ef_io__com_bus_slice_5um_3 VSSIO ) ;
