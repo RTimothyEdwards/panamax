@@ -3508,7 +3508,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 168610 81620 ) N ;
    - select_in_h + NET select_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 169718 81620 ) N ;
@@ -3708,7 +3708,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 258610 81620 ) N ;
    - gpio8_0_in_h + NET gpio8_0_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 259718 81620 ) N ;
@@ -3848,7 +3848,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 304610 81620 ) N ;
    - gpio8_1_in_h + NET gpio8_1_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 305718 81620 ) N ;
@@ -3988,7 +3988,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 350610 81620 ) N ;
    - gpio8_2_in_h + NET gpio8_2_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 351718 81620 ) N ;
@@ -4128,7 +4128,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 396610 81620 ) N ;
    - gpio8_3_in_h + NET gpio8_3_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 397718 81620 ) N ;
@@ -4288,7 +4288,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 802610 81620 ) N ;
    - gpio8_4_in_h + NET gpio8_4_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 803718 81620 ) N ;
@@ -4428,7 +4428,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 848610 81620 ) N ;
    - gpio8_5_in_h + NET gpio8_5_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 849718 81620 ) N ;
@@ -4568,7 +4568,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 894610 81620 ) N ;
    - gpio8_6_in_h + NET gpio8_6_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 895718 81620 ) N ;
@@ -4708,7 +4708,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 940610 81620 ) N ;
    - gpio8_7_in_h + NET gpio8_7_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 941718 81620 ) N ;
@@ -4803,12 +4803,12 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -300 ) ( 52 300 )        + PLACED ( 1051744 80900 ) N ;
    - sio_vinref_dft + NET sio_vinref_dft
-     + DIRECTION INPUT
+     + DIRECTION INOUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -128 -300 ) ( 128 300 )        + PLACED ( 1153460 102386 ) N ;
    - sio_voutref_dft + NET sio_voutref_dft
-     + DIRECTION INPUT
+     + DIRECTION INOUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -128 -300 ) ( 128 300 )        + PLACED ( 1154060 102386 ) N ;
@@ -5023,7 +5023,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -300 ) ( 52 300 )        + PLACED ( 1281062 102386 ) N ;
    - sio_in_h[0] + NET sio_in_h[0]
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -52 -300 ) ( 52 300 )        + PLACED ( 1282986 102386 ) N ;
@@ -6908,7 +6908,7 @@ PINS 2503 ;
      + PORT
         + LAYER met3 ( -300 -60 ) ( 300 60 )        + PLACED ( 1353700 1004950 ) N ;
    - vref_e_vinref + NET vref_e_vinref
-     + DIRECTION OUTPUT
+     + DIRECTION INOUT
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -128 ) ( 300 128 )        + PLACED ( 1353700 1014078 ) N ;
@@ -6943,7 +6943,7 @@ PINS 2503 ;
      + PORT
         + LAYER met3 ( -300 -60 ) ( 300 60 )        + PLACED ( 1353700 1027190 ) N ;
    - vcap_e_cpos + NET vcap_e_cpos
-     + DIRECTION INPUT
+     + DIRECTION INOUT
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -400 ) ( 300 400 )        + PLACED ( 1354300 1032722 ) N ;
@@ -8893,7 +8893,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 1270988 1993580 ) N ;
    - gpio3_0_in_h + NET gpio3_0_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 1269880 1993580 ) N ;
@@ -9033,7 +9033,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 1222988 1993580 ) N ;
    - gpio3_1_in_h + NET gpio3_1_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 1221880 1993580 ) N ;
@@ -9173,7 +9173,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 1174988 1993580 ) N ;
    - gpio3_2_in_h + NET gpio3_2_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 1173880 1993580 ) N ;
@@ -9313,7 +9313,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 1126988 1993580 ) N ;
    - gpio3_3_in_h + NET gpio3_3_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 1125880 1993580 ) N ;
@@ -9453,7 +9453,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 986988 1993580 ) N ;
    - gpio3_4_in_h + NET gpio3_4_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 985880 1993580 ) N ;
@@ -9593,7 +9593,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 938988 1993580 ) N ;
    - gpio3_5_in_h + NET gpio3_5_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 937880 1993580 ) N ;
@@ -9733,7 +9733,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 890988 1993580 ) N ;
    - gpio3_6_in_h + NET gpio3_6_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 889880 1993580 ) N ;
@@ -9873,7 +9873,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 842988 1993580 ) N ;
    - gpio3_7_in_h + NET gpio3_7_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 841880 1993580 ) N ;
@@ -10023,7 +10023,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 564988 1993580 ) N ;
    - gpio4_0_in_h + NET gpio4_0_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 563880 1993580 ) N ;
@@ -10163,7 +10163,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 516988 1993580 ) N ;
    - gpio4_1_in_h + NET gpio4_1_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 515880 1993580 ) N ;
@@ -10303,7 +10303,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 468988 1993580 ) N ;
    - gpio4_2_in_h + NET gpio4_2_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 467880 1993580 ) N ;
@@ -10443,7 +10443,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 420988 1993580 ) N ;
    - gpio4_3_in_h + NET gpio4_3_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 419880 1993580 ) N ;
@@ -10583,7 +10583,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 280988 1993580 ) N ;
    - gpio4_4_in_h + NET gpio4_4_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 279880 1993580 ) N ;
@@ -10723,7 +10723,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 232988 1993580 ) N ;
    - gpio4_5_in_h + NET gpio4_5_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 231880 1993580 ) N ;
@@ -10863,7 +10863,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 184988 1993580 ) N ;
    - gpio4_6_in_h + NET gpio4_6_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 183880 1993580 ) N ;
@@ -11003,7 +11003,7 @@ PINS 2503 ;
      + PORT
         + LAYER met2 ( -52 -200 ) ( 52 200 )        + PLACED ( 136988 1993580 ) N ;
    - gpio4_7_in_h + NET gpio4_7_in_h
-     + DIRECTION INPUT
+     + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
         + LAYER met2 ( -124 -200 ) ( 124 200 )        + PLACED ( 135880 1993580 ) N ;
@@ -12853,7 +12853,7 @@ PINS 2503 ;
      + PORT
         + LAYER met3 ( -300 -60 ) ( 300 60 )        + PLACED ( 81500 1027050 ) N ;
    - vref_w_vinref + NET vref_w_vinref
-     + DIRECTION OUTPUT
+     + DIRECTION INOUT
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -128 ) ( 300 128 )        + PLACED ( 81500 1017922 ) N ;

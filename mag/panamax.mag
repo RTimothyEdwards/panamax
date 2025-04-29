@@ -5577,7 +5577,7 @@ port 190 nsew signal input
 flabel metal2 s 84279 40710 84331 40910 0 FreeSans 320 90 0 0 select_oe_n
 port 191 nsew signal input
 flabel metal2 s 84797 40710 84921 40910 0 FreeSans 320 90 0 0 select_in_h
-port 192 nsew signal input
+port 192 nsew signal output
 flabel metal2 s 67493 40710 67545 40910 0 FreeSans 320 90 0 0 select_zero
 port 193 nsew signal output
 flabel metal2 s 67131 40710 67183 40910 0 FreeSans 320 90 0 0 select_one
@@ -5657,7 +5657,7 @@ port 230 nsew signal input
 flabel metal2 s 129279 40710 129331 40910 0 FreeSans 320 90 0 0 gpio8_0_oe_n
 port 231 nsew signal input
 flabel metal2 s 129797 40710 129921 40910 0 FreeSans 320 90 0 0 gpio8_0_in_h
-port 232 nsew signal input
+port 232 nsew signal output
 flabel metal2 s 112493 40710 112545 40910 0 FreeSans 320 90 0 0 gpio8_0_zero
 port 233 nsew signal output
 flabel metal2 s 112131 40710 112183 40910 0 FreeSans 320 90 0 0 gpio8_0_one
@@ -5713,7 +5713,7 @@ port 258 nsew signal input
 flabel metal2 s 152279 40710 152331 40910 0 FreeSans 320 90 0 0 gpio8_1_oe_n
 port 259 nsew signal input
 flabel metal2 s 152797 40710 152921 40910 0 FreeSans 320 90 0 0 gpio8_1_in_h
-port 260 nsew signal input
+port 260 nsew signal output
 flabel metal2 s 135493 40710 135545 40910 0 FreeSans 320 90 0 0 gpio8_1_zero
 port 261 nsew signal output
 flabel metal2 s 135131 40710 135183 40910 0 FreeSans 320 90 0 0 gpio8_1_one
@@ -5769,7 +5769,7 @@ port 286 nsew signal input
 flabel metal2 s 175279 40710 175331 40910 0 FreeSans 320 90 0 0 gpio8_2_oe_n
 port 287 nsew signal input
 flabel metal2 s 175797 40710 175921 40910 0 FreeSans 320 90 0 0 gpio8_2_in_h
-port 288 nsew signal input
+port 288 nsew signal output
 flabel metal2 s 158493 40710 158545 40910 0 FreeSans 320 90 0 0 gpio8_2_zero
 port 289 nsew signal output
 flabel metal2 s 158131 40710 158183 40910 0 FreeSans 320 90 0 0 gpio8_2_one
@@ -5825,7 +5825,7 @@ port 314 nsew signal input
 flabel metal2 s 198279 40710 198331 40910 0 FreeSans 320 90 0 0 gpio8_3_oe_n
 port 315 nsew signal input
 flabel metal2 s 198797 40710 198921 40910 0 FreeSans 320 90 0 0 gpio8_3_in_h
-port 316 nsew signal input
+port 316 nsew signal output
 flabel metal2 s 181493 40710 181545 40910 0 FreeSans 320 90 0 0 gpio8_3_zero
 port 317 nsew signal output
 flabel metal2 s 181131 40710 181183 40910 0 FreeSans 320 90 0 0 gpio8_3_one
@@ -5889,7 +5889,7 @@ port 346 nsew signal input
 flabel metal2 s 401279 40710 401331 40910 0 FreeSans 320 90 0 0 gpio8_4_oe_n
 port 347 nsew signal input
 flabel metal2 s 401797 40710 401921 40910 0 FreeSans 320 90 0 0 gpio8_4_in_h
-port 348 nsew signal input
+port 348 nsew signal output
 flabel metal2 s 384493 40710 384545 40910 0 FreeSans 320 90 0 0 gpio8_4_zero
 port 349 nsew signal output
 flabel metal2 s 384131 40710 384183 40910 0 FreeSans 320 90 0 0 gpio8_4_one
@@ -5945,7 +5945,7 @@ port 374 nsew signal input
 flabel metal2 s 424279 40710 424331 40910 0 FreeSans 320 90 0 0 gpio8_5_oe_n
 port 375 nsew signal input
 flabel metal2 s 424797 40710 424921 40910 0 FreeSans 320 90 0 0 gpio8_5_in_h
-port 376 nsew signal input
+port 376 nsew signal output
 flabel metal2 s 407493 40710 407545 40910 0 FreeSans 320 90 0 0 gpio8_5_zero
 port 377 nsew signal output
 flabel metal2 s 407131 40710 407183 40910 0 FreeSans 320 90 0 0 gpio8_5_one
@@ -6001,7 +6001,7 @@ port 402 nsew signal input
 flabel metal2 s 447279 40710 447331 40910 0 FreeSans 320 90 0 0 gpio8_6_oe_n
 port 403 nsew signal input
 flabel metal2 s 447797 40710 447921 40910 0 FreeSans 320 90 0 0 gpio8_6_in_h
-port 404 nsew signal input
+port 404 nsew signal output
 flabel metal2 s 430493 40710 430545 40910 0 FreeSans 320 90 0 0 gpio8_6_zero
 port 405 nsew signal output
 flabel metal2 s 430131 40710 430183 40910 0 FreeSans 320 90 0 0 gpio8_6_one
@@ -6057,7 +6057,7 @@ port 430 nsew signal input
 flabel metal2 s 470279 40710 470331 40910 0 FreeSans 320 90 0 0 gpio8_7_oe_n
 port 431 nsew signal input
 flabel metal2 s 470797 40710 470921 40910 0 FreeSans 320 90 0 0 gpio8_7_in_h
-port 432 nsew signal input
+port 432 nsew signal output
 flabel metal2 s 453493 40710 453545 40910 0 FreeSans 320 90 0 0 gpio8_7_zero
 port 433 nsew signal output
 flabel metal2 s 453131 40710 453183 40910 0 FreeSans 320 90 0 0 gpio8_7_one
@@ -6095,9 +6095,9 @@ port 449 nsew signal input
 flabel metal2 s 525846 40300 525898 40600 0 FreeSans 320 90 0 0 pwrdet_rst_por_hv_n
 port 450 nsew signal input
 flabel metal2 s 576666 51043 576794 51343 0 FreeSans 320 90 0 0 sio_vinref_dft
-port 451 nsew signal input
+port 451 nsew signal bidirectional
 flabel metal2 s 576966 51043 577094 51343 0 FreeSans 320 90 0 0 sio_voutref_dft
-port 452 nsew signal input
+port 452 nsew signal bidirectional
 flabel metal2 s 579167 51043 579219 51343 0 FreeSans 320 90 0 0 sio_vref_sel[1]
 port 453 nsew signal input
 flabel metal2 s 579317 51043 579369 51343 0 FreeSans 320 90 0 0 sio_vref_sel[0]
@@ -6183,7 +6183,7 @@ port 493 nsew signal input
 flabel metal2 s 640505 51043 640557 51343 0 FreeSans 320 90 0 0 sio_oe_n[0]
 port 494 nsew signal input
 flabel metal2 s 641467 51043 641519 51343 0 FreeSans 320 90 0 0 sio_in_h[0]
-port 495 nsew signal input
+port 495 nsew signal output
 flabel metal2 s 641547 51043 641599 51343 0 FreeSans 320 90 0 0 sio_in[0]
 port 496 nsew signal input
 flabel metal2 s 641691 51043 641760 51343 0 FreeSans 320 90 0 0 sio_hld_ovr[0]
@@ -6937,7 +6937,7 @@ port 870 nsew signal input
 flabel metal3 s 676700 502445 677000 502505 0 FreeSans 320 0 0 0 vref_e_ref_sel[0]
 port 871 nsew signal input
 flabel metal3 s 676700 506975 677000 507103 0 FreeSans 320 0 0 0 vref_e_vinref
-port 872 nsew signal output
+port 872 nsew signal bidirectional
 flabel metal3 s 676700 507799 677000 507859 0 FreeSans 320 0 0 0 vref_e_ref_sel[2]
 port 873 nsew signal input
 flabel metal3 s 676700 507997 677000 508057 0 FreeSans 320 0 0 0 vref_e_enable_h
@@ -6951,7 +6951,7 @@ port 877 nsew signal input
 flabel metal3 s 676700 513565 677000 513625 0 FreeSans 320 0 0 0 vref_e_ref_sel[3]
 port 878 nsew signal input
 flabel metal3 s 677000 516161 677300 516561 0 FreeSans 320 0 0 0 vcap_e_cpos
-port 879 nsew signal input
+port 879 nsew signal bidirectional
 flabel metal3 s 677000 545139 677300 545205 0 FreeSans 320 0 0 0 gpio1_4_tie_hi_esd
 port 880 nsew signal output
 flabel metal3 s 677000 549455 677300 549521 0 FreeSans 320 0 0 0 gpio1_4_dm[2]
@@ -7731,7 +7731,7 @@ port 1267 nsew signal input
 flabel metal2 s 635468 996690 635520 996890 0 FreeSans 320 90 0 0 gpio3_0_oe_n
 port 1268 nsew signal input
 flabel metal2 s 634878 996690 635002 996890 0 FreeSans 320 90 0 0 gpio3_0_in_h
-port 1269 nsew signal input
+port 1269 nsew signal output
 flabel metal2 s 652254 996690 652306 996890 0 FreeSans 320 90 0 0 gpio3_0_zero
 port 1270 nsew signal output
 flabel metal2 s 652616 996690 652668 996890 0 FreeSans 320 90 0 0 gpio3_0_one
@@ -7787,7 +7787,7 @@ port 1295 nsew signal input
 flabel metal2 s 611468 996690 611520 996890 0 FreeSans 320 90 0 0 gpio3_1_oe_n
 port 1296 nsew signal input
 flabel metal2 s 610878 996690 611002 996890 0 FreeSans 320 90 0 0 gpio3_1_in_h
-port 1297 nsew signal input
+port 1297 nsew signal output
 flabel metal2 s 628254 996690 628306 996890 0 FreeSans 320 90 0 0 gpio3_1_zero
 port 1298 nsew signal output
 flabel metal2 s 628616 996690 628668 996890 0 FreeSans 320 90 0 0 gpio3_1_one
@@ -7843,7 +7843,7 @@ port 1323 nsew signal input
 flabel metal2 s 587468 996690 587520 996890 0 FreeSans 320 90 0 0 gpio3_2_oe_n
 port 1324 nsew signal input
 flabel metal2 s 586878 996690 587002 996890 0 FreeSans 320 90 0 0 gpio3_2_in_h
-port 1325 nsew signal input
+port 1325 nsew signal output
 flabel metal2 s 604254 996690 604306 996890 0 FreeSans 320 90 0 0 gpio3_2_zero
 port 1326 nsew signal output
 flabel metal2 s 604616 996690 604668 996890 0 FreeSans 320 90 0 0 gpio3_2_one
@@ -7899,7 +7899,7 @@ port 1351 nsew signal input
 flabel metal2 s 563468 996690 563520 996890 0 FreeSans 320 90 0 0 gpio3_3_oe_n
 port 1352 nsew signal input
 flabel metal2 s 562878 996690 563002 996890 0 FreeSans 320 90 0 0 gpio3_3_in_h
-port 1353 nsew signal input
+port 1353 nsew signal output
 flabel metal2 s 580254 996690 580306 996890 0 FreeSans 320 90 0 0 gpio3_3_zero
 port 1354 nsew signal output
 flabel metal2 s 580616 996690 580668 996890 0 FreeSans 320 90 0 0 gpio3_3_one
@@ -7955,7 +7955,7 @@ port 1379 nsew signal input
 flabel metal2 s 493468 996690 493520 996890 0 FreeSans 320 90 0 0 gpio3_4_oe_n
 port 1380 nsew signal input
 flabel metal2 s 492878 996690 493002 996890 0 FreeSans 320 90 0 0 gpio3_4_in_h
-port 1381 nsew signal input
+port 1381 nsew signal output
 flabel metal2 s 510254 996690 510306 996890 0 FreeSans 320 90 0 0 gpio3_4_zero
 port 1382 nsew signal output
 flabel metal2 s 510616 996690 510668 996890 0 FreeSans 320 90 0 0 gpio3_4_one
@@ -8011,7 +8011,7 @@ port 1407 nsew signal input
 flabel metal2 s 469468 996690 469520 996890 0 FreeSans 320 90 0 0 gpio3_5_oe_n
 port 1408 nsew signal input
 flabel metal2 s 468878 996690 469002 996890 0 FreeSans 320 90 0 0 gpio3_5_in_h
-port 1409 nsew signal input
+port 1409 nsew signal output
 flabel metal2 s 486254 996690 486306 996890 0 FreeSans 320 90 0 0 gpio3_5_zero
 port 1410 nsew signal output
 flabel metal2 s 486616 996690 486668 996890 0 FreeSans 320 90 0 0 gpio3_5_one
@@ -8067,7 +8067,7 @@ port 1435 nsew signal input
 flabel metal2 s 445468 996690 445520 996890 0 FreeSans 320 90 0 0 gpio3_6_oe_n
 port 1436 nsew signal input
 flabel metal2 s 444878 996690 445002 996890 0 FreeSans 320 90 0 0 gpio3_6_in_h
-port 1437 nsew signal input
+port 1437 nsew signal output
 flabel metal2 s 462254 996690 462306 996890 0 FreeSans 320 90 0 0 gpio3_6_zero
 port 1438 nsew signal output
 flabel metal2 s 462616 996690 462668 996890 0 FreeSans 320 90 0 0 gpio3_6_one
@@ -8123,7 +8123,7 @@ port 1463 nsew signal input
 flabel metal2 s 421468 996690 421520 996890 0 FreeSans 320 90 0 0 gpio3_7_oe_n
 port 1464 nsew signal input
 flabel metal2 s 420878 996690 421002 996890 0 FreeSans 320 90 0 0 gpio3_7_in_h
-port 1465 nsew signal input
+port 1465 nsew signal output
 flabel metal2 s 438254 996690 438306 996890 0 FreeSans 320 90 0 0 gpio3_7_zero
 port 1466 nsew signal output
 flabel metal2 s 438616 996690 438668 996890 0 FreeSans 320 90 0 0 gpio3_7_one
@@ -8183,7 +8183,7 @@ port 1493 nsew signal input
 flabel metal2 s 282468 996690 282520 996890 0 FreeSans 320 90 0 0 gpio4_0_oe_n
 port 1494 nsew signal input
 flabel metal2 s 281878 996690 282002 996890 0 FreeSans 320 90 0 0 gpio4_0_in_h
-port 1495 nsew signal input
+port 1495 nsew signal output
 flabel metal2 s 299254 996690 299306 996890 0 FreeSans 320 90 0 0 gpio4_0_zero
 port 1496 nsew signal output
 flabel metal2 s 299616 996690 299668 996890 0 FreeSans 320 90 0 0 gpio4_0_one
@@ -8239,7 +8239,7 @@ port 1521 nsew signal input
 flabel metal2 s 258468 996690 258520 996890 0 FreeSans 320 90 0 0 gpio4_1_oe_n
 port 1522 nsew signal input
 flabel metal2 s 257878 996690 258002 996890 0 FreeSans 320 90 0 0 gpio4_1_in_h
-port 1523 nsew signal input
+port 1523 nsew signal output
 flabel metal2 s 275254 996690 275306 996890 0 FreeSans 320 90 0 0 gpio4_1_zero
 port 1524 nsew signal output
 flabel metal2 s 275616 996690 275668 996890 0 FreeSans 320 90 0 0 gpio4_1_one
@@ -8295,7 +8295,7 @@ port 1549 nsew signal input
 flabel metal2 s 234468 996690 234520 996890 0 FreeSans 320 90 0 0 gpio4_2_oe_n
 port 1550 nsew signal input
 flabel metal2 s 233878 996690 234002 996890 0 FreeSans 320 90 0 0 gpio4_2_in_h
-port 1551 nsew signal input
+port 1551 nsew signal output
 flabel metal2 s 251254 996690 251306 996890 0 FreeSans 320 90 0 0 gpio4_2_zero
 port 1552 nsew signal output
 flabel metal2 s 251616 996690 251668 996890 0 FreeSans 320 90 0 0 gpio4_2_one
@@ -8351,7 +8351,7 @@ port 1577 nsew signal input
 flabel metal2 s 210468 996690 210520 996890 0 FreeSans 320 90 0 0 gpio4_3_oe_n
 port 1578 nsew signal input
 flabel metal2 s 209878 996690 210002 996890 0 FreeSans 320 90 0 0 gpio4_3_in_h
-port 1579 nsew signal input
+port 1579 nsew signal output
 flabel metal2 s 227254 996690 227306 996890 0 FreeSans 320 90 0 0 gpio4_3_zero
 port 1580 nsew signal output
 flabel metal2 s 227616 996690 227668 996890 0 FreeSans 320 90 0 0 gpio4_3_one
@@ -8407,7 +8407,7 @@ port 1605 nsew signal input
 flabel metal2 s 140468 996690 140520 996890 0 FreeSans 320 90 0 0 gpio4_4_oe_n
 port 1606 nsew signal input
 flabel metal2 s 139878 996690 140002 996890 0 FreeSans 320 90 0 0 gpio4_4_in_h
-port 1607 nsew signal input
+port 1607 nsew signal output
 flabel metal2 s 157254 996690 157306 996890 0 FreeSans 320 90 0 0 gpio4_4_zero
 port 1608 nsew signal output
 flabel metal2 s 157616 996690 157668 996890 0 FreeSans 320 90 0 0 gpio4_4_one
@@ -8463,7 +8463,7 @@ port 1633 nsew signal input
 flabel metal2 s 116468 996690 116520 996890 0 FreeSans 320 90 0 0 gpio4_5_oe_n
 port 1634 nsew signal input
 flabel metal2 s 115878 996690 116002 996890 0 FreeSans 320 90 0 0 gpio4_5_in_h
-port 1635 nsew signal input
+port 1635 nsew signal output
 flabel metal2 s 133254 996690 133306 996890 0 FreeSans 320 90 0 0 gpio4_5_zero
 port 1636 nsew signal output
 flabel metal2 s 133616 996690 133668 996890 0 FreeSans 320 90 0 0 gpio4_5_one
@@ -8519,7 +8519,7 @@ port 1661 nsew signal input
 flabel metal2 s 92468 996690 92520 996890 0 FreeSans 320 90 0 0 gpio4_6_oe_n
 port 1662 nsew signal input
 flabel metal2 s 91878 996690 92002 996890 0 FreeSans 320 90 0 0 gpio4_6_in_h
-port 1663 nsew signal input
+port 1663 nsew signal output
 flabel metal2 s 109254 996690 109306 996890 0 FreeSans 320 90 0 0 gpio4_6_zero
 port 1664 nsew signal output
 flabel metal2 s 109616 996690 109668 996890 0 FreeSans 320 90 0 0 gpio4_6_one
@@ -8575,7 +8575,7 @@ port 1689 nsew signal input
 flabel metal2 s 68468 996690 68520 996890 0 FreeSans 320 90 0 0 gpio4_7_oe_n
 port 1690 nsew signal input
 flabel metal2 s 67878 996690 68002 996890 0 FreeSans 320 90 0 0 gpio4_7_in_h
-port 1691 nsew signal input
+port 1691 nsew signal output
 flabel metal2 s 85254 996690 85306 996890 0 FreeSans 320 90 0 0 gpio4_7_zero
 port 1692 nsew signal output
 flabel metal2 s 85616 996690 85668 996890 0 FreeSans 320 90 0 0 gpio4_7_one
@@ -9315,7 +9315,7 @@ port 2059 nsew signal input
 flabel metal3 s 40600 513495 40900 513555 0 FreeSans 320 0 0 0 vref_w_ref_sel[0]
 port 2060 nsew signal input
 flabel metal3 s 40600 508897 40900 509025 0 FreeSans 320 0 0 0 vref_w_vinref
-port 2061 nsew signal output
+port 2061 nsew signal bidirectional
 flabel metal3 s 40600 508141 40900 508201 0 FreeSans 320 0 0 0 vref_w_ref_sel[2]
 port 2062 nsew signal input
 flabel metal3 s 40600 507943 40900 508003 0 FreeSans 320 0 0 0 vref_w_enable_h
