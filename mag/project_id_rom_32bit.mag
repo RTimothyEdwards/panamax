@@ -1296,70 +1296,70 @@ flabel metal3 s 908 1040 3988 1136 0 FreeSans 800 0 0 0 VPWR
 port 1 nsew power input
 flabel metal3 s 908 2128 3988 2224 0 FreeSans 800 0 0 0 VPWR
 port 1 nsew power input
-flabel metal2 s 478 0 534 400 0 FreeSans 320 90 0 0 gpio_defaults[0]
-port 2 nsew signal tristate
-flabel metal2 s 478 2336 534 2736 0 FreeSans 320 90 0 0 gpio_defaults[1]
-port 3 nsew signal tristate
-flabel metal2 s 754 0 810 400 0 FreeSans 320 90 0 0 gpio_defaults[2]
-port 4 nsew signal tristate
-flabel metal2 s 754 2336 810 2736 0 FreeSans 320 90 0 0 gpio_defaults[3]
-port 5 nsew signal tristate
-flabel metal2 s 1030 0 1086 400 0 FreeSans 320 90 0 0 gpio_defaults[4]
-port 6 nsew signal tristate
-flabel metal2 s 1030 2336 1086 2736 0 FreeSans 320 90 0 0 gpio_defaults[5]
-port 7 nsew signal tristate
-flabel metal2 s 1306 0 1362 400 0 FreeSans 320 90 0 0 gpio_defaults[6]
-port 8 nsew signal tristate
-flabel metal2 s 1306 2336 1362 2736 0 FreeSans 320 90 0 0 gpio_defaults[7]
-port 9 nsew signal tristate
-flabel metal2 s 1582 0 1638 400 0 FreeSans 320 90 0 0 gpio_defaults[8]
-port 10 nsew signal tristate
-flabel metal2 s 1582 2336 1638 2736 0 FreeSans 320 90 0 0 gpio_defaults[9]
-port 11 nsew signal tristate
-flabel metal2 s 1950 0 2006 400 0 FreeSans 320 90 0 0 gpio_defaults[10]
-port 12 nsew signal tristate
-flabel metal2 s 1950 2336 2006 2736 0 FreeSans 320 90 0 0 gpio_defaults[11]
-port 13 nsew signal tristate
-flabel metal2 s 2318 0 2374 400 0 FreeSans 320 90 0 0 gpio_defaults[12]
-port 14 nsew signal tristate
-flabel metal2 s 2318 2336 2374 2736 0 FreeSans 320 90 0 0 gpio_defaults[13]
-port 15 nsew signal tristate
-flabel metal2 s 2594 0 2650 400 0 FreeSans 320 90 0 0 gpio_defaults[14]
-port 16 nsew signal tristate
-flabel metal2 s 2594 2336 2650 2736 0 FreeSans 320 90 0 0 gpio_defaults[15]
-port 17 nsew signal tristate
-flabel metal2 s 2870 0 2926 400 0 FreeSans 320 90 0 0 gpio_defaults[16]
-port 18 nsew signal tristate
-flabel metal2 s 2870 2336 2926 2736 0 FreeSans 320 90 0 0 gpio_defaults[17]
-port 19 nsew signal tristate
-flabel metal2 s 3238 0 3294 400 0 FreeSans 320 90 0 0 gpio_defaults[18]
-port 20 nsew signal tristate
-flabel metal2 s 3238 2336 3294 2736 0 FreeSans 320 90 0 0 gpio_defaults[19]
-port 21 nsew signal tristate
-flabel metal2 s 3514 0 3570 400 0 FreeSans 320 90 0 0 gpio_defaults[20]
-port 22 nsew signal tristate
-flabel metal2 s 3514 2336 3570 2736 0 FreeSans 320 90 0 0 gpio_defaults[21]
-port 23 nsew signal tristate
-flabel metal2 s 3790 0 3846 400 0 FreeSans 320 90 0 0 gpio_defaults[22]
-port 24 nsew signal tristate
-flabel metal2 s 3790 2336 3846 2736 0 FreeSans 320 90 0 0 gpio_defaults[23]
-port 25 nsew signal tristate
-flabel metal2 s 4066 0 4122 400 0 FreeSans 320 90 0 0 gpio_defaults[24]
-port 26 nsew signal tristate
-flabel metal2 s 4066 2336 4122 2736 0 FreeSans 320 90 0 0 gpio_defaults[25]
-port 27 nsew signal tristate
-flabel metal2 s 4342 0 4398 400 0 FreeSans 320 90 0 0 gpio_defaults[26]
-port 28 nsew signal tristate
-flabel metal2 s 4342 2336 4398 2736 0 FreeSans 320 90 0 0 gpio_defaults[27]
-port 29 nsew signal tristate
-flabel metal2 s 4710 0 4766 400 0 FreeSans 320 90 0 0 gpio_defaults[28]
-port 30 nsew signal tristate
-flabel metal2 s 4710 2336 4766 2736 0 FreeSans 320 90 0 0 gpio_defaults[29]
-port 31 nsew signal tristate
-flabel metal2 s 4986 0 5042 400 0 FreeSans 320 90 0 0 gpio_defaults[30]
-port 32 nsew signal tristate
-flabel metal2 s 4986 2336 5042 2736 0 FreeSans 320 90 0 0 gpio_defaults[31]
-port 33 nsew signal tristate
+flabel metal2 s 478 0 534 400 0 FreeSans 320 90 0 0 project_id[0]
+port 2 nsew signal output
+flabel metal2 s 478 2336 534 2736 0 FreeSans 320 90 0 0 project_id[1]
+port 3 nsew signal output
+flabel metal2 s 754 0 810 400 0 FreeSans 320 90 0 0 project_id[2]
+port 4 nsew signal output
+flabel metal2 s 754 2336 810 2736 0 FreeSans 320 90 0 0 project_id[3]
+port 5 nsew signal output
+flabel metal2 s 1030 0 1086 400 0 FreeSans 320 90 0 0 project_id[4]
+port 6 nsew signal output
+flabel metal2 s 1030 2336 1086 2736 0 FreeSans 320 90 0 0 project_id[5]
+port 7 nsew signal output
+flabel metal2 s 1306 0 1362 400 0 FreeSans 320 90 0 0 project_id[6]
+port 8 nsew signal output
+flabel metal2 s 1306 2336 1362 2736 0 FreeSans 320 90 0 0 project_id[7]
+port 9 nsew signal output
+flabel metal2 s 1582 0 1638 400 0 FreeSans 320 90 0 0 project_id[8]
+port 10 nsew signal output
+flabel metal2 s 1582 2336 1638 2736 0 FreeSans 320 90 0 0 project_id[9]
+port 11 nsew signal output
+flabel metal2 s 1950 0 2006 400 0 FreeSans 320 90 0 0 project_id[10]
+port 12 nsew signal output
+flabel metal2 s 1950 2336 2006 2736 0 FreeSans 320 90 0 0 project_id[11]
+port 13 nsew signal output
+flabel metal2 s 2318 0 2374 400 0 FreeSans 320 90 0 0 project_id[12]
+port 14 nsew signal output
+flabel metal2 s 2318 2336 2374 2736 0 FreeSans 320 90 0 0 project_id[13]
+port 15 nsew signal output
+flabel metal2 s 2594 0 2650 400 0 FreeSans 320 90 0 0 project_id[14]
+port 16 nsew signal output
+flabel metal2 s 2594 2336 2650 2736 0 FreeSans 320 90 0 0 project_id[15]
+port 17 nsew signal output
+flabel metal2 s 2870 0 2926 400 0 FreeSans 320 90 0 0 project_id[16]
+port 18 nsew signal output
+flabel metal2 s 2870 2336 2926 2736 0 FreeSans 320 90 0 0 project_id[17]
+port 19 nsew signal output
+flabel metal2 s 3238 0 3294 400 0 FreeSans 320 90 0 0 project_id[18]
+port 20 nsew signal output
+flabel metal2 s 3238 2336 3294 2736 0 FreeSans 320 90 0 0 project_id[19]
+port 21 nsew signal output
+flabel metal2 s 3514 0 3570 400 0 FreeSans 320 90 0 0 project_id[20]
+port 22 nsew signal output
+flabel metal2 s 3514 2336 3570 2736 0 FreeSans 320 90 0 0 project_id[21]
+port 23 nsew signal output
+flabel metal2 s 3790 0 3846 400 0 FreeSans 320 90 0 0 project_id[22]
+port 24 nsew signal output
+flabel metal2 s 3790 2336 3846 2736 0 FreeSans 320 90 0 0 project_id[23]
+port 25 nsew signal output
+flabel metal2 s 4066 0 4122 400 0 FreeSans 320 90 0 0 project_id[24]
+port 26 nsew signal output
+flabel metal2 s 4066 2336 4122 2736 0 FreeSans 320 90 0 0 project_id[25]
+port 27 nsew signal output
+flabel metal2 s 4342 0 4398 400 0 FreeSans 320 90 0 0 project_id[26]
+port 28 nsew signal output
+flabel metal2 s 4342 2336 4398 2736 0 FreeSans 320 90 0 0 project_id[27]
+port 29 nsew signal output
+flabel metal2 s 4710 0 4766 400 0 FreeSans 320 90 0 0 project_id[28]
+port 30 nsew signal output
+flabel metal2 s 4710 2336 4766 2736 0 FreeSans 320 90 0 0 project_id[29]
+port 31 nsew signal output
+flabel metal2 s 4986 0 5042 400 0 FreeSans 320 90 0 0 project_id[30]
+port 32 nsew signal output
+flabel metal2 s 4986 2336 5042 2736 0 FreeSans 320 90 0 0 project_id[31]
+port 33 nsew signal output
 << properties >>
 string FIXED_BBOX 0 0 5428 2736
 << end >>

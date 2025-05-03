@@ -81,6 +81,8 @@ module panamax_top_test();
     wire sio1;
     wire analog_1;
     wire analog_0;
+    wire [7:0] product_id;
+    wire [31:0] project_id;
 
     // gpio
     wire gpio0_0;
@@ -2164,6 +2166,7 @@ module panamax_top_test();
     wire resetb_tie_lo_esd;
     wire resetb_tie_weak_hi_h;
     wire resetb_xres_h_n;
+    wire resetb_xres_n;
     wire select_analog_en;
     wire select_analog_pol;
     wire select_analog_sel;
@@ -2235,6 +2238,8 @@ module panamax_top_test();
     /* Instantiate the padframe */
 
     panamax panamax(
+	.product_id(product_id),
+	.project_id(project_id),
         .amuxbus_a_n(amuxbus_a_n),
         .amuxbus_b_n(amuxbus_b_n),
         .analog_0(analog_0),
@@ -4294,6 +4299,7 @@ module panamax_top_test();
         .resetb_tie_lo_esd(resetb_tie_lo_esd),
         .resetb_tie_weak_hi_h(resetb_tie_weak_hi_h),
         .resetb_xres_h_n(resetb_xres_h_n),
+        .resetb_xres_n(resetb_xres_n),
         .select(select),
         .select_analog_en(select_analog_en),
         .select_analog_pol(select_analog_pol),

@@ -1,8 +1,9 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1746129498
+timestamp 1746231456
 << checkpaint >>
+rect -352380 1001282 -327322 1008206
 rect -1260 998860 718860 1038860
 rect -1261 998060 718860 998860
 rect -1261 996747 718861 998060
@@ -213,19 +214,26 @@ rect -1260 71660 40853 73997
 rect -1260 64140 42053 71660
 rect 675498 70140 718860 154904
 rect -1260 61660 41260 64140
-rect 675547 63340 718860 70140
 rect -1260 54140 42053 61660
-rect 676340 60860 718860 63340
 rect -1260 51660 40853 54140
-rect 675547 53340 718860 60860
 rect -1261 49277 41260 51660
 rect -1261 40853 41560 49277
+rect 516068 44052 524860 58438
+rect 578855 52003 581418 69290
+rect 675547 63340 718860 70140
+rect 676340 60860 718860 63340
+rect 675547 53340 718860 60860
+rect 607988 52003 610679 52603
+rect 618979 52272 621516 52605
+rect 618976 52003 621516 52272
+rect 651519 52003 654209 52603
 rect 43501 40853 63260 42960
 rect 83528 42224 88695 42430
 rect 83528 42170 93985 42224
 rect 64881 41358 93985 42170
-rect 100130 41358 102714 41494
-rect 64881 41260 102714 41358
+rect 99953 41498 102614 41504
+rect 99832 41358 102726 41498
+rect 64881 41260 102726 41358
 rect 109881 41260 131283 42170
 rect 132881 41260 154283 42170
 rect 155881 41260 177283 42170
@@ -285,17 +293,17 @@ rect 572740 -1464 671260 -1260
 << metal1 >>
 rect 89736 40019 89742 40161
 rect 89794 40098 89800 40161
-rect 101390 40098 101396 40221
-rect 89794 40052 101396 40098
+rect 101102 40098 101108 40221
+rect 89794 40052 101108 40098
 rect 89794 40019 89800 40052
-rect 101390 40049 101396 40052
-rect 101448 40049 101454 40221
+rect 101102 40049 101108 40052
+rect 101160 40049 101166 40221
 rect 101959 40130 101969 40330
 rect 102023 40130 102033 40330
 rect 101973 39934 102019 40130
 << via1 >>
 rect 89742 40019 89794 40161
-rect 101396 40049 101448 40221
+rect 101108 40049 101160 40221
 rect 101969 40130 102023 40330
 << metal2 >>
 rect 336566 997588 338362 997600
@@ -764,7 +772,7 @@ rect 579467 50743 579519 51343
 rect 579617 50743 579669 51343
 rect 579772 50743 579814 51343
 rect 579926 50743 579962 51343
-rect 580073 50743 580116 51343
+rect 580073 50743 580115 51343
 rect 580217 50743 580269 51343
 rect 580367 50743 580419 51343
 rect 580980 50743 581032 51343
@@ -772,15 +780,15 @@ rect 585410 50743 585462 51343
 rect 586059 50743 586111 51343
 rect 588949 50743 589001 51343
 rect 589380 50743 589432 51343
-rect 609051 50743 609220 51343
-rect 609249 50743 609418 51343
+rect 609050 50658 609220 51343
+rect 609248 50743 609418 51343
 rect 613341 50743 613393 51343
 rect 614017 50743 614069 51343
 rect 616290 50743 616342 51343
 rect 617624 50743 617676 51343
 rect 619034 50743 619086 51343
 rect 619114 50743 619166 51343
-rect 620239 50743 620308 51343
+rect 620256 50743 620308 51343
 rect 620400 50743 620452 51343
 rect 620480 50743 620532 51343
 rect 621442 50743 621494 51343
@@ -808,7 +816,8 @@ rect 645657 50743 645709 51343
 rect 647930 50743 647982 51343
 rect 648606 50743 648658 51343
 rect 652581 50743 652751 51343
-rect 652779 50743 652948 51343
+rect 609248 50682 609261 50743
+rect 652779 50663 652949 51343
 rect 67131 40710 67183 40910
 rect 67493 40710 67545 40910
 rect 68457 40710 68509 40910
@@ -955,13 +964,13 @@ rect 89742 40013 89794 40019
 rect 92353 40000 92557 40600
 rect 100396 40000 100448 40600
 rect 100769 40000 100899 40600
-rect 101067 40000 101213 40600
-rect 101354 40221 101484 40600
-rect 101354 40049 101396 40221
-rect 101448 40049 101484 40221
+rect 101067 40221 101213 40600
+rect 101067 40049 101108 40221
+rect 101160 40049 101213 40221
+rect 101067 40000 101213 40049
+rect 101354 40000 101484 40600
 rect 101969 40330 102023 40600
 rect 101969 40120 102023 40130
-rect 101354 40000 101484 40049
 rect 102468 40000 102528 40600
 rect 102755 40000 102985 40600
 rect 103218 40000 103551 40600
@@ -1817,7 +1826,7 @@ rect 40000 670655 40600 670721
 rect 40000 670028 40600 670094
 rect 677000 670014 677600 670134
 rect 40000 669889 40600 669955
-rect 677000 669760 677600 669879
+rect 677000 669760 677600 669880
 rect 677000 669503 677600 669623
 rect 677000 668927 677600 669047
 rect 677000 668712 677600 668778
@@ -1949,7 +1958,7 @@ rect 40000 604655 40600 604721
 rect 40000 604028 40600 604094
 rect 677000 604014 677600 604134
 rect 40000 603889 40600 603955
-rect 677000 603760 677600 603879
+rect 677000 603760 677600 603880
 rect 677000 603503 677600 603623
 rect 677000 602927 677600 603047
 rect 677000 602712 677600 602778
@@ -1998,7 +2007,7 @@ rect 40000 580623 40600 580689
 rect 40000 580422 40600 580488
 rect 40000 580153 40600 580273
 rect 40000 579577 40600 579697
-rect 40000 579321 40600 579440
+rect 40000 579320 40600 579440
 rect 677000 579245 677600 579311
 rect 40000 579066 40600 579186
 rect 677000 579106 677600 579172
@@ -2015,7 +2024,7 @@ rect 40000 571655 40600 571721
 rect 40000 571028 40600 571094
 rect 677000 571014 677600 571134
 rect 40000 570889 40600 570955
-rect 677000 570760 677600 570879
+rect 677000 570760 677600 570880
 rect 677000 570503 677600 570623
 rect 677000 569927 677600 570047
 rect 677000 569712 677600 569778
@@ -2064,7 +2073,7 @@ rect 40000 547623 40600 547689
 rect 40000 547422 40600 547488
 rect 40000 547153 40600 547273
 rect 40000 546577 40600 546697
-rect 40000 546321 40600 546440
+rect 40000 546320 40600 546440
 rect 677000 546245 677600 546311
 rect 40000 546066 40600 546186
 rect 677000 546106 677600 546172
@@ -2187,7 +2196,7 @@ rect 40000 441055 40600 441121
 rect 40000 440428 40600 440494
 rect 677000 440414 677600 440534
 rect 40000 440289 40600 440355
-rect 677000 440160 677600 440279
+rect 677000 440160 677600 440280
 rect 677000 439903 677600 440023
 rect 677000 439327 677600 439447
 rect 677000 439112 677600 439178
@@ -2236,7 +2245,7 @@ rect 40000 417023 40600 417089
 rect 40000 416822 40600 416888
 rect 40000 416553 40600 416673
 rect 40000 415977 40600 416097
-rect 40000 415721 40600 415840
+rect 40000 415720 40600 415840
 rect 677000 415645 677600 415711
 rect 40000 415466 40600 415586
 rect 677000 415506 677600 415572
@@ -2302,7 +2311,7 @@ rect 40000 384023 40600 384089
 rect 40000 383822 40600 383888
 rect 40000 383553 40600 383673
 rect 40000 382977 40600 383097
-rect 40000 382721 40600 382840
+rect 40000 382720 40600 382840
 rect 677000 382645 677600 382711
 rect 40000 382466 40600 382586
 rect 677000 382506 677600 382572
@@ -3159,17 +3168,17 @@ timestamp 1738263620
 transform 1 0 328800 0 1 998000
 box -80 0 15080 39600
 use caravel_logo  caravel_logo_0
-timestamp 1638586901
-transform 1 0 6820 0 1 1007840
-box -2520 0 15000 15560
+timestamp 1746202612
+transform 1 0 5560 0 1 1007840
+box 0 0 16262 15560
 use caravel_motto  caravel_motto_0
-timestamp 1637698310
-transform 1 0 -351120 0 1 1002542
-box 373080 14838 395618 19242
+timestamp 1746202518
+transform 1 0 21970 0 1 1017390
+box 0 0 22538 4404
 use copyright_block_frigate  copyright_block_frigate_0
-timestamp 1739562680
-transform 1 0 671202 0 1 16828
-box -262 -10348 28306 2764
+timestamp 1746202649
+transform 1 0 670926 0 1 6492
+box 0 0 28568 13112
 use sky130_ef_io__corner_pad  corner_ne $PDKPATH/libs.ref/sky130_fd_io/mag
 timestamp 1738263620
 transform 1 0 677600 0 1 996800
@@ -3799,9 +3808,9 @@ timestamp 1725852642
 transform -1 0 369376 0 1 996600
 box 0 0 1738 12222
 use open_source  open_source_0
-timestamp 1666123577
-transform 1 0 675528 0 1 1013176
-box 752 5164 29030 16242
+timestamp 1746202675
+transform 1 0 676282 0 1 1018342
+box 0 0 28278 11078
 use ovt_e_vinref_connects  ovt_e_vinref_connects_0
 timestamp 1746115413
 transform 1 0 0 0 1 4
@@ -3823,9 +3832,9 @@ timestamp 1738263620
 transform -1 0 526180 0 -1 40000
 box 282 0 10856 40000
 use pwrdetv2_overlay  pwrdetv2_overlay_0
-timestamp 1726600844
-transform 1 0 8 0 1 2
-box 518288 26330 524560 38196
+timestamp 1746204336
+transform 1 0 518296 0 1 26332
+box 0 0 6272 11866
 use sky130_fd_io__top_xres4v2  resetb_pad $PDKPATH/libs.ref/sky130_fd_io/mag
 timestamp 1738263620
 transform -1 0 107000 0 -1 40000
@@ -5103,9 +5112,9 @@ timestamp 1738263620
 transform 0 1 678007 -1 0 54600
 box 0 0 1000 39593
 use user_id_textblock  user_id_textblock_0
-timestamp 1608324878
-transform 1 0 12306 0 1 9642
-box -656 1508 33720 10344
+timestamp 1746202547
+transform 1 0 11650 0 1 11152
+box 0 0 34376 8836
 use sky130_fd_io__top_vrefcapv2  vcap_e $PDKPATH/libs.ref/sky130_fd_io/mag
 timestamp 1738263620
 transform 0 1 677600 -1 0 518056
@@ -6401,7 +6410,7 @@ flabel metal2 s 579772 51043 579814 51343 0 FreeSans 320 90 0 0 sio_voh_sel[2]
 port 457 nsew signal input
 flabel metal2 s 579926 51043 579962 51343 0 FreeSans 320 90 0 0 sio_voh_sel[1]
 port 458 nsew signal input
-flabel metal2 s 580073 51043 580116 51343 0 FreeSans 320 90 0 0 sio_voh_sel[0]
+flabel metal2 s 580073 51043 580115 51343 0 FreeSans 320 90 0 0 sio_voh_sel[0]
 port 459 nsew signal input
 flabel metal2 s 368752 996600 368880 996900 0 FreeSans 320 90 0 0 amuxbus_a_n
 port 460 nsew signal bidirectional
@@ -6421,9 +6430,9 @@ flabel metal2 s 588949 51043 589001 51343 0 FreeSans 320 90 0 0 sio_hld_h_n_refg
 port 467 nsew signal input
 flabel metal2 s 589380 51043 589432 51343 0 FreeSans 320 90 0 0 sio_vtrip_sel_refgen
 port 468 nsew signal input
-flabel metal2 s 609051 51043 609220 51343 0 FreeSans 320 90 0 0 sio_pad_a_esd_0_h[1]
+flabel metal2 s 609050 51043 609220 51343 0 FreeSans 320 90 0 0 sio_pad_a_esd_0_h[1]
 port 469 nsew signal input
-flabel metal2 s 609249 51043 609418 51343 0 FreeSans 320 90 0 0 sio_pad_a_noesd_h[1]
+flabel metal2 s 609248 51043 609418 51343 0 FreeSans 320 90 0 0 sio_pad_a_noesd_h[1]
 port 470 nsew signal input
 flabel metal2 s 613341 51043 613393 51343 0 FreeSans 320 90 0 0 sio_inp_dis[1]
 port 471 nsew signal input
@@ -6437,7 +6446,7 @@ flabel metal2 s 619034 51043 619086 51343 0 FreeSans 320 90 0 0 sio_ibuf_sel[1]
 port 475 nsew signal input
 flabel metal2 s 619114 51043 619166 51343 0 FreeSans 320 90 0 0 sio_hld_h_n[1]
 port 476 nsew signal input
-flabel metal2 s 620239 51043 620308 51343 0 FreeSans 320 90 0 0 sio_hld_ovr[1]
+flabel metal2 s 620256 51043 620308 51343 0 FreeSans 320 90 0 0 sio_hld_ovr[1]
 port 477 nsew signal input
 flabel metal2 s 620400 51043 620452 51343 0 FreeSans 320 90 0 0 sio_in[1]
 port 478 nsew signal output
@@ -6493,7 +6502,7 @@ flabel metal2 s 648606 51043 648658 51343 0 FreeSans 320 90 0 0 sio_inp_dis[0]
 port 503 nsew signal input
 flabel metal2 s 652581 51043 652751 51343 0 FreeSans 320 90 0 0 sio_pad_a_noesd_h[0]
 port 504 nsew signal bidirectional
-flabel metal2 s 652779 51043 652948 51343 0 FreeSans 320 90 0 0 sio_pad_a_esd_0_h[0]
+flabel metal2 s 652779 51043 652949 51343 0 FreeSans 320 90 0 0 sio_pad_a_esd_0_h[0]
 port 505 nsew signal bidirectional
 flabel metal3 s 676700 42386 677000 42446 0 FreeSans 320 0 0 0 muxsplit_se_hld_vdda_h_n
 port 506 nsew signal input
@@ -6996,7 +7005,6 @@ port 754 nsew signal input
 flabel metal3 s 677000 365463 677300 365529 0 FreeSans 320 0 0 0 gpio1_0_hys_trim
 port 755 nsew signal input
 flabel metal3 s 677000 365727 677300 365793 0 FreeSans 320 0 0 0 gpio1_0_vinref
-port 756 nsew signal input
 flabel metal3 s 677000 369063 677300 369129 0 FreeSans 320 0 0 0 gpio1_0_hld_ovr
 port 757 nsew signal input
 flabel metal3 s 677000 369658 677300 369724 0 FreeSans 320 0 0 0 gpio1_0_in_h
@@ -7062,7 +7070,6 @@ port 787 nsew signal input
 flabel metal3 s 677000 398463 677300 398529 0 FreeSans 320 0 0 0 gpio1_1_hys_trim
 port 788 nsew signal input
 flabel metal3 s 677000 398727 677300 398793 0 FreeSans 320 0 0 0 gpio1_1_vinref
-port 789 nsew signal input
 flabel metal3 s 677000 402063 677300 402129 0 FreeSans 320 0 0 0 gpio1_1_hld_ovr
 port 790 nsew signal input
 flabel metal3 s 677000 402658 677300 402724 0 FreeSans 320 0 0 0 gpio1_1_in_h
@@ -7128,7 +7135,6 @@ port 820 nsew signal input
 flabel metal3 s 677000 431463 677300 431529 0 FreeSans 320 0 0 0 gpio1_2_hys_trim
 port 821 nsew signal input
 flabel metal3 s 677000 431727 677300 431793 0 FreeSans 320 0 0 0 gpio1_2_vinref
-port 822 nsew signal input
 flabel metal3 s 677000 435063 677300 435129 0 FreeSans 320 0 0 0 gpio1_2_hld_ovr
 port 823 nsew signal input
 flabel metal3 s 677000 435658 677300 435724 0 FreeSans 320 0 0 0 gpio1_2_in_h
@@ -7149,7 +7155,7 @@ flabel metal3 s 677000 439327 677300 439447 0 FreeSans 320 0 0 0 gpio1_2_enable_
 port 831 nsew signal input
 flabel metal3 s 677000 439903 677300 440023 0 FreeSans 320 0 0 0 gpio1_2_pad_a_noesd_h
 port 832 nsew signal bidirectional
-flabel metal3 s 677000 440160 677300 440279 0 FreeSans 320 0 0 0 gpio1_2_pad_a_esd_0_h
+flabel metal3 s 677000 440160 677300 440280 0 FreeSans 320 0 0 0 gpio1_2_pad_a_esd_0_h
 port 833 nsew signal bidirectional
 flabel metal3 s 677000 440414 677300 440534 0 FreeSans 320 0 0 0 gpio1_2_pad_a_esd_1_h
 port 834 nsew signal bidirectional
@@ -7194,7 +7200,6 @@ port 853 nsew signal input
 flabel metal3 s 677000 464463 677300 464529 0 FreeSans 320 0 0 0 gpio1_3_hys_trim
 port 854 nsew signal input
 flabel metal3 s 677000 464727 677300 464793 0 FreeSans 320 0 0 0 gpio1_3_vinref
-port 855 nsew signal input
 flabel metal3 s 677000 468063 677300 468129 0 FreeSans 320 0 0 0 gpio1_3_hld_ovr
 port 856 nsew signal input
 flabel metal3 s 677000 468658 677300 468724 0 FreeSans 320 0 0 0 gpio1_3_in_h
@@ -7242,7 +7247,6 @@ port 877 nsew signal input
 flabel metal3 s 676700 513565 677000 513625 0 FreeSans 320 0 0 0 vref_e_ref_sel[3]
 port 878 nsew signal input
 flabel metal3 s 677000 516161 677300 516561 0 FreeSans 320 0 0 0 vcap_e_cpos
-port 879 nsew signal bidirectional
 flabel metal3 s 677000 545139 677300 545205 0 FreeSans 320 0 0 0 gpio1_4_tie_hi_esd
 port 880 nsew signal output
 flabel metal3 s 677000 549455 677300 549521 0 FreeSans 320 0 0 0 gpio1_4_dm[2]
@@ -7280,7 +7284,6 @@ port 896 nsew signal input
 flabel metal3 s 677000 562063 677300 562129 0 FreeSans 320 0 0 0 gpio1_4_hys_trim
 port 897 nsew signal input
 flabel metal3 s 677000 562327 677300 562393 0 FreeSans 320 0 0 0 gpio1_4_vinref
-port 898 nsew signal input
 flabel metal3 s 677000 565663 677300 565729 0 FreeSans 320 0 0 0 gpio1_4_hld_ovr
 port 899 nsew signal input
 flabel metal3 s 677000 566258 677300 566324 0 FreeSans 320 0 0 0 gpio1_4_in_h
@@ -7301,7 +7304,7 @@ flabel metal3 s 677000 569927 677300 570047 0 FreeSans 320 0 0 0 gpio1_4_enable_
 port 907 nsew signal input
 flabel metal3 s 677000 570503 677300 570623 0 FreeSans 320 0 0 0 gpio1_4_pad_a_noesd_h
 port 908 nsew signal bidirectional
-flabel metal3 s 677000 570760 677300 570879 0 FreeSans 320 0 0 0 gpio1_4_pad_a_esd_0_h
+flabel metal3 s 677000 570760 677300 570880 0 FreeSans 320 0 0 0 gpio1_4_pad_a_esd_0_h
 port 909 nsew signal bidirectional
 flabel metal3 s 677000 571014 677300 571134 0 FreeSans 320 0 0 0 gpio1_4_pad_a_esd_1_h
 port 910 nsew signal bidirectional
@@ -7346,7 +7349,6 @@ port 929 nsew signal input
 flabel metal3 s 677000 595063 677300 595129 0 FreeSans 320 0 0 0 gpio1_5_hys_trim
 port 930 nsew signal input
 flabel metal3 s 677000 595327 677300 595393 0 FreeSans 320 0 0 0 gpio1_5_vinref
-port 931 nsew signal input
 flabel metal3 s 677000 598663 677300 598729 0 FreeSans 320 0 0 0 gpio1_5_hld_ovr
 port 932 nsew signal input
 flabel metal3 s 677000 599258 677300 599324 0 FreeSans 320 0 0 0 gpio1_5_in_h
@@ -7367,7 +7369,7 @@ flabel metal3 s 677000 602927 677300 603047 0 FreeSans 320 0 0 0 gpio1_5_enable_
 port 940 nsew signal input
 flabel metal3 s 677000 603503 677300 603623 0 FreeSans 320 0 0 0 gpio1_5_pad_a_noesd_h
 port 941 nsew signal bidirectional
-flabel metal3 s 677000 603760 677300 603879 0 FreeSans 320 0 0 0 gpio1_5_pad_a_esd_0_h
+flabel metal3 s 677000 603760 677300 603880 0 FreeSans 320 0 0 0 gpio1_5_pad_a_esd_0_h
 port 942 nsew signal bidirectional
 flabel metal3 s 677000 604014 677300 604134 0 FreeSans 320 0 0 0 gpio1_5_pad_a_esd_1_h
 port 943 nsew signal bidirectional
@@ -7412,7 +7414,6 @@ port 962 nsew signal input
 flabel metal3 s 677000 628063 677300 628129 0 FreeSans 320 0 0 0 gpio1_6_hys_trim
 port 963 nsew signal input
 flabel metal3 s 677000 628327 677300 628393 0 FreeSans 320 0 0 0 gpio1_6_vinref
-port 964 nsew signal input
 flabel metal3 s 677000 631663 677300 631729 0 FreeSans 320 0 0 0 gpio1_6_hld_ovr
 port 965 nsew signal input
 flabel metal3 s 677000 632258 677300 632324 0 FreeSans 320 0 0 0 gpio1_6_in_h
@@ -7478,7 +7479,6 @@ port 995 nsew signal input
 flabel metal3 s 677000 661063 677300 661129 0 FreeSans 320 0 0 0 gpio1_7_hys_trim
 port 996 nsew signal input
 flabel metal3 s 677000 661327 677300 661393 0 FreeSans 320 0 0 0 gpio1_7_vinref
-port 997 nsew signal input
 flabel metal3 s 677000 664663 677300 664729 0 FreeSans 320 0 0 0 gpio1_7_hld_ovr
 port 998 nsew signal input
 flabel metal3 s 677000 665258 677300 665324 0 FreeSans 320 0 0 0 gpio1_7_in_h
@@ -7499,7 +7499,7 @@ flabel metal3 s 677000 668927 677300 669047 0 FreeSans 320 0 0 0 gpio1_7_enable_
 port 1006 nsew signal input
 flabel metal3 s 677000 669503 677300 669623 0 FreeSans 320 0 0 0 gpio1_7_pad_a_noesd_h
 port 1007 nsew signal bidirectional
-flabel metal3 s 677000 669760 677300 669879 0 FreeSans 320 0 0 0 gpio1_7_pad_a_esd_0_h
+flabel metal3 s 677000 669760 677300 669880 0 FreeSans 320 0 0 0 gpio1_7_pad_a_esd_0_h
 port 1008 nsew signal bidirectional
 flabel metal3 s 677000 670014 677300 670134 0 FreeSans 320 0 0 0 gpio1_7_pad_a_esd_1_h
 port 1009 nsew signal bidirectional
@@ -9372,7 +9372,6 @@ port 1942 nsew signal input
 flabel metal3 s 40300 654071 40600 654137 0 FreeSans 320 0 0 0 gpio6_0_hys_trim
 port 1943 nsew signal input
 flabel metal3 s 40300 653807 40600 653873 0 FreeSans 320 0 0 0 gpio6_0_vinref
-port 1944 nsew signal input
 flabel metal3 s 40300 650471 40600 650537 0 FreeSans 320 0 0 0 gpio6_0_hld_ovr
 port 1945 nsew signal input
 flabel metal3 s 40300 649876 40600 649942 0 FreeSans 320 0 0 0 gpio6_0_in_h
@@ -9438,7 +9437,6 @@ port 1975 nsew signal input
 flabel metal3 s 40300 621071 40600 621137 0 FreeSans 320 0 0 0 gpio6_1_hys_trim
 port 1976 nsew signal input
 flabel metal3 s 40300 620807 40600 620873 0 FreeSans 320 0 0 0 gpio6_1_vinref
-port 1977 nsew signal input
 flabel metal3 s 40300 617471 40600 617537 0 FreeSans 320 0 0 0 gpio6_1_hld_ovr
 port 1978 nsew signal input
 flabel metal3 s 40300 616876 40600 616942 0 FreeSans 320 0 0 0 gpio6_1_in_h
@@ -9504,7 +9502,6 @@ port 2008 nsew signal input
 flabel metal3 s 40300 588071 40600 588137 0 FreeSans 320 0 0 0 gpio6_2_hys_trim
 port 2009 nsew signal input
 flabel metal3 s 40300 587807 40600 587873 0 FreeSans 320 0 0 0 gpio6_2_vinref
-port 2010 nsew signal input
 flabel metal3 s 40300 584471 40600 584537 0 FreeSans 320 0 0 0 gpio6_2_hld_ovr
 port 2011 nsew signal input
 flabel metal3 s 40300 583876 40600 583942 0 FreeSans 320 0 0 0 gpio6_2_in_h
@@ -9525,7 +9522,7 @@ flabel metal3 s 40300 580153 40600 580273 0 FreeSans 320 0 0 0 gpio6_2_enable_vs
 port 2019 nsew signal input
 flabel metal3 s 40300 579577 40600 579697 0 FreeSans 320 0 0 0 gpio6_2_pad_a_noesd_h
 port 2020 nsew signal bidirectional
-flabel metal3 s 40300 579321 40600 579440 0 FreeSans 320 0 0 0 gpio6_2_pad_a_esd_0_h
+flabel metal3 s 40300 579320 40600 579440 0 FreeSans 320 0 0 0 gpio6_2_pad_a_esd_0_h
 port 2021 nsew signal bidirectional
 flabel metal3 s 40300 579066 40600 579186 0 FreeSans 320 0 0 0 gpio6_2_pad_a_esd_1_h
 port 2022 nsew signal bidirectional
@@ -9570,7 +9567,6 @@ port 2041 nsew signal input
 flabel metal3 s 40300 555071 40600 555137 0 FreeSans 320 0 0 0 gpio6_3_hys_trim
 port 2042 nsew signal input
 flabel metal3 s 40300 554807 40600 554873 0 FreeSans 320 0 0 0 gpio6_3_vinref
-port 2043 nsew signal input
 flabel metal3 s 40300 551471 40600 551537 0 FreeSans 320 0 0 0 gpio6_3_hld_ovr
 port 2044 nsew signal input
 flabel metal3 s 40300 550876 40600 550942 0 FreeSans 320 0 0 0 gpio6_3_in_h
@@ -9591,7 +9587,7 @@ flabel metal3 s 40300 547153 40600 547273 0 FreeSans 320 0 0 0 gpio6_3_enable_vs
 port 2052 nsew signal input
 flabel metal3 s 40300 546577 40600 546697 0 FreeSans 320 0 0 0 gpio6_3_pad_a_noesd_h
 port 2053 nsew signal bidirectional
-flabel metal3 s 40300 546321 40600 546440 0 FreeSans 320 0 0 0 gpio6_3_pad_a_esd_0_h
+flabel metal3 s 40300 546320 40600 546440 0 FreeSans 320 0 0 0 gpio6_3_pad_a_esd_0_h
 port 2054 nsew signal bidirectional
 flabel metal3 s 40300 546066 40600 546186 0 FreeSans 320 0 0 0 gpio6_3_pad_a_esd_1_h
 port 2055 nsew signal bidirectional
@@ -9600,7 +9596,6 @@ port 2056 nsew signal output
 flabel metal3 s 40300 576252 40600 576322 0 FreeSans 320 0 0 0 gpio6_3_one
 port 2057 nsew signal output
 flabel metal3 s 40300 518895 40600 519295 0 FreeSans 320 0 0 0 vcap_w_cpos
-port 2058 nsew signal bidirectional
 flabel metal3 s 40600 514476 40900 514536 0 FreeSans 320 0 0 0 vref_w_ref_sel[1]
 port 2059 nsew signal input
 flabel metal3 s 40600 513495 40900 513555 0 FreeSans 320 0 0 0 vref_w_ref_sel[0]
@@ -9656,7 +9651,6 @@ port 2084 nsew signal input
 flabel metal3 s 40300 457471 40600 457537 0 FreeSans 320 0 0 0 gpio6_4_hys_trim
 port 2085 nsew signal input
 flabel metal3 s 40300 457207 40600 457273 0 FreeSans 320 0 0 0 gpio6_4_vinref
-port 2086 nsew signal input
 flabel metal3 s 40300 453871 40600 453937 0 FreeSans 320 0 0 0 gpio6_4_hld_ovr
 port 2087 nsew signal input
 flabel metal3 s 40300 453276 40600 453342 0 FreeSans 320 0 0 0 gpio6_4_in_h
@@ -9722,7 +9716,6 @@ port 2117 nsew signal input
 flabel metal3 s 40300 424471 40600 424537 0 FreeSans 320 0 0 0 gpio6_5_hys_trim
 port 2118 nsew signal input
 flabel metal3 s 40300 424207 40600 424273 0 FreeSans 320 0 0 0 gpio6_5_vinref
-port 2119 nsew signal input
 flabel metal3 s 40300 420871 40600 420937 0 FreeSans 320 0 0 0 gpio6_5_hld_ovr
 port 2120 nsew signal input
 flabel metal3 s 40300 420276 40600 420342 0 FreeSans 320 0 0 0 gpio6_5_in_h
@@ -9743,7 +9736,7 @@ flabel metal3 s 40300 416553 40600 416673 0 FreeSans 320 0 0 0 gpio6_5_enable_vs
 port 2128 nsew signal input
 flabel metal3 s 40300 415977 40600 416097 0 FreeSans 320 0 0 0 gpio6_5_pad_a_noesd_h
 port 2129 nsew signal bidirectional
-flabel metal3 s 40300 415721 40600 415840 0 FreeSans 320 0 0 0 gpio6_5_pad_a_esd_0_h
+flabel metal3 s 40300 415720 40600 415840 0 FreeSans 320 0 0 0 gpio6_5_pad_a_esd_0_h
 port 2130 nsew signal bidirectional
 flabel metal3 s 40300 415466 40600 415586 0 FreeSans 320 0 0 0 gpio6_5_pad_a_esd_1_h
 port 2131 nsew signal bidirectional
@@ -9788,7 +9781,6 @@ port 2150 nsew signal input
 flabel metal3 s 40300 391471 40600 391537 0 FreeSans 320 0 0 0 gpio6_6_hys_trim
 port 2151 nsew signal input
 flabel metal3 s 40300 391207 40600 391273 0 FreeSans 320 0 0 0 gpio6_6_vinref
-port 2152 nsew signal input
 flabel metal3 s 40300 387871 40600 387937 0 FreeSans 320 0 0 0 gpio6_6_hld_ovr
 port 2153 nsew signal input
 flabel metal3 s 40300 387276 40600 387342 0 FreeSans 320 0 0 0 gpio6_6_in_h
@@ -9809,7 +9801,7 @@ flabel metal3 s 40300 383553 40600 383673 0 FreeSans 320 0 0 0 gpio6_6_enable_vs
 port 2161 nsew signal input
 flabel metal3 s 40300 382977 40600 383097 0 FreeSans 320 0 0 0 gpio6_6_pad_a_noesd_h
 port 2162 nsew signal bidirectional
-flabel metal3 s 40300 382721 40600 382840 0 FreeSans 320 0 0 0 gpio6_6_pad_a_esd_0_h
+flabel metal3 s 40300 382720 40600 382840 0 FreeSans 320 0 0 0 gpio6_6_pad_a_esd_0_h
 port 2163 nsew signal bidirectional
 flabel metal3 s 40300 382466 40600 382586 0 FreeSans 320 0 0 0 gpio6_6_pad_a_esd_1_h
 port 2164 nsew signal bidirectional
@@ -9854,7 +9846,6 @@ port 2183 nsew signal input
 flabel metal3 s 40300 358471 40600 358537 0 FreeSans 320 0 0 0 gpio6_7_hys_trim
 port 2184 nsew signal input
 flabel metal3 s 40300 358207 40600 358273 0 FreeSans 320 0 0 0 gpio6_7_vinref
-port 2185 nsew signal input
 flabel metal3 s 40300 354871 40600 354937 0 FreeSans 320 0 0 0 gpio6_7_hld_ovr
 port 2186 nsew signal input
 flabel metal3 s 40300 354276 40600 354342 0 FreeSans 320 0 0 0 gpio6_7_in_h

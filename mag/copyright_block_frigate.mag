@@ -1,234 +1,234 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1739562680
+timestamp 1746202649
 << checkpaint >>
-rect 1302 7792 4542 7874
-rect -1250 7086 4542 7792
-rect 5174 7086 8774 7184
-rect -1250 6092 8774 7086
-rect -1250 3823 10134 6092
-rect 26866 5124 31251 6692
-rect 10595 3823 14195 4501
-rect -1250 3795 14896 3823
-rect -1250 3787 14910 3795
-rect 23558 3787 31251 5124
-rect -1250 3780 31251 3787
-rect -1260 -1260 31251 3780
-rect -1210 -1276 31251 -1260
-rect -1210 -1290 2390 -1276
-rect 2470 -1290 31251 -1276
-rect 2470 -2224 6884 -1290
-rect 7110 -1304 31251 -1290
-rect 7960 -1321 31251 -1304
-rect 7960 -1358 14320 -1321
-rect 7960 -1414 14086 -1358
-rect 10486 -1730 14086 -1414
-rect 23558 -1820 31251 -1321
-rect 24790 -1976 31251 -1820
-rect 24790 -2142 29534 -1976
-rect 2730 -2292 6330 -2224
-rect 14674 -5516 18274 -4796
-rect 27046 -5516 32458 -3770
-rect 3444 -5574 7044 -5537
-rect 10398 -5556 32458 -5516
-rect 8808 -5574 32458 -5556
-rect 3444 -10577 32458 -5574
-rect 3466 -10614 32458 -10577
-rect 8808 -10618 32458 -10614
-rect 14688 -11174 18288 -10618
-rect 27046 -12238 32458 -10618
+rect 1564 18140 4804 18222
+rect -988 17434 4804 18140
+rect 5436 17434 9036 17532
+rect -988 16440 9036 17434
+rect -988 14171 10396 16440
+rect 27128 15472 31513 17040
+rect 10857 14171 14457 14849
+rect -988 14143 15158 14171
+rect -988 14135 15172 14143
+rect 23820 14135 31513 15472
+rect -988 14128 31513 14135
+rect -998 9088 31513 14128
+rect -948 9072 31513 9088
+rect -948 9058 2652 9072
+rect 2732 9058 31513 9072
+rect 2732 8124 7146 9058
+rect 7372 9044 31513 9058
+rect 8222 9027 31513 9044
+rect 8222 8990 14582 9027
+rect 8222 8934 14348 8990
+rect 10748 8618 14348 8934
+rect 23820 8528 31513 9027
+rect 25052 8372 31513 8528
+rect 25052 8206 29796 8372
+rect 2992 8056 6592 8124
+rect 14936 4832 18536 5552
+rect 27308 4832 32720 6578
+rect 3706 4774 7306 4811
+rect 10660 4792 32720 4832
+rect 9070 4774 32720 4792
+rect 3706 -229 32720 4774
+rect 3728 -266 32720 -229
+rect 9070 -270 32720 -266
+rect 14950 -826 18550 -270
+rect 27308 -1890 32720 -270
 << fillblock >>
-rect -262 -266 26050 2764
-rect 3730 -964 5624 -266
-rect -140 -5140 22204 -1424
-rect 26 -10348 28306 -6358
+rect 0 10082 26312 13112
+rect 3992 9384 5886 10082
+rect 122 5208 22466 8924
+rect 288 0 28568 3990
 use font_4B  font_4B_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598766293
-transform 1 0 20418 0 1 -4282
+transform 1 0 20680 0 1 6066
 box 0 0 1080 2520
 use font_6B  font_6B_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598776472
-transform 1 0 1698 0 1 -4282
+transform 1 0 1960 0 1 6066
 box 0 0 1080 2520
 use font_6C  font_6C_1 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598776550
-transform 1 0 23190 0 1 -9358
+transform 1 0 23452 0 1 990
 box 0 0 360 2520
 use font_6D  font_6D_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598776905
-transform 1 0 20938 0 1 -7
+transform 1 0 21200 0 1 10341
 box 0 0 1800 1800
 use font_6E  font_6E_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598776997
-transform 1 0 14658 0 1 -4282
+transform 1 0 14920 0 1 6066
 box 0 0 1080 1800
 use font_6E  font_6E_1
 timestamp 1598776997
-transform 1 0 18118 0 1 -26
+transform 1 0 18380 0 1 10322
 box 0 0 1080 1800
 use font_6F  font_6F_2 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598777049
-transform 1 0 10338 0 1 -4282
+transform 1 0 10600 0 1 6066
 box 0 0 1080 1800
 use font_28  font_28_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1606780629
-transform 1 0 250 0 1 -9325
+transform 1 0 512 0 1 1023
 box 0 0 720 2520
 use font_29  font_29_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598786350
-transform 1 0 2770 0 1 -9325
+transform 1 0 3032 0 1 1023
 box 0 0 720 2520
 use font_30  font_30_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598786981
-transform 1 0 11508 0 1 -9340
+transform 1 0 11770 0 1 1008
 box 0 0 1080 2520
 use font_30  font_30_1
 timestamp 1598786981
-transform 1 0 7374 0 1 -4297
+transform 1 0 7636 0 1 6051
 box 0 0 1080 2520
 use font_31  font_31_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598787010
-transform 1 0 4551 0 1 -4281
+transform 1 0 4813 0 1 6067
 box 0 0 1080 2520
 use font_31  font_31_1
 timestamp 1598787010
-transform 1 0 12570 0 1 -30
+transform 1 0 12832 0 1 10318
 box 0 0 1080 2520
 use font_32  font_32_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598787041
-transform 1 0 10068 0 1 -9340
+transform 1 0 10330 0 1 1008
 box 0 0 1080 2520
 use font_32  font_32_1
 timestamp 1598787041
-transform 1 0 12948 0 1 -9340
+transform 1 0 13210 0 1 1008
 box 0 0 1080 2520
 use font_33  font_33_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598787077
-transform 1 0 5954 0 1 -4297
+transform 1 0 6216 0 1 6051
 box 0 0 1080 2520
 use font_35  font_35_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598787165
-transform 1 0 14372 0 1 -9336
+transform 1 0 14634 0 1 1012
 box 0 0 1080 2520
 use font_43  font_43_1 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598763351
-transform 1 0 1330 0 1 -9325
+transform 1 0 1592 0 1 1023
 box 0 0 1080 2520
 use font_44  font_44_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598763661
-transform 1 0 18978 0 1 -4282
+transform 1 0 19240 0 1 6066
 box 0 0 1080 2520
 use font_45  font_45_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598765099
-transform 1 0 17412 0 1 -9358
+transform 1 0 17674 0 1 990
 box 0 0 1080 2520
 use font_46  font_46_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598765253
-transform 1 0 50 0 1 -30
+transform 1 0 312 0 1 10318
 box 0 0 1080 2520
 use font_46  font_46_1
 timestamp 1598765253
-transform 1 0 4726 0 1 -9354
+transform 1 0 4988 0 1 994
 box 0 0 1080 2520
 use font_50  font_50_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598768087
-transform 1 0 17538 0 1 -4282
+transform 1 0 17800 0 1 6066
 box 0 0 1080 2520
 use font_50  font_50_1
 timestamp 1598768087
-transform 1 0 15248 0 1 -30
+transform 1 0 15510 0 1 10318
 box 0 0 1080 2520
 use font_53  font_53_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598768855
-transform 1 0 258 0 1 -4282
+transform 1 0 520 0 1 6066
 box 0 0 1080 2520
 use font_56  font_56_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598769117
-transform 1 0 11073 0 1 15
+transform 1 0 11335 0 1 10363
 box 0 0 1080 2520
 use font_61  font_61_2 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598775307
-transform 1 0 20310 0 1 -9358
+transform 1 0 20572 0 1 990
 box 0 0 1080 1800
 use font_61  font_61_3
 timestamp 1598775307
-transform 1 0 5556 0 1 -30
+transform 1 0 5818 0 1 10318
 box 0 0 1080 1800
 use font_61  font_61_5
 timestamp 1598775307
-transform 1 0 16657 0 1 -26
+transform 1 0 16919 0 1 10322
 box 0 0 1080 1800
 use font_61  font_61_6
 timestamp 1598775307
-transform 1 0 19537 0 1 -26
+transform 1 0 19799 0 1 10322
 box 0 0 1080 1800
 use font_61  font_61_7
 timestamp 1598775307
-transform 1 0 23077 0 1 -26
+transform 1 0 23339 0 1 10322
 box 0 0 1080 1800
 use font_62  font_62_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598775406
-transform 1 0 21750 0 1 -9358
+transform 1 0 22012 0 1 990
 box 0 0 1080 2520
 use font_62  font_62_1
 timestamp 1598775406
-transform 1 0 7590 0 1 -9354
+transform 1 0 7852 0 1 994
 box 0 0 1080 2520
 use font_65  font_65_1 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598775915
-transform 1 0 6118 0 1 -9340
+transform 1 0 6380 0 1 1008
 box 0 0 1080 1800
 use font_65  font_65_2
 timestamp 1598775915
-transform 1 0 23910 0 1 -9358
+transform 1 0 24172 0 1 990
 box 0 0 1080 1800
 use font_65  font_65_3
 timestamp 1598775915
-transform 1 0 8370 0 1 -44
+transform 1 0 8632 0 1 10304
 box 0 0 1080 1800
 use font_65  font_65_7
 timestamp 1598775915
-transform 1 0 13218 0 1 -4282
+transform 1 0 13480 0 1 6066
 box 0 0 1080 1800
 use font_66  font_66_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598775974
-transform 1 0 18870 0 1 -9358
+transform 1 0 19132 0 1 990
 box 0 0 1080 2520
 use font_67  font_67_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598776042
-transform 1 0 4004 0 1 -24
+transform 1 0 4266 0 1 10324
 box 0 -720 1080 1800
 use font_69  font_69_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598776260
-transform 1 0 2796 0 1 -16
+transform 1 0 3058 0 1 10332
 box 0 0 720 2520
 use font_70  font_70_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598777090
-transform 1 0 11778 0 1 -4282
+transform 1 0 12040 0 1 6066
 box 0 -720 1080 1800
 use font_72  font_72_1 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598777237
-transform 1 0 1354 0 1 -16
+transform 1 0 1616 0 1 10332
 box 0 0 1080 1800
 use font_73  font_73_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598777283
-transform 1 0 25350 0 1 -9358
+transform 1 0 25612 0 1 990
 box 0 0 1080 1800
 use font_73  font_73_1
 timestamp 1598777283
-transform 1 0 26790 0 1 -9358
+transform 1 0 27052 0 1 990
 box 0 0 1080 1800
 use font_74  font_74_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598777367
-transform 1 0 6970 0 1 -30
+transform 1 0 7232 0 1 10318
 box 0 0 1080 2160
 use font_78  font_78_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598777815
-transform 1 0 24486 0 1 -61
+transform 1 0 24748 0 1 10287
 box 0 0 1080 1800
 use font_79  font_79_0 $PDKPATH/libs.ref/sky130_ml_xx_hd/mag
 timestamp 1598777870
-transform 1 0 3138 0 1 -4282
+transform 1 0 3400 0 1 6066
 box 0 -720 1080 1800
 << end >>

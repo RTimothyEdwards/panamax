@@ -73,5 +73,23 @@ module constant_block (
             .X(zero)
     );
 
+    sky130_fd_sc_hd__decap_12 FILLER_12 (
+`ifdef USE_POWER_PINS
+            .VPWR(vccd),
+            .VGND(vssd),
+            .VPB(vccd),
+            .VNB(vssd)
+`endif
+    );
+
+    sky130_fd_sc_hd__decap_8 FILLER_8 [1:0] (
+`ifdef USE_POWER_PINS
+            .VPWR(vccd),
+            .VGND(vssd),
+            .VPB(vccd),
+            .VNB(vssd)
+`endif
+    );
+
 endmodule
 `default_nettype wire

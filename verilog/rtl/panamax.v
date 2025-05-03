@@ -152,6 +152,8 @@ module panamax (
 	inout wire	[5:0]	vccd2,
 	inout wire	vssa2,
 	inout wire	vdda2,
+        output wire	[7:0] product_id,
+        output wire	[31:0] project_id,
 	output wire	select_tie_lo_esd,
 	output wire	select_in,
 	output wire	select_tie_hi_esd,
@@ -182,6 +184,7 @@ module panamax (
 	input wire	resetb_disable_pullup_h,
 	output wire	resetb_tie_hi_esd,
 	output wire	resetb_xres_h_n,
+	output wire	resetb_xres_n,
 	output wire	resetb_tie_lo_esd,
 	input wire	resetb_inp_sel_h,
 	input wire	resetb_en_vddio_sig_h,
@@ -681,7 +684,6 @@ module panamax (
 	input wire	gpio1_0_analog_pol,
 	input wire	gpio1_0_analog_sel,
 	input wire	gpio1_0_hys_trim,
-	input wire	gpio1_0_vinref,
 	input wire	gpio1_0_hld_ovr,
 	output wire	gpio1_0_in_h,
 	input wire	gpio1_0_enable_h,
@@ -710,7 +712,6 @@ module panamax (
 	input wire	gpio1_1_analog_pol,
 	input wire	gpio1_1_analog_sel,
 	input wire	gpio1_1_hys_trim,
-	input wire	gpio1_1_vinref,
 	input wire	gpio1_1_hld_ovr,
 	output wire	gpio1_1_in_h,
 	input wire	gpio1_1_enable_h,
@@ -739,7 +740,6 @@ module panamax (
 	input wire	gpio1_2_analog_pol,
 	input wire	gpio1_2_analog_sel,
 	input wire	gpio1_2_hys_trim,
-	input wire	gpio1_2_vinref,
 	input wire	gpio1_2_hld_ovr,
 	output wire	gpio1_2_in_h,
 	input wire	gpio1_2_enable_h,
@@ -768,7 +768,6 @@ module panamax (
 	input wire	gpio1_3_analog_pol,
 	input wire	gpio1_3_analog_sel,
 	input wire	gpio1_3_hys_trim,
-	input wire	gpio1_3_vinref,
 	input wire	gpio1_3_hld_ovr,
 	output wire	gpio1_3_in_h,
 	input wire	gpio1_3_enable_h,
@@ -788,7 +787,6 @@ module panamax (
 	input wire	vref_e_enable_h,
 	input wire	vref_e_hld_h_n,
 	input wire	vref_e_vrefgen_en,
-	inout wire	vcap_e_cpos,
 	output wire	gpio1_4_tie_hi_esd,
 	input wire	[2:0]	gpio1_4_dm,
 	input wire	gpio1_4_slow,
@@ -803,7 +801,6 @@ module panamax (
 	input wire	gpio1_4_analog_pol,
 	input wire	gpio1_4_analog_sel,
 	input wire	gpio1_4_hys_trim,
-	input wire	gpio1_4_vinref,
 	input wire	gpio1_4_hld_ovr,
 	output wire	gpio1_4_in_h,
 	input wire	gpio1_4_enable_h,
@@ -832,7 +829,6 @@ module panamax (
 	input wire	gpio1_5_analog_pol,
 	input wire	gpio1_5_analog_sel,
 	input wire	gpio1_5_hys_trim,
-	input wire	gpio1_5_vinref,
 	input wire	gpio1_5_hld_ovr,
 	output wire	gpio1_5_in_h,
 	input wire	gpio1_5_enable_h,
@@ -861,7 +857,6 @@ module panamax (
 	input wire	gpio1_6_analog_pol,
 	input wire	gpio1_6_analog_sel,
 	input wire	gpio1_6_hys_trim,
-	input wire	gpio1_6_vinref,
 	input wire	gpio1_6_hld_ovr,
 	output wire	gpio1_6_in_h,
 	input wire	gpio1_6_enable_h,
@@ -890,7 +885,6 @@ module panamax (
 	input wire	gpio1_7_analog_pol,
 	input wire	gpio1_7_analog_sel,
 	input wire	gpio1_7_hys_trim,
-	input wire	gpio1_7_vinref,
 	input wire	gpio1_7_hld_ovr,
 	output wire	gpio1_7_in_h,
 	input wire	gpio1_7_enable_h,
@@ -1769,7 +1763,6 @@ module panamax (
 	input wire	gpio6_0_analog_pol,
 	input wire	gpio6_0_analog_sel,
 	input wire	gpio6_0_hys_trim,
-	input wire	gpio6_0_vinref,
 	input wire	gpio6_0_hld_ovr,
 	output wire	gpio6_0_in_h,
 	input wire	gpio6_0_enable_h,
@@ -1798,7 +1791,6 @@ module panamax (
 	input wire	gpio6_1_analog_pol,
 	input wire	gpio6_1_analog_sel,
 	input wire	gpio6_1_hys_trim,
-	input wire	gpio6_1_vinref,
 	input wire	gpio6_1_hld_ovr,
 	output wire	gpio6_1_in_h,
 	input wire	gpio6_1_enable_h,
@@ -1827,7 +1819,6 @@ module panamax (
 	input wire	gpio6_2_analog_pol,
 	input wire	gpio6_2_analog_sel,
 	input wire	gpio6_2_hys_trim,
-	input wire	gpio6_2_vinref,
 	input wire	gpio6_2_hld_ovr,
 	output wire	gpio6_2_in_h,
 	input wire	gpio6_2_enable_h,
@@ -1856,7 +1847,6 @@ module panamax (
 	input wire	gpio6_3_analog_pol,
 	input wire	gpio6_3_analog_sel,
 	input wire	gpio6_3_hys_trim,
-	input wire	gpio6_3_vinref,
 	input wire	gpio6_3_hld_ovr,
 	output wire	gpio6_3_in_h,
 	input wire	gpio6_3_enable_h,
@@ -1871,7 +1861,6 @@ module panamax (
 	inout wire	gpio6_3_pad_a_esd_1_h,
 	output wire	gpio6_3_zero,
 	output wire	gpio6_3_one,
-	inout wire	vcap_w_cpos,
 	input wire	[4:0]	vref_w_ref_sel,
 	inout wire	vref_w_vinref,
 	input wire	vref_w_enable_h,
@@ -1891,7 +1880,6 @@ module panamax (
 	input wire	gpio6_4_analog_pol,
 	input wire	gpio6_4_analog_sel,
 	input wire	gpio6_4_hys_trim,
-	input wire	gpio6_4_vinref,
 	input wire	gpio6_4_hld_ovr,
 	output wire	gpio6_4_in_h,
 	input wire	gpio6_4_enable_h,
@@ -1920,7 +1908,6 @@ module panamax (
 	input wire	gpio6_5_analog_pol,
 	input wire	gpio6_5_analog_sel,
 	input wire	gpio6_5_hys_trim,
-	input wire	gpio6_5_vinref,
 	input wire	gpio6_5_hld_ovr,
 	output wire	gpio6_5_in_h,
 	input wire	gpio6_5_enable_h,
@@ -1949,7 +1936,6 @@ module panamax (
 	input wire	gpio6_6_analog_pol,
 	input wire	gpio6_6_analog_sel,
 	input wire	gpio6_6_hys_trim,
-	input wire	gpio6_6_vinref,
 	input wire	gpio6_6_hld_ovr,
 	output wire	gpio6_6_in_h,
 	input wire	gpio6_6_enable_h,
@@ -1978,7 +1964,6 @@ module panamax (
 	input wire	gpio6_7_analog_pol,
 	input wire	gpio6_7_analog_sel,
 	input wire	gpio6_7_hys_trim,
-	input wire	gpio6_7_vinref,
 	input wire	gpio6_7_hld_ovr,
 	output wire	gpio6_7_in_h,
 	input wire	gpio6_7_enable_h,
@@ -2225,26 +2210,6 @@ module panamax (
 	wire vddio_q;
 	wire vssio_q;
 	
-	assign vref_e_vinref = gpio1_0_vinref;
-	assign vref_e_vinref = gpio1_1_vinref;
-	assign vref_e_vinref = gpio1_2_vinref;
-	assign vref_e_vinref = gpio1_3_vinref;
-
-	assign vcap_e_cpos = gpio1_4_vinref;
-	assign vcap_e_cpos = gpio1_5_vinref;
-	assign vcap_e_cpos = gpio1_6_vinref;
-	assign vcap_e_cpos = gpio1_7_vinref;
-
-	assign vcap_w_cpos = gpio6_0_vinref;
-	assign vcap_w_cpos = gpio6_1_vinref;
-	assign vcap_w_cpos = gpio6_2_vinref;
-	assign vcap_w_cpos = gpio6_3_vinref;
-
-	assign vref_w_vinref = gpio6_4_vinref;
-	assign vref_w_vinref = gpio6_5_vinref;
-	assign vref_w_vinref = gpio6_6_vinref;
-	assign vref_w_vinref = gpio6_7_vinref;
-
     sky130_fd_io__top_gpio_ovtv2 gpio1_0_pad (
 	.OUT(gpio1_0_out),
 	.OE_N(gpio1_0_oe_n),
@@ -2265,7 +2230,7 @@ module panamax (
 	.ANALOG_POL(gpio1_0_analog_pol),
 	.DM(gpio1_0_dm),
 	.IB_MODE_SEL(gpio1_0_ib_mode_sel),
-	.VINREF(gpio1_0_vinref),
+	.VINREF(vref_e_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda1),
@@ -2618,7 +2583,7 @@ module panamax (
 	.ANALOG_POL(gpio1_3_analog_pol),
 	.DM(gpio1_3_dm),
 	.IB_MODE_SEL(gpio1_3_ib_mode_sel),
-	.VINREF(gpio1_3_vinref),
+	.VINREF(vref_e_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda1),
@@ -2946,7 +2911,7 @@ module panamax (
 	.ANALOG_POL(gpio1_6_analog_pol),
 	.DM(gpio1_6_dm),
 	.IB_MODE_SEL(gpio1_6_ib_mode_sel),
-	.VINREF(gpio1_6_vinref),
+	.VINREF(vref_e_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda1),
@@ -3158,7 +3123,7 @@ module panamax (
 	.ANALOG_POL(gpio6_2_analog_pol),
 	.DM(gpio6_2_dm),
 	.IB_MODE_SEL(gpio6_2_ib_mode_sel),
-	.VINREF(gpio6_2_vinref),
+	.VINREF(vref_e_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda2),
@@ -3456,7 +3421,7 @@ module panamax (
 	.ANALOG_POL(gpio6_5_analog_pol),
 	.DM(gpio6_5_dm),
 	.IB_MODE_SEL(gpio6_5_ib_mode_sel),
-	.VINREF(gpio6_5_vinref),
+	.VINREF(vref_w_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda2),
@@ -3789,7 +3754,7 @@ module panamax (
 	.amuxbus_a(amuxbus_a_e),
 	.amuxbus_b(amuxbus_b_e),
 	.cneg(vssio_q),
-	.cpos(vcap_e_cpos),
+	.cpos(vref_e_vinref),
 	.vccd(vccd0),
 	.vcchib(vccd0),
 	.vdda(vdda1),
@@ -3854,7 +3819,7 @@ module panamax (
 	.ANALOG_POL(gpio1_2_analog_pol),
 	.DM(gpio1_2_dm),
 	.IB_MODE_SEL(gpio1_2_ib_mode_sel),
-	.VINREF(gpio1_2_vinref),
+	.VINREF(vref_e_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda1),
@@ -4172,7 +4137,7 @@ module panamax (
 	.ANALOG_POL(gpio1_5_analog_pol),
 	.DM(gpio1_5_dm),
 	.IB_MODE_SEL(gpio1_5_ib_mode_sel),
-	.VINREF(gpio1_5_vinref),
+	.VINREF(vref_e_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda1),
@@ -4412,7 +4377,7 @@ module panamax (
 	.ANALOG_POL(gpio6_1_analog_pol),
 	.DM(gpio6_1_dm),
 	.IB_MODE_SEL(gpio6_1_ib_mode_sel),
-	.VINREF(gpio6_1_vinref),
+	.VINREF(vref_w_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda2),
@@ -4729,7 +4694,7 @@ module panamax (
 	.ANALOG_POL(gpio6_4_analog_pol),
 	.DM(gpio6_4_dm),
 	.IB_MODE_SEL(gpio6_4_ib_mode_sel),
-	.VINREF(gpio6_4_vinref),
+	.VINREF(vref_w_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda2),
@@ -5216,7 +5181,7 @@ module panamax (
 	.ANALOG_POL(gpio6_7_analog_pol),
 	.DM(gpio6_7_dm),
 	.IB_MODE_SEL(gpio6_7_ib_mode_sel),
-	.VINREF(gpio6_7_vinref),
+	.VINREF(vref_w_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda2),
@@ -5299,7 +5264,7 @@ module panamax (
 	.ANALOG_POL(gpio1_1_analog_pol),
 	.DM(gpio1_1_dm),
 	.IB_MODE_SEL(gpio1_1_ib_mode_sel),
-	.VINREF(gpio1_1_vinref),
+	.VINREF(vref_e_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda1),
@@ -5720,7 +5685,7 @@ module panamax (
 	.ANALOG_POL(gpio1_4_analog_pol),
 	.DM(gpio1_4_dm),
 	.IB_MODE_SEL(gpio1_4_ib_mode_sel),
-	.VINREF(gpio1_4_vinref),
+	.VINREF(vref_e_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda1),
@@ -6026,7 +5991,7 @@ module panamax (
 	.ANALOG_POL(gpio6_0_analog_pol),
 	.DM(gpio6_0_dm),
 	.IB_MODE_SEL(gpio6_0_ib_mode_sel),
-	.VINREF(gpio6_0_vinref),
+	.VINREF(vref_w_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda2),
@@ -6140,7 +6105,7 @@ module panamax (
 	.ANALOG_POL(gpio1_7_analog_pol),
 	.DM(gpio1_7_dm),
 	.IB_MODE_SEL(gpio1_7_ib_mode_sel),
-	.VINREF(gpio1_7_vinref),
+	.VINREF(vref_e_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda1),
@@ -6237,7 +6202,7 @@ module panamax (
 	.amuxbus_a(amuxbus_a_w),
 	.amuxbus_b(amuxbus_b_w),
 	.cneg(vssio_q),
-	.cpos(vcap_w_cpos),
+	.cpos(vref_w_vinref),
 	.vccd(vccd0),
 	.vcchib(vccd0),
 	.vdda(vdda2),
@@ -6427,7 +6392,7 @@ module panamax (
 	.ANALOG_POL(gpio6_3_analog_pol),
 	.DM(gpio6_3_dm),
 	.IB_MODE_SEL(gpio6_3_ib_mode_sel),
-	.VINREF(gpio6_3_vinref),
+	.VINREF(vref_w_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda2),
@@ -6844,7 +6809,7 @@ module panamax (
 	.ANALOG_POL(gpio6_6_analog_pol),
 	.DM(gpio6_6_dm),
 	.IB_MODE_SEL(gpio6_6_ib_mode_sel),
-	.VINREF(gpio6_6_vinref),
+	.VINREF(vref_w_vinref),
 	.VDDIO(vddio),
 	.VDDIO_Q(vddio_q),
 	.VDDA(vdda2),
@@ -6889,6 +6854,38 @@ module panamax (
 	.vssio(vssio),
 	.vssio_q(vssio_q),
 	.vswitch(vddio)
+    );
+
+    /* Additional modules */
+    /* Level shifted output for the RESETB pin */
+
+    xres_lvlshift xres_lvlshift_0 (
+    `ifdef USE_POWER_PINS
+	.VPWR(vddio),
+	.VGND(vssio),
+	.LVPWR(vccd0),
+	.LVGND(vssd0),
+    `endif
+	.A(resetb_xres_h_n),
+	.X(resetb_xres_n)
+    );
+
+    /* Product ID (note:  Unprogrammed version) */
+    product_id_rom_8bit product_id_rom_8bit_0 (
+    `ifdef USE_POWER_PINS
+	.VPWR(vccd),
+	.VGND(vssd),
+    `endif
+	.product_id(product_id)
+    );
+
+    /* Project (user) ID (note:  Unprogrammed version) */
+    project_id_rom_32bit project_id_rom_32bit_0 (
+    `ifdef USE_POWER_PINS
+	.VPWR(vccd),
+	.VGND(vssd),
+    `endif
+	.project_id(project_id)
     );
 
 endmodule
