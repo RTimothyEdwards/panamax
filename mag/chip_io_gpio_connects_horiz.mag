@@ -1,9 +1,9 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1726839386
+timestamp 1746308774
 << checkpaint >>
-rect -335 -3690 3913 1114
+rect -1260 -3690 11355 18074
 << metal1 >>
 rect 753 4232 759 4444
 rect 811 4284 817 4444
@@ -261,7 +261,7 @@ rect 776 1185 1074 1190
 rect 0 988 842 1058
 rect 657 852 1005 922
 rect 657 746 727 852
-rect 4 676 727 746
+rect 0 676 727 746
 rect 736 546 806 556
 rect 736 466 741 546
 rect 0 461 741 466
@@ -394,7 +394,7 @@ flabel metal3 s 0 15284 300 15354 0 FreeSans 320 0 0 0 vtrip_sel
 port 23 nsew
 flabel metal3 s 0 396 300 466 0 FreeSans 320 0 0 0 tie_hi_esd
 port 3 nsew
-flabel metal3 s 4 676 304 746 0 FreeSans 320 0 0 0 in
+flabel metal3 s 0 676 300 746 0 FreeSans 320 0 0 0 in
 port 2 nsew
 << properties >>
 string FIXED_BBOX 0 770 1249 16770

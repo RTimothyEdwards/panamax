@@ -2969,16 +2969,6 @@ PINS 2526 ;
      + USE POWER
      + PORT
         + LAYER met5 ( -8000 -8000 ) ( 8000 8000 )        + PLACED ( 25840 1959000 ) N ;
-   - vccd0 + NET vccd0
-     + DIRECTION INOUT
-     + USE POWER
-     + PORT
-        + LAYER met3 ( -4789 -1000 ) ( 4789 1000 )        + PLACED ( 98909 80586 ) N ;
-   - vccd0 + NET vccd0
-     + DIRECTION INOUT
-     + USE POWER
-     + PORT
-        + LAYER met3 ( -4802 -1000 ) ( 4802 1000 )        + PLACED ( 119002 80586 ) N ;
    - vssio + NET vssio
      + DIRECTION INOUT
      + USE GROUND
@@ -2989,16 +2979,6 @@ PINS 2526 ;
      + USE GROUND
      + PORT
         + LAYER met3 ( -4780 -1000 ) ( 4780 1000 )        + PLACED ( 437022 80586 ) N ;
-   - vssd0 + NET vssd0
-     + DIRECTION INOUT
-     + USE GROUND
-     + PORT
-        + LAYER met3 ( -4789 -1000 ) ( 4789 1000 )        + PLACED ( 460909 80586 ) N ;
-   - vssd0 + NET vssd0
-     + DIRECTION INOUT
-     + USE GROUND
-     + PORT
-        + LAYER met3 ( -4800 -1000 ) ( 4800 1000 )        + PLACED ( 481000 80586 ) N ;
    - vddio + NET vddio
      + DIRECTION INOUT
      + USE POWER
@@ -3009,11 +2989,6 @@ PINS 2526 ;
      + USE POWER
      + PORT
         + LAYER met3 ( -4780 -1000 ) ( 4780 1000 )        + PLACED ( 701022 80586 ) N ;
-   - vccd0 + NET vccd0
-     + DIRECTION INOUT
-     + USE POWER
-     + PORT
-        + LAYER met3 ( -4789 -1000 ) ( 4789 1000 )        + PLACED ( 732909 80586 ) N ;
    - vccd0 + NET vccd0
      + DIRECTION INOUT
      + USE POWER
@@ -3049,16 +3024,6 @@ PINS 2526 ;
      + USE POWER
      + PORT
         + LAYER met3 ( -4780 -1000 ) ( 4780 1000 )        + PLACED ( 1077022 80586 ) N ;
-   - vssd0 + NET vssd0
-     + DIRECTION INOUT
-     + USE GROUND
-     + PORT
-        + LAYER met3 ( -4789 -1000 ) ( 4789 1000 )        + PLACED ( 1108909 80586 ) N ;
-   - vssd0 + NET vssd0
-     + DIRECTION INOUT
-     + USE GROUND
-     + PORT
-        + LAYER met3 ( -4800 -1000 ) ( 4800 1000 )        + PLACED ( 1129000 80586 ) N ;
    - vddio + NET vddio
      + DIRECTION INOUT
      + USE POWER
@@ -3069,21 +3034,6 @@ PINS 2526 ;
      + USE POWER
      + PORT
         + LAYER met3 ( -1000 -4780 ) ( 1000 4780 )        + PLACED ( 1354614 134222 ) N ;
-   - vssd1[0] + NET vssd1[0]
-     + DIRECTION INOUT
-     + USE GROUND
-     + PORT
-        + LAYER met3 ( -1000 -4789 ) ( 1000 4789 )        + PLACED ( 1354614 322109 ) N ;
-   - vssd1[0] + NET vssd1[0]
-     + DIRECTION INOUT
-     + USE GROUND
-     + PORT
-        + LAYER met3 ( -1000 -4800 ) ( 1000 4800 )        + PLACED ( 1354614 342200 ) N ;
-   - vccd1[0] + NET vccd1[0]
-     + DIRECTION INOUT
-     + USE POWER
-     + PORT
-        + LAYER met3 ( -1000 -4651 ) ( 1000 4651 )        + PLACED ( 1354614 332149 ) N ;
    - vssio + NET vssio
      + DIRECTION INOUT
      + USE GROUND
@@ -3124,16 +3074,6 @@ PINS 2526 ;
      + USE GROUND
      + PORT
         + LAYER met3 ( -1000 -4780 ) ( 1000 4780 )        + PLACED ( 1354614 678222 ) N ;
-   - vccd1[1] + NET vccd1[1]
-     + DIRECTION INOUT
-     + USE POWER
-     + PORT
-        + LAYER met3 ( -1000 -4789 ) ( 1000 4789 )        + PLACED ( 1354614 962109 ) N ;
-   - vccd1[1] + NET vccd1[1]
-     + DIRECTION INOUT
-     + USE POWER
-     + PORT
-        + LAYER met3 ( -1000 -4802 ) ( 1000 4802 )        + PLACED ( 1354614 982202 ) N ;
    - vssd1[1] + NET vssd1[1]
      + DIRECTION INOUT
      + USE GROUND
@@ -3183,17 +3123,7 @@ PINS 2526 ;
      + DIRECTION INOUT
      + USE GROUND
      + PORT
-        + LAYER met3 ( -1000 -4789 ) ( 1000 4789 )        + PLACED ( 1354614 1483309 ) N ;
-   - vssd1[2] + NET vssd1[2]
-     + DIRECTION INOUT
-     + USE GROUND
-     + PORT
         + LAYER met3 ( -1000 -4800 ) ( 1000 4800 )        + PLACED ( 1354614 1503400 ) N ;
-   - vccd1[2] + NET vccd1[2]
-     + DIRECTION INOUT
-     + USE POWER
-     + PORT
-        + LAYER met3 ( -1000 -4651 ) ( 1000 4651 )        + PLACED ( 1354614 1493349 ) N ;
    - vssio + NET vssio
      + DIRECTION INOUT
      + USE GROUND
@@ -3204,11 +3134,6 @@ PINS 2526 ;
      + USE GROUND
      + PORT
         + LAYER met3 ( -1000 -4780 ) ( 1000 4780 )        + PLACED ( 1354614 1711422 ) N ;
-   - vccd1[3] + NET vccd1[3]
-     + DIRECTION INOUT
-     + USE POWER
-     + PORT
-        + LAYER met3 ( -1000 -4789 ) ( 1000 4789 )        + PLACED ( 1354614 1899309 ) N ;
    - vccd1[3] + NET vccd1[3]
      + DIRECTION INOUT
      + USE POWER
@@ -3233,7 +3158,7 @@ PINS 2526 ;
      + DIRECTION INOUT
      + USE GROUND
      + PORT
-        + LAYER met3 ( -4789 -1000 ) ( 4789 1000 )        + PLACED ( 1342691 1994614 ) N ;
+        + LAYER met3 ( -4800 -1000 ) ( 4800 1000 )        + PLACED ( 1342702 1994614 ) N ;
    - vssd1[4] + NET vssd1[4]
      + DIRECTION INOUT
      + USE GROUND
@@ -3243,7 +3168,7 @@ PINS 2526 ;
      + DIRECTION INOUT
      + USE POWER
      + PORT
-        + LAYER met3 ( -4651 -1000 ) ( 4651 1000 )        + PLACED ( 1332651 1994614 ) N ;
+        + LAYER met3 ( -4652 -1000 ) ( 4652 1000 )        + PLACED ( 1332652 1994614 ) N ;
    - vssio + NET vssio
      + DIRECTION INOUT
      + USE GROUND
@@ -3258,7 +3183,7 @@ PINS 2526 ;
      + DIRECTION INOUT
      + USE POWER
      + PORT
-        + LAYER met3 ( -4789 -1000 ) ( 4789 1000 )        + PLACED ( 1058691 1994614 ) N ;
+        + LAYER met3 ( -4800 -1000 ) ( 4800 1000 )        + PLACED ( 1058702 1994614 ) N ;
    - vccd1[5] + NET vccd1[5]
      + DIRECTION INOUT
      + USE POWER
@@ -3303,17 +3228,7 @@ PINS 2526 ;
      + DIRECTION INOUT
      + USE GROUND
      + PORT
-        + LAYER met3 ( -4789 -1000 ) ( 4789 1000 )        + PLACED ( 398691 1994614 ) N ;
-   - vssd2[0] + NET vssd2[0]
-     + DIRECTION INOUT
-     + USE GROUND
-     + PORT
         + LAYER met3 ( -4800 -1000 ) ( 4800 1000 )        + PLACED ( 378600 1994614 ) N ;
-   - vccd2[0] + NET vccd2[0]
-     + DIRECTION INOUT
-     + USE POWER
-     + PORT
-        + LAYER met3 ( -4651 -1000 ) ( 4651 1000 )        + PLACED ( 388651 1994614 ) N ;
    - vssio + NET vssio
      + DIRECTION INOUT
      + USE GROUND
@@ -3324,11 +3239,6 @@ PINS 2526 ;
      + USE GROUND
      + PORT
         + LAYER met3 ( -4780 -1000 ) ( 4780 1000 )        + PLACED ( 332578 1994614 ) N ;
-   - vccd2[1] + NET vccd2[1]
-     + DIRECTION INOUT
-     + USE POWER
-     + PORT
-        + LAYER met3 ( -4789 -1000 ) ( 4789 1000 )        + PLACED ( 114691 1994614 ) N ;
    - vccd2[1] + NET vccd2[1]
      + DIRECTION INOUT
      + USE POWER
@@ -3349,16 +3259,6 @@ PINS 2526 ;
      + USE POWER
      + PORT
         + LAYER met3 ( -1000 -4780 ) ( 1000 4780 )        + PLACED ( 80586 1968936 ) N ;
-   - vssd2[2] + NET vssd2[2]
-     + DIRECTION INOUT
-     + USE GROUND
-     + PORT
-        + LAYER met3 ( -1000 -4800 ) ( 1000 4800 )        + PLACED ( 80586 1903000 ) N ;
-   - vssd2[2] + NET vssd2[2]
-     + DIRECTION INOUT
-     + USE GROUND
-     + PORT
-        + LAYER met3 ( -1000 -4789 ) ( 1000 4789 )        + PLACED ( 80586 1923091 ) N ;
    - vssio + NET vssio
      + DIRECTION INOUT
      + USE GROUND
@@ -3373,12 +3273,7 @@ PINS 2526 ;
      + DIRECTION INOUT
      + USE POWER
      + PORT
-        + LAYER met3 ( -1000 -4802 ) ( 1000 4802 )        + PLACED ( 80586 1486998 ) N ;
-   - vccd2[3] + NET vccd2[3]
-     + DIRECTION INOUT
-     + USE POWER
-     + PORT
-        + LAYER met3 ( -1000 -4789 ) ( 1000 4789 )        + PLACED ( 80586 1507091 ) N ;
+        + LAYER met3 ( -1000 -4790 ) ( 1000 4790 )        + PLACED ( 80586 1507092 ) N ;
    - vssd2[3] + NET vssd2[3]
      + DIRECTION INOUT
      + USE GROUND
@@ -3424,21 +3319,6 @@ PINS 2526 ;
      + USE GROUND
      + PORT
         + LAYER met3 ( -1000 -4780 ) ( 1000 4780 )        + PLACED ( 80586 1076936 ) N ;
-   - vssd2[4] + NET vssd2[4]
-     + DIRECTION INOUT
-     + USE GROUND
-     + PORT
-        + LAYER met3 ( -1000 -4800 ) ( 1000 4800 )        + PLACED ( 80586 967800 ) N ;
-   - vssd2[4] + NET vssd2[4]
-     + DIRECTION INOUT
-     + USE GROUND
-     + PORT
-        + LAYER met3 ( -1000 -4789 ) ( 1000 4789 )        + PLACED ( 80586 987891 ) N ;
-   - vccd2[4] + NET vccd2[4]
-     + DIRECTION INOUT
-     + USE POWER
-     + PORT
-        + LAYER met3 ( -1000 -4651 ) ( 1000 4651 )        + PLACED ( 80586 977851 ) N ;
    - vssa2 + NET vssa2
      + DIRECTION INOUT
      + USE GROUND
@@ -3479,16 +3359,6 @@ PINS 2526 ;
      + USE GROUND
      + PORT
         + LAYER met3 ( -1000 -4780 ) ( 1000 4780 )        + PLACED ( 80586 389736 ) N ;
-   - vccd2[5] + NET vccd2[5]
-     + DIRECTION INOUT
-     + USE POWER
-     + PORT
-        + LAYER met3 ( -1000 -4802 ) ( 1000 4802 )        + PLACED ( 80586 323798 ) N ;
-   - vccd2[5] + NET vccd2[5]
-     + DIRECTION INOUT
-     + USE POWER
-     + PORT
-        + LAYER met3 ( -1000 -4789 ) ( 1000 4789 )        + PLACED ( 80586 343891 ) N ;
    - vssd2[5] + NET vssd2[5]
      + DIRECTION INOUT
      + USE GROUND
@@ -3688,7 +3558,7 @@ PINS 2526 ;
      + DIRECTION OUTPUT
      + USE SIGNAL
      + PORT
-        + LAYER met2 ( -333 -300 ) ( 333 300 )        + PLACED ( 206769 80900 ) N ;
+        + LAYER met2 ( -332 -300 ) ( 332 300 )        + PLACED ( 206768 80900 ) N ;
    - resetb_pullup_h + NET resetb_pullup_h
      + DIRECTION INPUT
      + USE SIGNAL
@@ -5158,7 +5028,7 @@ PINS 2526 ;
      + DIRECTION INPUT
      + USE SIGNAL
      + PORT
-        + LAYER met2 ( -69 -300 ) ( 69 300 )        + PLACED ( 1283451 102386 ) N ;
+        + LAYER met2 ( -68 -300 ) ( 68 300 )        + PLACED ( 1283450 102386 ) N ;
    - sio_hld_h_n[0] + NET sio_hld_h_n[0]
      + DIRECTION INPUT
      + USE SIGNAL
@@ -5384,11 +5254,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 189926 ) N ;
-   - gpio0_1_in + NET gpio0_1_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 191082 ) N ;
    - gpio0_1_tie_hi_esd + NET gpio0_1_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -5524,11 +5389,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 231926 ) N ;
-   - gpio0_2_in + NET gpio0_2_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 233082 ) N ;
    - gpio0_2_tie_hi_esd + NET gpio0_2_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -5664,11 +5524,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 273926 ) N ;
-   - gpio0_3_in + NET gpio0_3_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 275082 ) N ;
    - gpio0_3_tie_hi_esd + NET gpio0_3_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -5804,11 +5659,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 395926 ) N ;
-   - gpio0_4_in + NET gpio0_4_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 397082 ) N ;
    - gpio0_4_tie_hi_esd + NET gpio0_4_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -5944,11 +5794,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 437926 ) N ;
-   - gpio0_5_in + NET gpio0_5_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 439082 ) N ;
    - gpio0_5_tie_hi_esd + NET gpio0_5_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -6084,11 +5929,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 479926 ) N ;
-   - gpio0_6_in + NET gpio0_6_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 481082 ) N ;
    - gpio0_6_tie_hi_esd + NET gpio0_6_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -6224,11 +6064,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 521926 ) N ;
-   - gpio0_7_in + NET gpio0_7_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 523082 ) N ;
    - gpio0_7_tie_hi_esd + NET gpio0_7_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -6503,7 +6338,7 @@ PINS 2526 ;
      + DIRECTION INOUT
      + USE SIGNAL
      + PORT
-        + LAYER met3 ( -300 -119 ) ( 300 119 )        + PLACED ( 1354300 748439 ) N ;
+        + LAYER met3 ( -300 -120 ) ( 300 120 )        + PLACED ( 1354300 748440 ) N ;
    - gpio1_0_pad_a_esd_1_h + NET gpio1_0_pad_a_esd_1_h
      + DIRECTION INOUT
      + USE SIGNAL
@@ -6663,7 +6498,7 @@ PINS 2526 ;
      + DIRECTION INOUT
      + USE SIGNAL
      + PORT
-        + LAYER met3 ( -300 -119 ) ( 300 119 )        + PLACED ( 1354300 814439 ) N ;
+        + LAYER met3 ( -300 -120 ) ( 300 120 )        + PLACED ( 1354300 814440 ) N ;
    - gpio1_1_pad_a_esd_1_h + NET gpio1_1_pad_a_esd_1_h
      + DIRECTION INOUT
      + USE SIGNAL
@@ -6983,7 +6818,7 @@ PINS 2526 ;
      + DIRECTION INOUT
      + USE SIGNAL
      + PORT
-        + LAYER met3 ( -300 -119 ) ( 300 119 )        + PLACED ( 1354300 946439 ) N ;
+        + LAYER met3 ( -300 -120 ) ( 300 120 )        + PLACED ( 1354300 946440 ) N ;
    - gpio1_3_pad_a_esd_1_h + NET gpio1_3_pad_a_esd_1_h
      + DIRECTION INOUT
      + USE SIGNAL
@@ -7508,7 +7343,7 @@ PINS 2526 ;
      + DIRECTION INOUT
      + USE SIGNAL
      + PORT
-        + LAYER met3 ( -300 -119 ) ( 300 119 )        + PLACED ( 1354300 1273639 ) N ;
+        + LAYER met3 ( -300 -120 ) ( 300 120 )        + PLACED ( 1354300 1273640 ) N ;
    - gpio1_6_pad_a_esd_1_h + NET gpio1_6_pad_a_esd_1_h
      + DIRECTION INOUT
      + USE SIGNAL
@@ -7689,11 +7524,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1517126 ) N ;
-   - gpio2_0_in + NET gpio2_0_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 1518282 ) N ;
    - gpio2_0_tie_hi_esd + NET gpio2_0_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -7829,11 +7659,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1559126 ) N ;
-   - gpio2_1_in + NET gpio2_1_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 1560282 ) N ;
    - gpio2_1_tie_hi_esd + NET gpio2_1_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -7969,11 +7794,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1601126 ) N ;
-   - gpio2_2_in + NET gpio2_2_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 1602282 ) N ;
    - gpio2_2_tie_hi_esd + NET gpio2_2_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -8109,11 +7929,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1643126 ) N ;
-   - gpio2_3_in + NET gpio2_3_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 1644282 ) N ;
    - gpio2_3_tie_hi_esd + NET gpio2_3_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -8249,11 +8064,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1725126 ) N ;
-   - gpio2_4_in + NET gpio2_4_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 1726282 ) N ;
    - gpio2_4_tie_hi_esd + NET gpio2_4_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -8389,11 +8199,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1767126 ) N ;
-   - gpio2_5_in + NET gpio2_5_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 1768282 ) N ;
    - gpio2_5_tie_hi_esd + NET gpio2_5_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -8529,11 +8334,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1809126 ) N ;
-   - gpio2_6_in + NET gpio2_6_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 1810282 ) N ;
    - gpio2_6_tie_hi_esd + NET gpio2_6_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -8669,11 +8469,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1851126 ) N ;
-   - gpio2_7_in + NET gpio2_7_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 1852282 ) N ;
    - gpio2_7_tie_hi_esd + NET gpio2_7_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -11139,11 +10934,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1889274 ) N ;
-   - gpio5_0_in + NET gpio5_0_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 1888118 ) N ;
    - gpio5_0_tie_hi_esd + NET gpio5_0_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -11279,11 +11069,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1847274 ) N ;
-   - gpio5_1_in + NET gpio5_1_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 1846118 ) N ;
    - gpio5_1_tie_hi_esd + NET gpio5_1_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -11419,11 +11204,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1805274 ) N ;
-   - gpio5_2_in + NET gpio5_2_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 1804118 ) N ;
    - gpio5_2_tie_hi_esd + NET gpio5_2_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -11559,11 +11339,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1763274 ) N ;
-   - gpio5_3_in + NET gpio5_3_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 1762118 ) N ;
    - gpio5_3_tie_hi_esd + NET gpio5_3_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -11699,11 +11474,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1681274 ) N ;
-   - gpio5_4_in + NET gpio5_4_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 1680118 ) N ;
    - gpio5_4_tie_hi_esd + NET gpio5_4_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -11839,11 +11609,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1639274 ) N ;
-   - gpio5_5_in + NET gpio5_5_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 1638118 ) N ;
    - gpio5_5_tie_hi_esd + NET gpio5_5_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -11979,11 +11744,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1597274 ) N ;
-   - gpio5_6_in + NET gpio5_6_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 1596118 ) N ;
    - gpio5_6_tie_hi_esd + NET gpio5_6_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -12119,11 +11879,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1555274 ) N ;
-   - gpio5_7_in + NET gpio5_7_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 1554118 ) N ;
    - gpio5_7_tie_hi_esd + NET gpio5_7_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -12398,7 +12153,7 @@ PINS 2526 ;
      + DIRECTION INOUT
      + USE SIGNAL
      + PORT
-        + LAYER met3 ( -300 -119 ) ( 300 119 )        + PLACED ( 80900 1290761 ) N ;
+        + LAYER met3 ( -300 -120 ) ( 300 120 )        + PLACED ( 80900 1290760 ) N ;
    - gpio6_0_pad_a_esd_1_h + NET gpio6_0_pad_a_esd_1_h
      + DIRECTION INOUT
      + USE SIGNAL
@@ -12558,7 +12313,7 @@ PINS 2526 ;
      + DIRECTION INOUT
      + USE SIGNAL
      + PORT
-        + LAYER met3 ( -300 -119 ) ( 300 119 )        + PLACED ( 80900 1224761 ) N ;
+        + LAYER met3 ( -300 -120 ) ( 300 120 )        + PLACED ( 80900 1224760 ) N ;
    - gpio6_1_pad_a_esd_1_h + NET gpio6_1_pad_a_esd_1_h
      + DIRECTION INOUT
      + USE SIGNAL
@@ -13083,7 +12838,7 @@ PINS 2526 ;
      + DIRECTION INOUT
      + USE SIGNAL
      + PORT
-        + LAYER met3 ( -300 -119 ) ( 300 119 )        + PLACED ( 80900 897561 ) N ;
+        + LAYER met3 ( -300 -120 ) ( 300 120 )        + PLACED ( 80900 897560 ) N ;
    - gpio6_4_pad_a_esd_1_h + NET gpio6_4_pad_a_esd_1_h
      + DIRECTION INOUT
      + USE SIGNAL
@@ -13563,7 +13318,7 @@ PINS 2526 ;
      + DIRECTION INOUT
      + USE SIGNAL
      + PORT
-        + LAYER met3 ( -300 -119 ) ( 300 119 )        + PLACED ( 80900 699561 ) N ;
+        + LAYER met3 ( -300 -120 ) ( 300 120 )        + PLACED ( 80900 699560 ) N ;
    - gpio6_7_pad_a_esd_1_h + NET gpio6_7_pad_a_esd_1_h
      + DIRECTION INOUT
      + USE SIGNAL
@@ -13584,11 +13339,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 564074 ) N ;
-   - gpio7_0_in + NET gpio7_0_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 562918 ) N ;
    - gpio7_0_tie_hi_esd + NET gpio7_0_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -13724,11 +13474,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 522074 ) N ;
-   - gpio7_1_in + NET gpio7_1_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 520918 ) N ;
    - gpio7_1_tie_hi_esd + NET gpio7_1_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -13864,11 +13609,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 480074 ) N ;
-   - gpio7_2_in + NET gpio7_2_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 478918 ) N ;
    - gpio7_2_tie_hi_esd + NET gpio7_2_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -14004,11 +13744,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 438074 ) N ;
-   - gpio7_3_in + NET gpio7_3_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 436918 ) N ;
    - gpio7_3_tie_hi_esd + NET gpio7_3_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -14144,11 +13879,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 310074 ) N ;
-   - gpio7_4_in + NET gpio7_4_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 308918 ) N ;
    - gpio7_4_tie_hi_esd + NET gpio7_4_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -14284,11 +14014,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 268074 ) N ;
-   - gpio7_5_in + NET gpio7_5_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 266918 ) N ;
    - gpio7_5_tie_hi_esd + NET gpio7_5_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -14424,11 +14149,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 226074 ) N ;
-   - gpio7_6_in + NET gpio7_6_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 224918 ) N ;
    - gpio7_6_tie_hi_esd + NET gpio7_6_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -14564,11 +14284,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 184074 ) N ;
-   - gpio7_7_in + NET gpio7_7_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81376 182918 ) N ;
    - gpio7_7_tie_hi_esd + NET gpio7_7_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -14739,14 +14454,9 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -60 ) ( 300 60 )        + PLACED ( 81500 84276 ) N ;
-   - vccd2[2] + NET vccd2[2]
-     + DIRECTION INOUT
-     + USE POWER
-     + PORT
-        + LAYER met3 ( -1000 -4651 ) ( 1000 4651 )        + PLACED ( 80586 1913051 ) N ;
    - resetb_xres_n + NET resetb_xres_n
      + PORT
-        + LAYER met2 ( -56 -247 ) ( 56 247 )        + PLACED ( 174152 80985 ) N ;
+        + LAYER met2 ( -56 -248 ) ( 56 248 )        + PLACED ( 174152 80984 ) N ;
    - project_id[0] + NET project_id[0]
      + PORT
         + LAYER met2 ( -56 -168 ) ( 56 168 )        + PLACED ( 1087296 81524 ) N ;
@@ -14867,9 +14577,299 @@ PINS 2526 ;
    - product_id[7] + NET product_id[7]
      + PORT
         + LAYER met2 ( -56 -168 ) ( 56 168 )        + PLACED ( 1142992 81456 ) N ;
+   - vssd2[4] + NET vssd2[4]
+     + DIRECTION INOUT
+     + USE GROUND
+     + PORT
+        + LAYER met3 ( -1000 -4800 ) ( 1000 4800 )        + PLACED ( 80588 967800 ) N ;
+   - vccd2[4] + NET vccd2[4]
+     + DIRECTION INOUT
+     + USE POWER
+     + PORT
+        + LAYER met3 ( -1000 -4652 ) ( 1000 4652 )        + PLACED ( 80588 977852 ) N ;
+   - vccd1[3] + NET vccd1[3]
+     + DIRECTION INOUT
+     + USE POWER
+     + PORT
+        + LAYER met3 ( -1000 -4790 ) ( 1000 4790 )        + PLACED ( 1354612 1899310 ) N ;
+   - vccd2[3] + NET vccd2[3]
+     + DIRECTION INOUT
+     + USE POWER
+     + PORT
+        + LAYER met3 ( -1000 -4802 ) ( 1000 4802 )        + PLACED ( 80588 1486998 ) N ;
+   - vssd1[2] + NET vssd1[2]
+     + DIRECTION INOUT
+     + USE GROUND
+     + PORT
+        + LAYER met3 ( -1000 -4790 ) ( 1000 4790 )        + PLACED ( 1354612 1483310 ) N ;
+   - vccd1[2] + NET vccd1[2]
+     + DIRECTION INOUT
+     + USE POWER
+     + PORT
+        + LAYER met3 ( -1000 -4652 ) ( 1000 4652 )        + PLACED ( 1354612 1493348 ) N ;
+   - vssd2[2] + NET vssd2[2]
+     + DIRECTION INOUT
+     + USE GROUND
+     + PORT
+        + LAYER met3 ( -1000 -4800 ) ( 1000 4800 )        + PLACED ( 80588 1903000 ) N ;
+   - vccd2[2] + NET vccd2[2]
+     + DIRECTION INOUT
+     + USE POWER
+     + PORT
+        + LAYER met3 ( -1000 -4652 ) ( 1000 4652 )        + PLACED ( 80588 1913052 ) N ;
+   - vccd2[1] + NET vccd2[1]
+     + DIRECTION INOUT
+     + USE POWER
+     + PORT
+        + LAYER met3 ( -4790 -1000 ) ( 4790 1000 )        + PLACED ( 114690 1994612 ) N ;
+   - vccd1[1] + NET vccd1[1]
+     + DIRECTION INOUT
+     + USE POWER
+     + PORT
+        + LAYER met3 ( -1000 -4790 ) ( 1000 4790 )        + PLACED ( 1354612 962110 ) N ;
+   - vssd2[0] + NET vssd2[0]
+     + DIRECTION INOUT
+     + USE GROUND
+     + PORT
+        + LAYER met3 ( -4790 -1000 ) ( 4790 1000 )        + PLACED ( 398690 1994612 ) N ;
+   - vccd2[0] + NET vccd2[0]
+     + DIRECTION INOUT
+     + USE POWER
+     + PORT
+        + LAYER met3 ( -4652 -1000 ) ( 4652 1000 )        + PLACED ( 388652 1994612 ) N ;
+   - vssd1[0] + NET vssd1[0]
+     + DIRECTION INOUT
+     + USE GROUND
+     + PORT
+        + LAYER met3 ( -1000 -4790 ) ( 1000 4790 )        + PLACED ( 1354612 322110 ) N ;
+   - vccd1[0] + NET vccd1[0]
+     + DIRECTION INOUT
+     + USE POWER
+     + PORT
+        + LAYER met3 ( -1000 -4652 ) ( 1000 4652 )        + PLACED ( 1354612 332148 ) N ;
+   - vccd0 + NET vccd0
+     + DIRECTION INOUT
+     + USE POWER
+     + PORT
+        + LAYER met3 ( -4790 -1000 ) ( 4790 1000 )        + PLACED ( 98910 80588 ) N ;
+   - vccd0 + NET vccd0
+     + DIRECTION INOUT
+     + USE POWER
+     + PORT
+        + LAYER met3 ( -4802 -1000 ) ( 4802 1000 )        + PLACED ( 119002 80588 ) N ;
+   - vccd0 + NET vccd0
+     + DIRECTION INOUT
+     + USE POWER
+     + PORT
+        + LAYER met3 ( -4790 -1000 ) ( 4790 1000 )        + PLACED ( 732910 80588 ) N ;
+   - vssd0 + NET vssd0
+     + DIRECTION INOUT
+     + USE GROUND
+     + PORT
+        + LAYER met3 ( -4790 -1000 ) ( 4790 1000 )        + PLACED ( 460910 80588 ) N ;
+   - vssd0 + NET vssd0
+     + DIRECTION INOUT
+     + USE GROUND
+     + PORT
+        + LAYER met3 ( -4800 -1000 ) ( 4800 1000 )        + PLACED ( 481000 80588 ) N ;
+   - vssd0 + NET vssd0
+     + DIRECTION INOUT
+     + USE GROUND
+     + PORT
+        + LAYER met3 ( -4790 -1000 ) ( 4790 1000 )        + PLACED ( 1108910 80588 ) N ;
+   - vssd0 + NET vssd0
+     + DIRECTION INOUT
+     + USE GROUND
+     + PORT
+        + LAYER met3 ( -4800 -1000 ) ( 4800 1000 )        + PLACED ( 1129000 80588 ) N ;
+   - vccd2[5] + NET vccd2[5]
+     + DIRECTION INOUT
+     + USE POWER
+     + PORT
+        + LAYER met3 ( -1000 -4790 ) ( 1000 4790 )        + PLACED ( 80588 343890 ) N ;
+   - vccd2[5] + NET vccd2[5]
+     + DIRECTION INOUT
+     + USE POWER
+     + PORT
+        + LAYER met3 ( -1000 -4800 ) ( 1000 4800 )        + PLACED ( 80588 323800 ) N ;
+   - vssd2[2] + NET vssd2[2]
+     + DIRECTION INOUT
+     + USE GROUND
+     + PORT
+        + LAYER met3 ( -1000 -4790 ) ( 1000 4790 )        + PLACED ( 80588 1923090 ) N ;
+   - vccd1[1] + NET vccd1[1]
+     + DIRECTION INOUT
+     + USE POWER
+     + PORT
+        + LAYER met3 ( -1000 -4802 ) ( 1000 4802 )        + PLACED ( 1354612 982202 ) N ;
+   - vssd1[0] + NET vssd1[0]
+     + DIRECTION INOUT
+     + USE GROUND
+     + PORT
+        + LAYER met3 ( -1000 -4800 ) ( 1000 4800 )        + PLACED ( 1354612 342200 ) N ;
+   - gpio0_4_in + NET gpio0_4_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 397082 ) N ;
+   - gpio0_1_in + NET gpio0_1_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 191082 ) N ;
+   - gpio0_2_in + NET gpio0_2_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 233082 ) N ;
+   - gpio0_3_in + NET gpio0_3_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 275082 ) N ;
+   - gpio0_5_in + NET gpio0_5_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 439082 ) N ;
+   - gpio0_6_in + NET gpio0_6_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 481082 ) N ;
+   - gpio0_7_in + NET gpio0_7_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 523082 ) N ;
+   - gpio2_0_in + NET gpio2_0_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1518282 ) N ;
+   - gpio2_1_in + NET gpio2_1_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1560282 ) N ;
+   - gpio2_2_in + NET gpio2_2_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1602282 ) N ;
+   - gpio2_3_in + NET gpio2_3_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1644282 ) N ;
+   - gpio2_4_in + NET gpio2_4_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1726282 ) N ;
+   - gpio2_5_in + NET gpio2_5_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1768282 ) N ;
+   - gpio2_6_in + NET gpio2_6_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1810282 ) N ;
+   - gpio2_7_in + NET gpio2_7_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 1852282 ) N ;
+   - gpio5_0_in + NET gpio5_0_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1888118 ) N ;
+   - gpio5_1_in + NET gpio5_1_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1846118 ) N ;
+   - gpio5_2_in + NET gpio5_2_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1804118 ) N ;
+   - gpio5_3_in + NET gpio5_3_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1762118 ) N ;
+   - gpio5_4_in + NET gpio5_4_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1680118 ) N ;
+   - gpio5_5_in + NET gpio5_5_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1638118 ) N ;
+   - gpio5_6_in + NET gpio5_6_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1596118 ) N ;
+   - gpio5_7_in + NET gpio5_7_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 1554118 ) N ;
+   - gpio7_0_in + NET gpio7_0_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 562918 ) N ;
+   - gpio7_1_in + NET gpio7_1_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 520918 ) N ;
+   - gpio7_2_in + NET gpio7_2_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 478918 ) N ;
+   - gpio7_3_in + NET gpio7_3_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 436918 ) N ;
+   - gpio7_4_in + NET gpio7_4_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 308918 ) N ;
+   - gpio7_5_in + NET gpio7_5_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 266918 ) N ;
+   - gpio7_6_in + NET gpio7_6_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 224918 ) N ;
+   - gpio7_7_in + NET gpio7_7_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 81384 182918 ) N ;
+   - vssd2[4] + NET vssd2[4]
+     + DIRECTION INOUT
+     + USE GROUND
+     + PORT
+        + LAYER met3 ( -1000 -4790 ) ( 1000 4790 )        + PLACED ( 80588 987890 ) N ;
 END PINS
 
-NONDEFAULTRULES 138 ;
+NONDEFAULTRULES 142 ;
   - met4_width_114
      + LAYER met4 WIDTH 114 ;
   - met3_width_4
@@ -14882,12 +14882,16 @@ NONDEFAULTRULES 138 ;
      + LAYER met3 WIDTH 140 ;
   - met3_width_6
      + LAYER met3 WIDTH 6 ;
+  - met3_width_3404
+     + LAYER met3 WIDTH 3404 ;
   - met3_width_130
      + LAYER met3 WIDTH 130 ;
   - met3_width_70
      + LAYER met3 WIDTH 70 ;
   - met4_width_106
      + LAYER met4 WIDTH 106 ;
+  - met3_width_334
+     + LAYER met3 WIDTH 334 ;
   - met3_width_142
      + LAYER met3 WIDTH 142 ;
   - met3_width_120
@@ -14932,14 +14936,14 @@ NONDEFAULTRULES 138 ;
      + LAYER met3 WIDTH 10 ;
   - met3_width_88
      + LAYER met3 WIDTH 88 ;
+  - met2_width_4
+     + LAYER met2 WIDTH 4 ;
   - met3_width_22
      + LAYER met3 WIDTH 22 ;
   - met3_width_148
      + LAYER met3 WIDTH 148 ;
   - met3_width_66
      + LAYER met3 WIDTH 66 ;
-  - met2_width_4
-     + LAYER met2 WIDTH 4 ;
   - met3_width_78
      + LAYER met3 WIDTH 78 ;
   - met3_width_56
@@ -15020,6 +15024,8 @@ NONDEFAULTRULES 138 ;
      + LAYER met3 WIDTH 18 ;
   - met2_width_30
      + LAYER met2 WIDTH 30 ;
+  - met2_width_136
+     + LAYER met2 WIDTH 136 ;
   - met2_width_96
      + LAYER met2 WIDTH 96 ;
   - met2_width_52
@@ -15040,8 +15046,6 @@ NONDEFAULTRULES 138 ;
      + LAYER met1 WIDTH 4 ;
   - met3_width_400
      + LAYER met3 WIDTH 400 ;
-  - met2_width_138
-     + LAYER met2 WIDTH 138 ;
   - met2_width_98
      + LAYER met2 WIDTH 98 ;
   - met2_width_10
@@ -15058,6 +15062,8 @@ NONDEFAULTRULES 138 ;
      + LAYER met2 WIDTH 66 ;
   - met1_width_6
      + LAYER met1 WIDTH 6 ;
+  - met3_width_402
+     + LAYER met3 WIDTH 402 ;
   - met2_width_800
      + LAYER met2 WIDTH 800 ;
   - met2_width_56
@@ -15068,6 +15074,8 @@ NONDEFAULTRULES 138 ;
      + LAYER met2 WIDTH 34 ;
   - met2_width_12
      + LAYER met2 WIDTH 12 ;
+  - met2_width_664
+     + LAYER met2 WIDTH 664 ;
   - met2_width_24
      + LAYER met2 WIDTH 24 ;
   - met2_width_46
@@ -15080,14 +15088,14 @@ NONDEFAULTRULES 138 ;
      + LAYER met3 WIDTH 256 ;
   - met2_width_292
      + LAYER met2 WIDTH 292 ;
-  - met2_width_666
-     + LAYER met2 WIDTH 666 ;
   - met1_width_92
      + LAYER met1 WIDTH 92 ;
   - met2_width_48
      + LAYER met2 WIDTH 48 ;
   - met2_width_26
      + LAYER met2 WIDTH 26 ;
+  - met3_width_2402
+     + LAYER met3 WIDTH 2402 ;
   - met3_width_428
      + LAYER met3 WIDTH 428 ;
   - met2_width_260
@@ -15104,8 +15112,6 @@ NONDEFAULTRULES 138 ;
      + LAYER met4 WIDTH 4 ;
   - met1_width_104
      + LAYER met1 WIDTH 104 ;
-  - met3_width_238
-     + LAYER met3 WIDTH 238 ;
   - met2_width_18
      + LAYER met2 WIDTH 18 ;
   - met1_width_96
@@ -15118,6 +15124,8 @@ NONDEFAULTRULES 138 ;
      + LAYER met1 WIDTH 20 ;
   - met2_width_232
      + LAYER met2 WIDTH 232 ;
+  - met3_width_2750
+     + LAYER met3 WIDTH 2750 ;
   - met4_width_120
      + LAYER met4 WIDTH 120 ;
   - met4_width_142
@@ -15205,10 +15213,12 @@ SPECIALNETS 12 ;
       NEW met3 2400  ( 347756 1994814 ) ( 357316 * )
       NEW met3 2400  ( 327798 1994814 ) ( 337358 * ) ;
    - vssd0 ( PIN vssd0 ) ( product_id_rom_8bit_0 VGND )
-      + ROUTED met3 2400  ( 1124200 80386 ) ( 1133800 * )
-      NEW met3 2400  ( 1104120 80386 ) ( 1113698 * )
-      NEW met3 2400  ( 476200 80386 ) ( 485800 * )
-      NEW met3 2400  ( 456120 80386 ) ( 465698 * ) ;
+      + ROUTED met3 2402  ( 1124200 80387 ) ( 1133800 * )
+      NEW met3 2000  ( 1104120 80588 ) ( 1113700 * )
+      NEW met3 402  ( 1104120 79387 ) ( 1113698 * )
+      NEW met3 2402  ( 476200 80387 ) ( 485800 * )
+      NEW met3 2000  ( 456120 80588 ) ( 465700 * )
+      NEW met3 402  ( 456120 79387 ) ( 465698 * ) ;
    - vdda2 ( PIN vdda2 ) ( vdda2_1_pad VDDA )
        ( sky130_ef_io__com_bus_slice_5um_78 VDDA )
        ( sky130_ef_io__com_bus_slice_20um_135 VDDA )
@@ -15322,9 +15332,11 @@ SPECIALNETS 12 ;
        ( sky130_ef_io__com_bus_slice_10um_23 VCCHIB )
        ( sky130_ef_io__com_bus_slice_20um_25 VCCHIB )
       + ROUTED met3 2400  ( 748200 80386 ) ( 757804 * )
-      NEW met3 2400  ( 728120 80386 ) ( 737698 * )
-      NEW met3 2400  ( 114200 80386 ) ( 123804 * )
-      NEW met3 2400  ( 94120 80386 ) ( 103698 * ) ;
+      NEW met3 2000  ( 728120 80588 ) ( 737700 * )
+      NEW met3 402  ( 728120 79387 ) ( 737698 * )
+      NEW met3 2402  ( 114200 80387 ) ( 123804 * )
+      NEW met3 2000  ( 94120 80588 ) ( 103700 * )
+      NEW met3 402  ( 94120 79387 ) ( 103698 * ) ;
    - vdda3 ( PIN vdda3 ) ( corner_se VDDA ) ( sio_macro_pads vdda )
        ( sky130_ef_io__com_bus_slice_1um_0 VDDA )
        ( sky130_ef_io__com_bus_slice_1um_1 VDDA )
@@ -17722,7 +17734,7 @@ NETS 4576 ;
    - gpio2_0_pad/AMUXBUS_A ( gpio2_0_pad AMUXBUS_A )
        ( sky130_ef_io__com_bus_slice_5um_53 AMUXBUS_A ) ;
    - gpio2_0_in ( PIN gpio2_0_in ) ( gpio2_0_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 1518282 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 1518282 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1518422 ) ( * 1518494 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1518634 ) ( 1355456 * ) ;
    - gpio2_0_enable_vddio ( PIN gpio2_0_enable_vddio ) ( gpio2_0_pad ENABLE_VDDIO )
@@ -18222,7 +18234,7 @@ NETS 4576 ;
        ( sky130_ef_io__com_bus_slice_5um_67 VDDIO_Q ) ;
    - gpio7_6_pad/PAD ( gpio7_6_pad PAD ) ;
    - gpio7_6_in ( PIN gpio7_6_in ) ( gpio7_6_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 224918 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 224918 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 224706 ) ( * 224778 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 224566 ) ( 80300 * ) ;
    - gpio7_6_enable_vddio ( PIN gpio7_6_enable_vddio ) ( gpio7_6_pad ENABLE_VDDIO )
@@ -18523,7 +18535,7 @@ NETS 4576 ;
    - gpio5_3_pad/AMUXBUS_A ( gpio5_3_pad AMUXBUS_A )
        ( sky130_ef_io__com_bus_slice_5um_102 AMUXBUS_A ) ;
    - gpio5_3_in ( PIN gpio5_3_in ) ( gpio5_3_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1762118 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1762118 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 1761906 ) ( * 1761978 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 1761766 ) ( 80300 * ) ;
    - gpio5_3_enable_vddio ( PIN gpio5_3_enable_vddio ) ( gpio5_3_pad ENABLE_VDDIO )
@@ -18814,12 +18826,14 @@ NETS 4576 ;
    - vssd1_0_pad/VSSD ( vssd1_0_pad VSSD ) ;
    - vssd1_0_pad/VSSD_PAD ( vssd1_0_pad VSSD_PAD ) ;
    - vssd1[0] ( PIN vssd1[0] ) ( vssd1_0_pad VSSD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 1354814 318520 ) ( * 325698 )
-      NEW met3 TAPERRULE met3_width_2400  ( 1354814 338600 ) ( * 345800 ) ;
+      + ROUTED met3 TAPERRULE met3_width_2402  ( 1354813 318520 ) ( * 325698 )
+      NEW met3 TAPERRULE met3_width_2  ( 1353612 326899 ) ( 1355612 * )
+      NEW met3 TAPERRULE met3_width_2402  ( 1354813 338600 ) ( * 345800 ) ;
    - vccd1[0] ( PIN vccd1[0] ) ( vssd1_0_pad VCCD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 1354814 328698 ) ( * 330648 )
-      NEW met3 TAPERRULE met3_width_600  ( 1353914 332148 ) ( 1355314 * )
-      NEW met3 TAPERRULE met3_width_2400  ( 1354814 333648 ) ( * 335600 ) ;
+      + ROUTED met3 TAPERRULE met3_width_2  ( 1353612 327497 ) ( 1355612 * )
+      NEW met3 TAPERRULE met3_width_2402  ( 1354813 328698 ) ( * 330648 )
+      NEW met3 TAPERRULE met3_width_600  ( 1353912 332148 ) ( 1355312 * )
+      NEW met3 TAPERRULE met3_width_2402  ( 1354813 333648 ) ( * 335600 ) ;
    - gpio3_0_pad/VCCHIB ( gpio3_0_pad VCCHIB ) ;
    - gpio3_0_pad/PAD ( gpio3_0_pad PAD ) ;
    - gpio3_0_in ( PIN gpio3_0_in ) ( gpio3_0_pad IN )
@@ -19305,12 +19319,13 @@ NETS 4576 ;
       + ROUTED met3 TAPERRULE met3_width_240  ( 80120 1094426 ) ( 81080 * ) ;
    - vssd2_0_pad/VSSD_PAD ( vssd2_0_pad VSSD_PAD ) ;
    - vssd2[0] ( PIN vssd2[0] ) ( vssd2_0_pad VSSD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 395102 1994814 ) ( 402280 * )
+      + ROUTED met3 TAPERRULE met3_width_2000  ( 394900 1994612 ) ( 402480 * )
+      NEW met3 TAPERRULE met3_width_402  ( 394102 1995813 ) ( 403280 * )
       NEW met3 TAPERRULE met3_width_2400  ( 375000 1994814 ) ( 382200 * ) ;
    - vccd2[0] ( PIN vccd2[0] ) ( vssd2_0_pad VCCD1 )
-      + ROUTED met3 TAPERRULE met3_width_2000  ( 385000 1994614 ) ( 392302 * )
-      NEW met3 TAPERRULE met3_width_400  ( 384200 1995814 ) ( 388152 * )
-      NEW met3 TAPERRULE met3_width_400  ( 389152 1995814 ) ( 393102 * ) ;
+      + ROUTED met3 TAPERRULE met3_width_2000  ( 385000 1994612 ) ( 392304 * )
+      NEW met3 TAPERRULE met3_width_402  ( 384200 1995813 ) ( 388152 * )
+      NEW met3 TAPERRULE met3_width_402  ( 389152 1995813 ) ( 393102 * ) ;
    - sky130_ef_io__com_bus_slice_20um_159/VSSIO
        ( sky130_ef_io__com_bus_slice_20um_159 VSSIO ) ;
    - sky130_ef_io__com_bus_slice_20um_159/VSSA
@@ -19616,7 +19631,7 @@ NETS 4576 ;
    - gpio0_7_pad/AMUXBUS_A ( gpio0_7_pad AMUXBUS_A )
        ( sky130_ef_io__com_bus_slice_5um_34 AMUXBUS_A ) ;
    - gpio0_7_in ( PIN gpio0_7_in ) ( gpio0_7_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 523082 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 523082 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 523222 ) ( * 523294 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 523434 ) ( 1355456 * ) ;
    - gpio0_7_enable_vddio ( PIN gpio0_7_enable_vddio ) ( gpio0_7_pad ENABLE_VDDIO )
@@ -20074,7 +20089,7 @@ NETS 4576 ;
    - gpio7_3_pad/AMUXBUS_B ( gpio7_3_pad AMUXBUS_B ) ;
    - gpio7_3_pad/AMUXBUS_A ( gpio7_3_pad AMUXBUS_A ) ;
    - gpio7_3_in ( PIN gpio7_3_in ) ( gpio7_3_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 436918 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 436918 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 436706 ) ( * 436778 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 436566 ) ( 80300 * ) ;
    - gpio7_3_enable_vddio ( PIN gpio7_3_enable_vddio ) ( gpio7_3_pad ENABLE_VDDIO )
@@ -20368,7 +20383,7 @@ NETS 4576 ;
        ( sky130_ef_io__com_bus_slice_5um_105 VSSD ) ;
    - gpio5_0_pad/PAD ( gpio5_0_pad PAD ) ;
    - gpio5_0_in ( PIN gpio5_0_in ) ( gpio5_0_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1888118 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1888118 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 1887906 ) ( * 1887978 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 1887766 ) ( 80300 * ) ;
    - gpio5_0_enable_vddio ( PIN gpio5_0_enable_vddio ) ( gpio5_0_pad ENABLE_VDDIO )
@@ -21182,7 +21197,7 @@ NETS 4576 ;
    - gpio6_0_pad_a_esd_1_h ( PIN gpio6_0_pad_a_esd_1_h ) ( gpio6_0_pad PAD_A_ESD_1_H )
       + ROUTED met3 TAPERRULE met3_width_240  ( 80120 1290252 ) ( 81080 * ) ;
    - gpio6_0_pad_a_esd_0_h ( PIN gpio6_0_pad_a_esd_0_h ) ( gpio6_0_pad PAD_A_ESD_0_H )
-      + ROUTED met3 TAPERRULE met3_width_238  ( 80118 1290761 ) ( 81082 * ) ;
+      + ROUTED met3 TAPERRULE met3_width_240  ( 80120 1290760 ) ( 81080 * ) ;
    - gpio6_0_analog_en ( PIN gpio6_0_analog_en ) ( gpio6_0_pad ANALOG_EN )
       + ROUTED met3 TAPERRULE met3_width_132  ( 80066 1293312 ) ( 81134 * ) ;
    - gpio6_0_enable_vswitch_h ( PIN gpio6_0_enable_vswitch_h ) ( gpio6_0_pad ENABLE_VSWITCH_H )
@@ -21213,8 +21228,9 @@ NETS 4576 ;
    - vccd1_0_pad/AMUXBUS_A ( vccd1_0_pad AMUXBUS_A )
        ( sky130_ef_io__com_bus_slice_20um_46 AMUXBUS_A ) ;
    - vccd1[1] ( PIN vccd1[1] ) ( vccd1_0_pad VCCD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 1354814 958520 ) ( * 965698 )
-      NEW met3 TAPERRULE met3_width_2400  ( 1354814 978600 ) ( * 985804 ) ;
+      + ROUTED met3 TAPERRULE met3_width_2402  ( 1354813 958520 ) ( * 965698 )
+      NEW met3 TAPERRULE met3_width_2  ( 1353612 966899 ) ( 1355612 * )
+      NEW met3 TAPERRULE met3_width_2402  ( 1354813 978600 ) ( * 985804 ) ;
    - vssd1[1] ( PIN vssd1[1] ) ( vccd1_0_pad VSSD1 )
       + ROUTED met3 TAPERRULE met3_width_2000  ( 1354614 968496 ) ( * 975820 ) ;
    - gpio2_7_pad/VDDA ( gpio2_7_pad VDDA ) ;
@@ -21231,7 +21247,7 @@ NETS 4576 ;
    - gpio2_7_pad/AMUXBUS_B ( gpio2_7_pad AMUXBUS_B ) ;
    - gpio2_7_pad/AMUXBUS_A ( gpio2_7_pad AMUXBUS_A ) ;
    - gpio2_7_in ( PIN gpio2_7_in ) ( gpio2_7_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 1852282 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 1852282 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1852422 ) ( * 1852494 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1852634 ) ( 1355456 * ) ;
    - gpio2_7_enable_vddio ( PIN gpio2_7_enable_vddio ) ( gpio2_7_pad ENABLE_VDDIO )
@@ -21594,7 +21610,7 @@ NETS 4576 ;
    - gpio0_4_pad/AMUXBUS_A ( gpio0_4_pad AMUXBUS_A )
        ( sky130_ef_io__com_bus_slice_5um_31 AMUXBUS_A ) ;
    - gpio0_4_in ( PIN gpio0_4_in ) ( gpio0_4_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 397082 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 397082 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 397222 ) ( * 397294 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 397434 ) ( 1355456 * ) ;
    - gpio0_4_enable_vddio ( PIN gpio0_4_enable_vddio ) ( gpio0_4_pad ENABLE_VDDIO )
@@ -22150,7 +22166,7 @@ NETS 4576 ;
    - gpio7_0_pad/AMUXBUS_B ( gpio7_0_pad AMUXBUS_B ) ;
    - gpio7_0_pad/AMUXBUS_A ( gpio7_0_pad AMUXBUS_A ) ;
    - gpio7_0_in ( PIN gpio7_0_in ) ( gpio7_0_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 562918 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 562918 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 562706 ) ( * 562778 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 562566 ) ( 80300 * ) ;
    - gpio7_0_enable_vddio ( PIN gpio7_0_enable_vddio ) ( gpio7_0_pad ENABLE_VDDIO )
@@ -22448,7 +22464,8 @@ NETS 4576 ;
    - vccd2_0_pad/AMUXBUS_A ( vccd2_0_pad AMUXBUS_A )
        ( muxsplit_nw amuxbus_a_r ) ;
    - vccd2[1] ( PIN vccd2[1] ) ( vccd2_0_pad VCCD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 111102 1994814 ) ( 118280 * )
+      + ROUTED met3 TAPERRULE met3_width_2000  ( 110900 1994612 ) ( 118480 * )
+      NEW met3 TAPERRULE met3_width_402  ( 110102 1995813 ) ( 119280 * )
       NEW met3 TAPERRULE met3_width_2400  ( 90996 1994814 ) ( 98200 * ) ;
    - vssd2[1] ( PIN vssd2[1] ) ( vccd2_0_pad VSSD1 )
       + ROUTED met3 TAPERRULE met3_width_2000  ( 100980 1994614 ) ( 108304 * ) ;
@@ -23409,7 +23426,7 @@ NETS 4576 ;
    - gpio2_4_pad/AMUXBUS_B ( gpio2_4_pad AMUXBUS_B ) ;
    - gpio2_4_pad/AMUXBUS_A ( gpio2_4_pad AMUXBUS_A ) ;
    - gpio2_4_in ( PIN gpio2_4_in ) ( gpio2_4_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 1726282 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 1726282 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1726422 ) ( * 1726494 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1726634 ) ( 1355456 * ) ;
    - gpio2_4_enable_vddio ( PIN gpio2_4_enable_vddio ) ( gpio2_4_pad ENABLE_VDDIO )
@@ -23735,7 +23752,7 @@ NETS 4576 ;
        ( sky130_ef_io__com_bus_slice_5um_67 VSSD ) ;
    - gpio0_1_pad/PAD ( gpio0_1_pad PAD ) ;
    - gpio0_1_in ( PIN gpio0_1_in ) ( gpio0_1_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 191082 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 191082 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 191222 ) ( * 191294 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 191434 ) ( 1355456 * ) ;
    - gpio0_1_enable_vddio ( PIN gpio0_1_enable_vddio ) ( gpio0_1_pad ENABLE_VDDIO )
@@ -24302,7 +24319,7 @@ NETS 4576 ;
    - gpio5_7_pad/AMUXBUS_B ( gpio5_7_pad AMUXBUS_B ) ;
    - gpio5_7_pad/AMUXBUS_A ( gpio5_7_pad AMUXBUS_A ) ;
    - gpio5_7_in ( PIN gpio5_7_in ) ( gpio5_7_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1554118 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1554118 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 1553906 ) ( * 1553978 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 1553766 ) ( 80300 * ) ;
    - gpio5_7_enable_vddio ( PIN gpio5_7_enable_vddio ) ( gpio5_7_pad ENABLE_VDDIO )
@@ -25002,7 +25019,7 @@ NETS 4576 ;
    - gpio1_1_pad_a_esd_1_h ( PIN gpio1_1_pad_a_esd_1_h ) ( gpio1_1_pad PAD_A_ESD_1_H )
       + ROUTED met3 TAPERRULE met3_width_240  ( 1354120 814948 ) ( 1355080 * ) ;
    - gpio1_1_pad_a_esd_0_h ( PIN gpio1_1_pad_a_esd_0_h ) ( gpio1_1_pad PAD_A_ESD_0_H )
-      + ROUTED met3 TAPERRULE met3_width_238  ( 1354118 814439 ) ( 1355082 * ) ;
+      + ROUTED met3 TAPERRULE met3_width_240  ( 1354120 814440 ) ( 1355080 * ) ;
    - gpio1_1_analog_en ( PIN gpio1_1_analog_en ) ( gpio1_1_pad ANALOG_EN )
       + ROUTED met3 TAPERRULE met3_width_132  ( 1354066 811888 ) ( 1355134 * ) ;
    - gpio1_1_enable_vswitch_h ( PIN gpio1_1_enable_vswitch_h ) ( gpio1_1_pad ENABLE_VSWITCH_H )
@@ -25465,7 +25482,7 @@ NETS 4576 ;
    - gpio6_7_pad_a_esd_1_h ( PIN gpio6_7_pad_a_esd_1_h ) ( gpio6_7_pad PAD_A_ESD_1_H )
       + ROUTED met3 TAPERRULE met3_width_240  ( 80120 699052 ) ( 81080 * ) ;
    - gpio6_7_pad_a_esd_0_h ( PIN gpio6_7_pad_a_esd_0_h ) ( gpio6_7_pad PAD_A_ESD_0_H )
-      + ROUTED met3 TAPERRULE met3_width_238  ( 80118 699561 ) ( 81082 * ) ;
+      + ROUTED met3 TAPERRULE met3_width_240  ( 80120 699560 ) ( 81080 * ) ;
    - gpio6_7_analog_en ( PIN gpio6_7_analog_en ) ( gpio6_7_pad ANALOG_EN )
       + ROUTED met3 TAPERRULE met3_width_132  ( 80066 702112 ) ( 81134 * ) ;
    - gpio6_7_enable_vswitch_h ( PIN gpio6_7_enable_vswitch_h ) ( gpio6_7_pad ENABLE_VSWITCH_H )
@@ -25990,7 +26007,7 @@ NETS 4576 ;
    - gpio2_1_pad/VSSD ( gpio2_1_pad VSSD ) ;
    - gpio2_1_pad/PAD ( gpio2_1_pad PAD ) ;
    - gpio2_1_in ( PIN gpio2_1_in ) ( gpio2_1_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 1560282 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 1560282 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1560422 ) ( * 1560494 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1560634 ) ( 1355456 * ) ;
    - gpio2_1_enable_vddio ( PIN gpio2_1_enable_vddio ) ( gpio2_1_pad ENABLE_VDDIO )
@@ -26340,7 +26357,7 @@ NETS 4576 ;
        ( sky130_ef_io__com_bus_slice_5um_66 VDDIO_Q ) ;
    - gpio7_7_pad/PAD ( gpio7_7_pad PAD ) ;
    - gpio7_7_in ( PIN gpio7_7_in ) ( gpio7_7_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 182918 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 182918 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 182706 ) ( * 182778 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 182566 ) ( 80300 * ) ;
    - gpio7_7_enable_vddio ( PIN gpio7_7_enable_vddio ) ( gpio7_7_pad ENABLE_VDDIO )
@@ -26801,7 +26818,7 @@ NETS 4576 ;
    - gpio5_4_pad/AMUXBUS_B ( gpio5_4_pad AMUXBUS_B ) ;
    - gpio5_4_pad/AMUXBUS_A ( gpio5_4_pad AMUXBUS_A ) ;
    - gpio5_4_in ( PIN gpio5_4_in ) ( gpio5_4_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1680118 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1680118 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 1679906 ) ( * 1679978 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 1679766 ) ( 80300 * ) ;
    - gpio5_4_enable_vddio ( PIN gpio5_4_enable_vddio ) ( gpio5_4_pad ENABLE_VDDIO )
@@ -27092,12 +27109,14 @@ NETS 4576 ;
    - vssd1_1_pad/VSSD ( vssd1_1_pad VSSD ) ;
    - vssd1_1_pad/VSSD_PAD ( vssd1_1_pad VSSD_PAD ) ;
    - vssd1[2] ( PIN vssd1[2] ) ( vssd1_1_pad VSSD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 1354814 1479720 ) ( * 1486898 )
+      + ROUTED met3 TAPERRULE met3_width_2402  ( 1354813 1479720 ) ( * 1486898 )
+      NEW met3 TAPERRULE met3_width_2  ( 1353612 1488099 ) ( 1355612 * )
       NEW met3 TAPERRULE met3_width_2400  ( 1354814 1499800 ) ( * 1507000 ) ;
    - vccd1[2] ( PIN vccd1[2] ) ( vssd1_1_pad VCCD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 1354814 1489898 ) ( * 1491848 )
-      NEW met3 TAPERRULE met3_width_600  ( 1353914 1493348 ) ( 1355314 * )
-      NEW met3 TAPERRULE met3_width_2400  ( 1354814 1494848 ) ( * 1496800 ) ;
+      + ROUTED met3 TAPERRULE met3_width_2  ( 1353612 1488697 ) ( 1355612 * )
+      NEW met3 TAPERRULE met3_width_2402  ( 1354813 1489898 ) ( * 1491848 )
+      NEW met3 TAPERRULE met3_width_600  ( 1353912 1493348 ) ( 1355312 * )
+      NEW met3 TAPERRULE met3_width_2402  ( 1354813 1494848 ) ( * 1496800 ) ;
    - vssio_0_pad/VSSA ( vssio_0_pad VSSA ) ;
    - vssio_0_pad/VSSD ( vssio_0_pad VSSD ) ;
    - vssio_0_pad/VSSIO_PAD ( vssio_0_pad VSSIO_PAD ) ;
@@ -27779,7 +27798,7 @@ NETS 4576 ;
    - gpio6_4_pad_a_esd_1_h ( PIN gpio6_4_pad_a_esd_1_h ) ( gpio6_4_pad PAD_A_ESD_1_H )
       + ROUTED met3 TAPERRULE met3_width_240  ( 80120 897052 ) ( 81080 * ) ;
    - gpio6_4_pad_a_esd_0_h ( PIN gpio6_4_pad_a_esd_0_h ) ( gpio6_4_pad PAD_A_ESD_0_H )
-      + ROUTED met3 TAPERRULE met3_width_238  ( 80118 897561 ) ( 81082 * ) ;
+      + ROUTED met3 TAPERRULE met3_width_240  ( 80120 897560 ) ( 81080 * ) ;
    - gpio6_4_analog_en ( PIN gpio6_4_analog_en ) ( gpio6_4_pad ANALOG_EN )
       + ROUTED met3 TAPERRULE met3_width_132  ( 80066 900112 ) ( 81134 * ) ;
    - gpio6_4_enable_vswitch_h ( PIN gpio6_4_enable_vswitch_h ) ( gpio6_4_pad ENABLE_VSWITCH_H )
@@ -27791,12 +27810,14 @@ NETS 4576 ;
        ( sky130_ef_io__com_bus_slice_5um_106 VSSD ) ;
    - vssd2_1_pad/VSSD_PAD ( vssd2_1_pad VSSD_PAD ) ;
    - vssd2[2] ( PIN vssd2[2] ) ( vssd2_1_pad VSSD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 80386 1899400 ) ( * 1906600 )
-      NEW met3 TAPERRULE met3_width_2400  ( 80386 1919502 ) ( * 1926680 ) ;
+      + ROUTED met3 TAPERRULE met3_width_2402  ( 80387 1899400 ) ( * 1906600 )
+      NEW met3 TAPERRULE met3_width_2  ( 79588 1918301 ) ( 81588 * )
+      NEW met3 TAPERRULE met3_width_2402  ( 80387 1919502 ) ( * 1926680 ) ;
    - vccd2[2] ( PIN vccd2[2] ) ( vssd2_1_pad VCCD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 80386 1909600 ) ( * 1911552 )
-      NEW met3 TAPERRULE met3_width_600  ( 79886 1913052 ) ( 81286 * )
-      NEW met3 TAPERRULE met3_width_2400  ( 80386 1914552 ) ( * 1916502 ) ;
+      + ROUTED met3 TAPERRULE met3_width_2402  ( 80387 1909600 ) ( * 1911552 )
+      NEW met3 TAPERRULE met3_width_600  ( 79888 1913052 ) ( 81288 * )
+      NEW met3 TAPERRULE met3_width_2402  ( 80387 1914552 ) ( * 1916502 )
+      NEW met3 TAPERRULE met3_width_2  ( 79588 1917703 ) ( 81588 * ) ;
    - muxsplit_sw/vccd ( muxsplit_sw vccd ) ;
    - muxsplit_sw/vssa ( muxsplit_sw vssa ) ;
    - vddio_8_pad/AMUXBUS_B ( vddio_8_pad AMUXBUS_B )
@@ -28391,7 +28412,7 @@ NETS 4576 ;
    - gpio7_4_pad/VSSD ( gpio7_4_pad VSSD ) ( gpio0_3_pad VSSD ) ;
    - gpio7_4_pad/PAD ( gpio7_4_pad PAD ) ;
    - gpio7_4_in ( PIN gpio7_4_in ) ( gpio7_4_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 308918 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 308918 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 308706 ) ( * 308778 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 308566 ) ( 80300 * ) ;
    - gpio7_4_enable_vddio ( PIN gpio7_4_enable_vddio ) ( gpio7_4_pad ENABLE_VDDIO )
@@ -28868,7 +28889,7 @@ NETS 4576 ;
        ( sky130_ef_io__com_bus_slice_5um_104 VSSD ) ;
    - gpio5_1_pad/PAD ( gpio5_1_pad PAD ) ;
    - gpio5_1_in ( PIN gpio5_1_in ) ( gpio5_1_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1846118 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1846118 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 1845906 ) ( * 1845978 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 1845766 ) ( 80300 * ) ;
    - gpio5_1_enable_vddio ( PIN gpio5_1_enable_vddio ) ( gpio5_1_pad ENABLE_VDDIO )
@@ -29565,7 +29586,7 @@ NETS 4576 ;
    - gpio6_1_pad_a_esd_1_h ( PIN gpio6_1_pad_a_esd_1_h ) ( gpio6_1_pad PAD_A_ESD_1_H )
       + ROUTED met3 TAPERRULE met3_width_240  ( 80120 1224252 ) ( 81080 * ) ;
    - gpio6_1_pad_a_esd_0_h ( PIN gpio6_1_pad_a_esd_0_h ) ( gpio6_1_pad PAD_A_ESD_0_H )
-      + ROUTED met3 TAPERRULE met3_width_238  ( 80118 1224761 ) ( 81082 * ) ;
+      + ROUTED met3 TAPERRULE met3_width_240  ( 80120 1224760 ) ( 81080 * ) ;
    - gpio6_1_analog_en ( PIN gpio6_1_analog_en ) ( gpio6_1_pad ANALOG_EN )
       + ROUTED met3 TAPERRULE met3_width_132  ( 80066 1227312 ) ( 81134 * ) ;
    - gpio6_1_enable_vswitch_h ( PIN gpio6_1_enable_vswitch_h ) ( gpio6_1_pad ENABLE_VSWITCH_H )
@@ -29575,7 +29596,8 @@ NETS 4576 ;
    - vccd1_1_pad/VSSD ( vccd1_1_pad VSSD ) ;
    - vccd1_1_pad/VCCD_PAD ( vccd1_1_pad VCCD_PAD ) ;
    - vccd1[3] ( PIN vccd1[3] ) ( vccd1_1_pad VCCD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 1354814 1895720 ) ( * 1902898 )
+      + ROUTED met3 TAPERRULE met3_width_2402  ( 1354813 1895720 ) ( * 1902898 )
+      NEW met3 TAPERRULE met3_width_2  ( 1353612 1904099 ) ( 1355612 * )
       NEW met3 TAPERRULE met3_width_2400  ( 1354814 1915800 ) ( * 1923004 ) ;
    - vssd1[3] ( PIN vssd1[3] ) ( vccd1_1_pad VSSD1 )
       + ROUTED met3 TAPERRULE met3_width_2000  ( 1354614 1905696 ) ( * 1913020 ) ;
@@ -29590,7 +29612,7 @@ NETS 4576 ;
    - gpio0_5_pad/VSSIO ( gpio0_5_pad VSSIO ) ;
    - gpio0_5_pad/PAD ( gpio0_5_pad PAD ) ;
    - gpio0_5_in ( PIN gpio0_5_in ) ( gpio0_5_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 439082 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 439082 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 439222 ) ( * 439294 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 439434 ) ( 1355456 * ) ;
    - gpio0_5_enable_vddio ( PIN gpio0_5_enable_vddio ) ( gpio0_5_pad ENABLE_VDDIO )
@@ -30048,7 +30070,7 @@ NETS 4576 ;
    - resetb_tie_hi_esd ( PIN resetb_tie_hi_esd ) ( resetb_pad TIE_HI_ESD )
       + ROUTED met2 TAPERRULE met2_width_260  ( 201668 80130 ) ( * 81070 ) ;
    - resetb_pad_a_esd_h ( PIN resetb_pad_a_esd_h ) ( resetb_pad PAD_A_ESD_H )
-      + ROUTED met2 TAPERRULE met2_width_666  ( 206769 80332 ) ( * 80868 ) ;
+      + ROUTED met2 TAPERRULE met2_width_664  ( 206768 80332 ) ( * 80868 ) ;
    - resetb_enable_h ( PIN resetb_enable_h ) ( resetb_pad ENABLE_H )
       + ROUTED met2 TAPERRULE met2_width_104  ( 209034 80052 ) ( * 81148 ) ;
    - resetb_enable_vddio ( PIN resetb_enable_vddio ) ( resetb_pad ENABLE_VDDIO )
@@ -30091,7 +30113,7 @@ NETS 4576 ;
        ( sky130_ef_io__com_bus_slice_5um_75 VSSD ) ;
    - gpio7_1_pad/PAD ( gpio7_1_pad PAD ) ;
    - gpio7_1_in ( PIN gpio7_1_in ) ( gpio7_1_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 520918 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 520918 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 520706 ) ( * 520778 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 520566 ) ( 80300 * ) ;
    - gpio7_1_enable_vddio ( PIN gpio7_1_enable_vddio ) ( gpio7_1_pad ENABLE_VDDIO )
@@ -30437,8 +30459,9 @@ NETS 4576 ;
    - vccd2_1_pad/VSSD ( vccd2_1_pad VSSD ) ;
    - vccd2_1_pad/VCCD_PAD ( vccd2_1_pad VCCD_PAD ) ;
    - vccd2[3] ( PIN vccd2[3] ) ( vccd2_1_pad VCCD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 80386 1483396 ) ( * 1490600 )
-      NEW met3 TAPERRULE met3_width_2400  ( 80386 1503502 ) ( * 1510680 ) ;
+      + ROUTED met3 TAPERRULE met3_width_2402  ( 80387 1483396 ) ( * 1490600 )
+      NEW met3 TAPERRULE met3_width_2400  ( 80386 1503502 ) ( * 1510680 )
+      NEW met3 TAPERRULE met3_width_2  ( 79586 1511881 ) ( 81586 * ) ;
    - vssd2[3] ( PIN vssd2[3] ) ( vccd2_1_pad VSSD1 )
       + ROUTED met3 TAPERRULE met3_width_2000  ( 80586 1493380 ) ( * 1500704 ) ;
    - vssio_7_pad/VSSA ( vssio_7_pad VSSA ) ;
@@ -31212,7 +31235,7 @@ NETS 4576 ;
        ( sky130_ef_io__com_bus_slice_5um_59 VSSD ) ;
    - gpio2_5_pad/PAD ( gpio2_5_pad PAD ) ;
    - gpio2_5_in ( PIN gpio2_5_in ) ( gpio2_5_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 1768282 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 1768282 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1768422 ) ( * 1768494 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1768634 ) ( 1355456 * ) ;
    - gpio2_5_enable_vddio ( PIN gpio2_5_enable_vddio ) ( gpio2_5_pad ENABLE_VDDIO )
@@ -31506,7 +31529,7 @@ NETS 4576 ;
    - gpio0_2_pad/VSSA ( gpio0_2_pad VSSA ) ;
    - gpio0_2_pad/PAD ( gpio0_2_pad PAD ) ;
    - gpio0_2_in ( PIN gpio0_2_in ) ( gpio0_2_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 233082 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 233082 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 233222 ) ( * 233294 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 233434 ) ( 1355456 * ) ;
    - gpio0_2_enable_vddio ( PIN gpio0_2_enable_vddio ) ( gpio0_2_pad ENABLE_VDDIO )
@@ -32936,7 +32959,7 @@ NETS 4576 ;
    - gpio2_2_pad/VSSD ( gpio2_2_pad VSSD ) ;
    - gpio2_2_pad/PAD ( gpio2_2_pad PAD ) ;
    - gpio2_2_in ( PIN gpio2_2_in ) ( gpio2_2_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 1602282 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 1602282 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1602422 ) ( * 1602494 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1602634 ) ( 1355456 * ) ;
    - gpio2_2_enable_vddio ( PIN gpio2_2_enable_vddio ) ( gpio2_2_pad ENABLE_VDDIO )
@@ -33450,7 +33473,7 @@ NETS 4576 ;
        ( sky130_ef_io__com_bus_slice_5um_99 VSSD ) ;
    - gpio5_5_pad/PAD ( gpio5_5_pad PAD ) ;
    - gpio5_5_in ( PIN gpio5_5_in ) ( gpio5_5_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1638118 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1638118 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 1637906 ) ( * 1637978 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 1637766 ) ( 80300 * ) ;
    - gpio5_5_enable_vddio ( PIN gpio5_5_enable_vddio ) ( gpio5_5_pad ENABLE_VDDIO )
@@ -33820,10 +33843,11 @@ NETS 4576 ;
        ( sky130_ef_io__com_bus_slice_20um_158 VSSIO ) ;
    - vssd1_2_pad/VSSD_PAD ( vssd1_2_pad VSSD_PAD ) ;
    - vssd1[4] ( PIN vssd1[4] ) ( vssd1_2_pad VSSD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 1339102 1994814 ) ( 1346280 * )
+      + ROUTED met3 TAPERRULE met3_width_3404  ( 1339604 1993912 ) ( 1345800 * )
+      NEW met3 TAPERRULE met3_width_400  ( 1338102 1995814 ) ( 1347280 * )
       NEW met3 TAPERRULE met3_width_2400  ( 1319000 1994814 ) ( 1326200 * ) ;
    - vccd1[4] ( PIN vccd1[4] ) ( vssd1_2_pad VCCD1 )
-      + ROUTED met3 TAPERRULE met3_width_2000  ( 1329000 1994614 ) ( 1336302 * )
+      + ROUTED met3 TAPERRULE met3_width_2000  ( 1329000 1994614 ) ( 1336304 * )
       NEW met3 TAPERRULE met3_width_400  ( 1328200 1995814 ) ( 1332152 * )
       NEW met3 TAPERRULE met3_width_400  ( 1333152 1995814 ) ( 1337102 * ) ;
    - vssio_1_pad/VSSA ( vssio_1_pad VSSA )
@@ -34256,7 +34280,7 @@ NETS 4576 ;
    - sio_in[0] ( PIN sio_in[0] ) ( sio_macro_pads in<0> )
       + ROUTED met2 TAPERRULE met2_width_104  ( 1283146 101538 ) ( * 102634 ) ;
    - sio_hld_ovr[0] ( PIN sio_hld_ovr[0] ) ( sio_macro_pads hld_ovr<0> )
-      + ROUTED met2 TAPERRULE met2_width_138  ( 1283451 101554 ) ( * 102618 ) ;
+      + ROUTED met2 TAPERRULE met2_width_136  ( 1283450 101554 ) ( * 102618 ) ;
    - sio_hld_h_n[0] ( PIN sio_hld_h_n[0] ) ( sio_macro_pads hld_h_n<0> )
       + ROUTED met2 TAPERRULE met2_width_104  ( 1285718 101538 ) ( * 102634 ) ;
    - sio_ibuf_sel[0] ( PIN sio_ibuf_sel[0] ) ( sio_macro_pads ibuf_sel<0> )
@@ -34393,12 +34417,14 @@ NETS 4576 ;
    - vssd2_2_pad/AMUXBUS_A ( vssd2_2_pad AMUXBUS_A )
        ( sky130_ef_io__com_bus_slice_20um_141 AMUXBUS_A ) ;
    - vssd2[4] ( PIN vssd2[4] ) ( vssd2_2_pad VSSD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 80386 964200 ) ( * 971400 )
-      NEW met3 TAPERRULE met3_width_2400  ( 80386 984302 ) ( * 991480 ) ;
+      + ROUTED met3 TAPERRULE met3_width_2402  ( 80387 964200 ) ( * 971400 )
+      NEW met3 TAPERRULE met3_width_2  ( 79588 983101 ) ( 81588 * )
+      NEW met3 TAPERRULE met3_width_2402  ( 80387 984302 ) ( * 991480 ) ;
    - vccd2[4] ( PIN vccd2[4] ) ( vssd2_2_pad VCCD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 80386 974400 ) ( * 976352 )
-      NEW met3 TAPERRULE met3_width_600  ( 79886 977852 ) ( 81286 * )
-      NEW met3 TAPERRULE met3_width_2400  ( 80386 979352 ) ( * 981302 ) ;
+      + ROUTED met3 TAPERRULE met3_width_2402  ( 80387 974400 ) ( * 976352 )
+      NEW met3 TAPERRULE met3_width_600  ( 79888 977852 ) ( 81288 * )
+      NEW met3 TAPERRULE met3_width_2402  ( 80387 979352 ) ( * 981302 )
+      NEW met3 TAPERRULE met3_width_2  ( 79588 982503 ) ( 81588 * ) ;
    - gpio6_5_pad/VSSIO ( gpio6_5_pad VSSIO )
        ( sky130_ef_io__com_bus_slice_5um_83 VSSIO ) ;
    - gpio6_5_pad/VSSA ( gpio6_5_pad VSSA )
@@ -35044,7 +35070,7 @@ NETS 4576 ;
    - gpio7_5_pad/VSSD ( gpio7_5_pad VSSD ) ( gpio0_2_pad VSSD ) ;
    - gpio7_5_pad/PAD ( gpio7_5_pad PAD ) ;
    - gpio7_5_in ( PIN gpio7_5_in ) ( gpio7_5_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 266918 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 266918 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 266706 ) ( * 266778 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 266566 ) ( 80300 * ) ;
    - gpio7_5_enable_vddio ( PIN gpio7_5_enable_vddio ) ( gpio7_5_pad ENABLE_VDDIO )
@@ -35456,7 +35482,7 @@ NETS 4576 ;
        ( sky130_ef_io__com_bus_slice_5um_103 VSSD ) ;
    - gpio5_2_pad/PAD ( gpio5_2_pad PAD ) ;
    - gpio5_2_in ( PIN gpio5_2_in ) ( gpio5_2_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1804118 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1804118 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 1803906 ) ( * 1803978 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 1803766 ) ( 80300 * ) ;
    - gpio5_2_enable_vddio ( PIN gpio5_2_enable_vddio ) ( gpio5_2_pad ENABLE_VDDIO )
@@ -36960,7 +36986,8 @@ NETS 4576 ;
       NEW met1 TAPERRULE met1_width_4  ( 1161222 1994266 ) ( 1161230 * ) ;
    - vccd1_2_pad/VCCD_PAD ( vccd1_2_pad VCCD_PAD ) ;
    - vccd1[5] ( PIN vccd1[5] ) ( vccd1_2_pad VCCD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 1055102 1994814 ) ( 1062280 * )
+      + ROUTED met3 TAPERRULE met3_width_2750  ( 1055276 1994305 ) ( 1062128 * )
+      NEW met3 TAPERRULE met3_width_334  ( 1054068 1995847 ) ( 1063314 * )
       NEW met3 TAPERRULE met3_width_2400  ( 1034996 1994814 ) ( 1042200 * ) ;
    - vssd1[5] ( PIN vssd1[5] ) ( vccd1_2_pad VSSD1 )
       + ROUTED met3 TAPERRULE met3_width_2000  ( 1044980 1994614 ) ( 1052304 * ) ;
@@ -37065,7 +37092,7 @@ NETS 4576 ;
    - gpio0_6_pad/VSSA ( gpio0_6_pad VSSA ) ;
    - gpio0_6_pad/PAD ( gpio0_6_pad PAD ) ;
    - gpio0_6_in ( PIN gpio0_6_in ) ( gpio0_6_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 481082 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 481082 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 481222 ) ( * 481294 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 481434 ) ( 1355456 * ) ;
    - gpio0_6_enable_vddio ( PIN gpio0_6_enable_vddio ) ( gpio0_6_pad ENABLE_VDDIO )
@@ -37617,7 +37644,7 @@ NETS 4576 ;
        ( sky130_ef_io__com_bus_slice_5um_74 VSSD ) ;
    - gpio7_2_pad/PAD ( gpio7_2_pad PAD ) ;
    - gpio7_2_in ( PIN gpio7_2_in ) ( gpio7_2_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 478918 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 478918 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 478706 ) ( * 478778 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 478566 ) ( 80300 * ) ;
    - gpio7_2_enable_vddio ( PIN gpio7_2_enable_vddio ) ( gpio7_2_pad ENABLE_VDDIO )
@@ -37908,8 +37935,10 @@ NETS 4576 ;
    - vccd2_2_pad/VSSD ( vccd2_2_pad VSSD ) ;
    - vccd2_2_pad/VCCD_PAD ( vccd2_2_pad VCCD_PAD ) ;
    - vccd2[5] ( PIN vccd2[5] ) ( vccd2_2_pad VCCD1 )
-      + ROUTED met3 TAPERRULE met3_width_2400  ( 80386 320196 ) ( * 327400 )
-      NEW met3 TAPERRULE met3_width_2400  ( 80386 340302 ) ( * 347480 ) ;
+      + ROUTED met3 TAPERRULE met3_width_2402  ( 80387 320200 ) ( * 327400 )
+      NEW met3 TAPERRULE met3_width_4  ( 79188 318998 ) ( 81584 * )
+      NEW met3 TAPERRULE met3_width_2  ( 79588 339101 ) ( 81588 * )
+      NEW met3 TAPERRULE met3_width_2402  ( 80387 340302 ) ( * 347480 ) ;
    - vssd2[5] ( PIN vssd2[5] ) ( vccd2_2_pad VSSD1 )
       + ROUTED met3 TAPERRULE met3_width_2000  ( 80586 330180 ) ( * 337504 ) ;
    - vssio_8_pad/VSSIO_PAD ( vssio_8_pad VSSIO_PAD ) ;
@@ -38223,7 +38252,7 @@ NETS 4576 ;
    - gpio1_6_pad_a_esd_1_h ( PIN gpio1_6_pad_a_esd_1_h ) ( gpio1_6_pad PAD_A_ESD_1_H )
       + ROUTED met3 TAPERRULE met3_width_240  ( 1354120 1274148 ) ( 1355080 * ) ;
    - gpio1_6_pad_a_esd_0_h ( PIN gpio1_6_pad_a_esd_0_h ) ( gpio1_6_pad PAD_A_ESD_0_H )
-      + ROUTED met3 TAPERRULE met3_width_238  ( 1354118 1273639 ) ( 1355082 * ) ;
+      + ROUTED met3 TAPERRULE met3_width_240  ( 1354120 1273640 ) ( 1355080 * ) ;
    - gpio1_6_analog_en ( PIN gpio1_6_analog_en ) ( gpio1_6_pad ANALOG_EN )
       + ROUTED met3 TAPERRULE met3_width_132  ( 1354066 1271088 ) ( 1355134 * ) ;
    - gpio1_6_enable_vswitch_h ( PIN gpio1_6_enable_vswitch_h ) ( gpio1_6_pad ENABLE_VSWITCH_H )
@@ -39317,7 +39346,7 @@ NETS 4576 ;
        ( sky130_ef_io__com_bus_slice_5um_60 VSSD ) ;
    - gpio2_6_pad/PAD ( gpio2_6_pad PAD ) ;
    - gpio2_6_in ( PIN gpio2_6_in ) ( gpio2_6_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 1810282 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 1810282 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1810422 ) ( * 1810494 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1810634 ) ( 1355456 * ) ;
    - gpio2_6_enable_vddio ( PIN gpio2_6_enable_vddio ) ( gpio2_6_pad ENABLE_VDDIO )
@@ -39646,7 +39675,7 @@ NETS 4576 ;
    - gpio0_3_pad/VSSA ( gpio0_3_pad VSSA ) ;
    - gpio0_3_pad/PAD ( gpio0_3_pad PAD ) ;
    - gpio0_3_in ( PIN gpio0_3_in ) ( gpio0_3_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 275082 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 275082 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 275222 ) ( * 275294 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 275434 ) ( 1355456 * ) ;
    - gpio0_3_enable_vddio ( PIN gpio0_3_enable_vddio ) ( gpio0_3_pad ENABLE_VDDIO )
@@ -40512,7 +40541,7 @@ NETS 4576 ;
    - gpio1_3_pad_a_esd_1_h ( PIN gpio1_3_pad_a_esd_1_h ) ( gpio1_3_pad PAD_A_ESD_1_H )
       + ROUTED met3 TAPERRULE met3_width_240  ( 1354120 946948 ) ( 1355080 * ) ;
    - gpio1_3_pad_a_esd_0_h ( PIN gpio1_3_pad_a_esd_0_h ) ( gpio1_3_pad PAD_A_ESD_0_H )
-      + ROUTED met3 TAPERRULE met3_width_238  ( 1354118 946439 ) ( 1355082 * ) ;
+      + ROUTED met3 TAPERRULE met3_width_240  ( 1354120 946440 ) ( 1355080 * ) ;
    - gpio1_3_analog_en ( PIN gpio1_3_analog_en ) ( gpio1_3_pad ANALOG_EN )
       + ROUTED met3 TAPERRULE met3_width_132  ( 1354066 943888 ) ( 1355134 * ) ;
    - gpio1_3_enable_vswitch_h ( PIN gpio1_3_enable_vswitch_h ) ( gpio1_3_pad ENABLE_VSWITCH_H )
@@ -40947,7 +40976,7 @@ NETS 4576 ;
    - gpio2_3_pad/AMUXBUS_A ( gpio2_3_pad AMUXBUS_A )
        ( sky130_ef_io__com_bus_slice_5um_56 AMUXBUS_A ) ;
    - gpio2_3_in ( PIN gpio2_3_in ) ( gpio2_3_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 1644282 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 1644282 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1644422 ) ( * 1644494 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 1644634 ) ( 1355456 * ) ;
    - gpio2_3_enable_vddio ( PIN gpio2_3_enable_vddio ) ( gpio2_3_pad ENABLE_VDDIO )
@@ -41297,7 +41326,7 @@ NETS 4576 ;
    - gpio0_0_pad/AMUXBUS_A ( gpio0_0_pad AMUXBUS_A )
        ( sky130_ef_io__com_bus_slice_5um_25 AMUXBUS_A ) ;
    - gpio0_0_in ( PIN gpio0_0_in ) ( gpio0_0_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 1353594 149082 ) ( 1354900 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 1353586 149082 ) ( 1354900 * )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 149222 ) ( * 149294 )
       NEW met3 TAPERRULE met3_width_140  ( 1354900 149434 ) ( 1355456 * ) ;
    - gpio0_0_enable_vddio ( PIN gpio0_0_enable_vddio ) ( gpio0_0_pad ENABLE_VDDIO )
@@ -41632,7 +41661,7 @@ NETS 4576 ;
        ( sky130_ef_io__com_bus_slice_5um_98 VSSD ) ;
    - gpio5_6_pad/PAD ( gpio5_6_pad PAD ) ;
    - gpio5_6_in ( PIN gpio5_6_in ) ( gpio5_6_pad IN )
-      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1596118 ) ( 81606 * )
+      + ROUTED met3 TAPERRULE met3_width_140  ( 80300 1596118 ) ( 81614 * )
       NEW met3 TAPERRULE met3_width_140  ( 80300 1595906 ) ( * 1595978 )
       NEW met3 TAPERRULE met3_width_140  ( 79744 1595766 ) ( 80300 * ) ;
    - gpio5_6_enable_vddio ( PIN gpio5_6_enable_vddio ) ( gpio5_6_pad ENABLE_VDDIO )
@@ -42390,7 +42419,7 @@ NETS 4576 ;
    - gpio1_0_pad_a_esd_1_h ( PIN gpio1_0_pad_a_esd_1_h ) ( gpio1_0_pad PAD_A_ESD_1_H )
       + ROUTED met3 TAPERRULE met3_width_240  ( 1354120 748948 ) ( 1355080 * ) ;
    - gpio1_0_pad_a_esd_0_h ( PIN gpio1_0_pad_a_esd_0_h ) ( gpio1_0_pad PAD_A_ESD_0_H )
-      + ROUTED met3 TAPERRULE met3_width_238  ( 1354118 748439 ) ( 1355082 * ) ;
+      + ROUTED met3 TAPERRULE met3_width_240  ( 1354120 748440 ) ( 1355080 * ) ;
    - gpio1_0_analog_en ( PIN gpio1_0_analog_en ) ( gpio1_0_pad ANALOG_EN )
       + ROUTED met3 TAPERRULE met3_width_132  ( 1354066 745888 ) ( 1355134 * ) ;
    - gpio1_0_enable_vswitch_h ( PIN gpio1_0_enable_vswitch_h ) ( gpio1_0_pad ENABLE_VSWITCH_H )
