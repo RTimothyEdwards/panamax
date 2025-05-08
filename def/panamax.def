@@ -1244,10 +1244,10 @@ COMPONENTS 539 ;
       + PLACED ( 0 0 ) S ;
    - muxsplit_sw sky130_fd_io__top_amuxsplitv2
       + PLACED ( 0 81600 ) W ;
+   - project_id_textblock_0 project_id_textblock
+      + PLACED ( 23300 22304 ) N ;
    - sky130_ef_io__com_bus_slice_20um_0 sky130_ef_io__com_bus_slice_20um
       + PLACED ( 80000 0 ) S ;
-   - user_id_textblock_0 user_id_textblock
-      + PLACED ( 23300 22304 ) N ;
    - constant_block_72 constant_block
       + PLACED ( 131542 75512 ) FN ;
    - select_pad sky130_ef_io__gpiov2_pad
@@ -5114,11 +5114,6 @@ PINS 2526 ;
      + USE SIGNAL
      + PORT
         + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 147926 ) N ;
-   - gpio0_0_in + NET gpio0_0_in
-     + DIRECTION OUTPUT
-     + USE SIGNAL
-     + PORT
-        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353824 149082 ) N ;
    - gpio0_0_tie_hi_esd + NET gpio0_0_tie_hi_esd
      + DIRECTION OUTPUT
      + USE SIGNAL
@@ -14867,6 +14862,11 @@ PINS 2526 ;
      + USE GROUND
      + PORT
         + LAYER met3 ( -1000 -4790 ) ( 1000 4790 )        + PLACED ( 80588 987890 ) N ;
+   - gpio0_0_in + NET gpio0_0_in
+     + DIRECTION OUTPUT
+     + USE SIGNAL
+     + PORT
+        + LAYER met3 ( -300 -70 ) ( 300 70 )        + PLACED ( 1353816 149082 ) N ;
 END PINS
 
 NONDEFAULTRULES 142 ;
@@ -30626,7 +30626,7 @@ NETS 4576 ;
       NEW met2 TAPERRULE met2_width_18  ( 1087419 71636 ) ( * 71732 )
       NEW met3 TAPERRULE met3_width_120  ( 1087484 71328 ) ( * 71558 )
       NEW met3 TAPERRULE met3_width_120  ( 1085992 71208 ) ( 1087484 * )
-      NEW met3 TAPERRULE met3_width_78  ( 1085970 71307 ) ( 1086014 * )
+      NEW met3 TAPERRULE met3_width_78  ( 1085970 71307 ) ( 1086020 * )
       NEW met3 TAPERRULE met3_width_10  ( 1085930 71351 ) ( 1086054 * )
       NEW met3 TAPERRULE met3_width_10  ( 1085931 71360 ) ( * 71464 )
       NEW met3 TAPERRULE met3_width_10  ( 1085930 71473 ) ( 1086054 * )
@@ -30721,19 +30721,19 @@ NETS 4576 ;
       NEW met3 TAPERRULE met3_width_4  ( 1087018 77282 ) ( 1087416 * )
       NEW met3 TAPERRULE met3_width_120  ( 1087076 77344 ) ( * 77932 )
       NEW met3 TAPERRULE met3_width_120  ( 1086220 78052 ) ( 1087076 * )
-      NEW met3 TAPERRULE met3_width_120  ( 1086220 76928 ) ( * 77932 )
-      NEW met3 TAPERRULE met3_width_8  ( 1085898 76864 ) ( 1086276 * )
-      NEW met3 TAPERRULE met3_width_2  ( 1085894 76869 ) ( 1086026 * )
-      NEW met3 TAPERRULE met3_width_112  ( 1086072 76804 ) ( 1086224 * )
-      NEW met3 TAPERRULE met3_width_10  ( 1085898 76743 ) ( 1086022 * )
-      NEW met3 TAPERRULE met3_width_10  ( 1085899 76752 ) ( * 76856 )
-      NEW met2 TAPERRULE met2_width_18  ( 1085895 76840 ) ( * 76852 )
-      NEW met2 TAPERRULE met2_width_18  ( 1085960 76804 ) via2_112_112_hx 
-      NEW met2 TAPERRULE met2_width_18  ( 1086025 76756 ) ( * 76852 )
+      NEW met3 TAPERRULE met3_width_120  ( 1086220 76908 ) ( * 77932 )
+      NEW met3 TAPERRULE met3_width_8  ( 1085898 76844 ) ( 1086276 * )
+      NEW met3 TAPERRULE met3_width_2  ( 1085894 76849 ) ( 1086026 * )
+      NEW met3 TAPERRULE met3_width_112  ( 1086072 76784 ) ( 1086224 * )
+      NEW met3 TAPERRULE met3_width_10  ( 1085898 76723 ) ( 1086022 * )
+      NEW met3 TAPERRULE met3_width_10  ( 1085899 76732 ) ( * 76836 )
+      NEW met2 TAPERRULE met2_width_8  ( 1085890 76836 ) ( 1085900 * )
+      NEW met2 TAPERRULE met2_width_8  ( 1085960 76784 ) via2_112_112_hx 
+      NEW met2 TAPERRULE met2_width_18  ( 1086025 76736 ) ( * 76832 )
       NEW met2 TAPERRULE met2_width_56  ( 1083832 76804 ) ( 1085876 * )
       NEW met2 TAPERRULE met2_width_56  ( 1083832 76860 ) ( * 76876 )
       NEW met2 TAPERRULE met2_width_56  ( 1083592 76932 ) ( 1083832 * )
-      NEW met2 TAPERRULE met2_width_18  ( 1085895 76756 ) ( * 76768 )
+      NEW met2 TAPERRULE met2_width_18  ( 1085895 76736 ) ( * 76768 )
       NEW met3 TAPERRULE met3_width_6  ( 1087288 77287 ) ( 1087416 * )
       NEW met3 TAPERRULE met3_width_10  ( 1087413 77172 ) ( * 77276 )
       NEW met3 TAPERRULE met3_width_4  ( 1087018 77166 ) ( 1087416 * )

@@ -1,15 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1746117482
-<< checkpaint >>
-rect 2024 4996 4600 5060
-rect 2024 4834 5748 4996
-rect -1177 4774 5748 4834
-rect -1570 -784 5748 4774
-rect -1570 -898 5448 -784
-rect -1366 -1318 5448 -898
-rect -828 -1764 1978 -1318
+timestamp 1746642053
 << isosubstrate >>
 rect 260 560 3666 3400
 << viali >>
@@ -235,7 +227,7 @@ transform 1 0 3360 0 -1 3256
 box -66 -43 162 897
 use sky130_fd_sc_hvl__lsbufhv2lv_1  lvlshiftdown $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
 timestamp 1738263620
-transform 1 0 1826 0 1 1628
+transform 1 0 1728 0 1 1628
 box -66 -43 1698 1671
 << labels >>
 flabel metal2 s 3288 544 3344 800 0 FreeSans 480 0 0 0 A

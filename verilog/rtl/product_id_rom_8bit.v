@@ -14,7 +14,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 `default_nettype none
-// This module represents an unprogrammed mask revision
+// This module represents an unprogrammed product ID
 // block that is configured with via programming on the
 // chip top level.  This value is passed to the block as
 // a parameter
@@ -32,9 +32,9 @@ module product_id_rom_8bit #(
     wire [7:0] prod_id_high;
     wire [7:0] prod_id_low;
 
-    // For the mask revision input, use an array of digital constant logic cells
+    // For the product ID input, use an array of digital constant logic cells
 
-    sky130_fd_sc_hd__conb_1 mask_rev_value [7:0] (
+    sky130_fd_sc_hd__conb_1 product_id_value [7:0] (
 `ifdef USE_POWER_PINS
             .VPWR(VPWR),
             .VPB(VPWR),
@@ -48,7 +48,7 @@ module product_id_rom_8bit #(
     genvar i;
     generate
 	for (i = 0; i < 8; i = i+1) begin
-	    assign mask_rev[i] = (PRODUCT_ID & (8'h01 << i)) ?
+	    assign product_id[i] = (PRODUCT_ID & (8'h01 << i)) ?
 			prod_id_high[i] : prod_id_low[i];
 	end
     endgenerate
@@ -64,7 +64,7 @@ module product_id_rom_8bit #(
 `endif
     );
 
-    sky130_fd_sc_hd__decap_6 [3:0] FILLER_6 (
+    sky130_fd_sc_hd__decap_6 FILLER_6 [3:0] (
 `ifdef USE_POWER_PINS
             .VPWR(VPWR),
             .VPB(VPWR),

@@ -14,14 +14,14 @@
 // SPDX-License-Identifier: Apache-2.0
 
 `default_nettype none
-// This module represents an unprogrammed mask revision
+// This module represents an unprogrammed project ID
 // block that is configured with via programming on the
 // chip top level.  This value is passed to the block as
 // a parameter
 
 /// sta-blackbox
 module project_id_rom_32bit #(
-    parameter USER_PROJECT_ID = 32'h0
+    parameter PROJECT_ID = 32'h0
 ) (
 `ifdef USE_POWER_PINS
     inout VPWR,
@@ -29,27 +29,27 @@ module project_id_rom_32bit #(
 `endif
     output [31:0] project_id
 );
-    wire [31:0] user_proj_id_high;
-    wire [31:0] user_proj_id_low;
+    wire [31:0] proj_id_high;
+    wire [31:0] proj_id_low;
 
-    // For the mask revision input, use an array of digital constant logic cells
+    // For the project ID input, use an array of digital constant logic cells
 
-    sky130_fd_sc_hd__conb_1 mask_rev_value [31:0] (
+    sky130_fd_sc_hd__conb_1 project_id_value [31:0] (
 `ifdef USE_POWER_PINS
             .VPWR(VPWR),
             .VPB(VPWR),
             .VNB(VGND),
             .VGND(VGND),
 `endif
-            .HI(user_proj_id_high),
-            .LO(user_proj_id_low)
+            .HI(proj_id_high),
+            .LO(proj_id_low)
     );
 
     genvar i;
     generate
 	for (i = 0; i < 32; i = i+1) begin
-	    assign mask_rev[i] = (USER_PROJECT_ID & (32'h01 << i)) ?
-			user_proj_id_high[i] : user_proj_id_low[i];
+	    assign project_id[i] = (PROJECT_ID & (32'h01 << i)) ?
+			proj_id_high[i] : proj_id_low[i];
 	end
     endgenerate
 

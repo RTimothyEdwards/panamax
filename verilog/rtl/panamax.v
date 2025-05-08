@@ -2196,6 +2196,18 @@ module panamax (
 	input wire	muxsplit_sw_switch_aa_sr
 );
 
+	/*------------------------------------------------------------
+	 * This value is uniquely defined for each user project.
+	 *------------------------------------------------------------
+	 */
+	parameter PROJECT_ID = 32'h00000000;
+
+	/*------------------------------------------------------------
+	 * This value can be set for a unique product identifier.
+	 *------------------------------------------------------------
+	 */
+	parameter PRODUCT_ID = 8'h00;
+
 	/* Declaration of wires internal to the padframe and not connected
 	 * to a padframe pin.
 	 */
@@ -6871,7 +6883,9 @@ module panamax (
     );
 
     /* Product ID (note:  Unprogrammed version) */
-    product_id_rom_8bit product_id_rom_8bit_0 (
+    product_id_rom_8bit #(
+	.PRODUCT_ID(PRODUCT_ID)
+    ) product_id_rom_8bit_0 (
     `ifdef USE_POWER_PINS
 	.VPWR(vccd),
 	.VGND(vssd),
@@ -6880,7 +6894,9 @@ module panamax (
     );
 
     /* Project (user) ID (note:  Unprogrammed version) */
-    project_id_rom_32bit project_id_rom_32bit_0 (
+    project_id_rom_32bit #(
+	.PROJECT_ID(PROJECT_ID)
+    ) project_id_rom_32bit_0 (
     `ifdef USE_POWER_PINS
 	.VPWR(vccd),
 	.VGND(vssd),
